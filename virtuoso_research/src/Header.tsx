@@ -1,7 +1,7 @@
 // src/Header.tsx
 import React from 'react';
 import Navigation from './Navigation';
-import './App.css'; // Import the CSS file
+import './Header.css'; // Import the CSS file
 
 const Header: React.FC = () => {
     return (

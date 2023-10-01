@@ -1,7 +1,6 @@
 // src/Navigation.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css'; // Import the CSS file
 
 const Navigation: React.FC = () => {
     return (
