@@ -1,0 +1,30 @@
+/* Header.css */
+
+.header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-title {
+    color: #333;
+    margin: 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #000;
+}

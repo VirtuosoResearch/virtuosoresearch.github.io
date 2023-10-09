@@ -1,0 +1,40 @@
+/* News.css */
+
+/* News.css */
+
+.news {
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    /* Ensure border is defined only once */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ... (other styles) */
+.news h2 {
+    margin-top: 0;
+}
+
+.news-item {
+    margin-bottom: 10px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+.news-link {
+    text-decoration: none;
+    color: blue;
+    /* Blue color for the link */
+}
+
+.news-link:hover {
+    text-decoration: underline;
+    /* Underline the link on hover */
+}
