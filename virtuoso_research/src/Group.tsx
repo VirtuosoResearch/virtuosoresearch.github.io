@@ -1,5 +1,6 @@
 // Group.tsx
 import React from 'react';
+import Header from './Header'; // Import the Header component
 import './Group.css';
 
 // Member component
@@ -99,51 +100,56 @@ const Group: React.FC = () => {
     ];
 
     return (
-        <div className="group-container">
+        <div>
+            <Header />
+        
+            <div className="group-container">
+                
 
-            {/* Students and Postdocs section */}
-            <section className="group-section">
-                <h2>Students and Postdocs</h2>
-                <div className="members">
-                    {phdStudentsData.map((person, index) => (
-                        <Member
-                            key={index}
-                            name={person.name}
-                            position={person.position}
-                            details={person.details}
-                            imageSrc={person.imageSrc}
-                        />
-                    ))}
-                </div>
-            </section>
-
-            {/* Faculty section */}
-            <section className="group-section">
-                <h2>Faculty</h2>
-                <div className="members">
-                    {facultyData.map((person, index) => (
-                        <Member
-                            key={index}
-                            name={person.name}
-                            position={person.position}
-                            details={person.details}
-                            imageSrc={person.imageSrc}
-                        />
-                    ))}
-                </div>
-            </section>
-
-            {/* Collaborators section */}
-            <section className="group-section">
-                <h2>Collaborators</h2>
-                <div className="members">
-                    <ul>
-                        {collaboratorsData.map((collaborator, index) => (
-                            <li key={index}>{collaborator}</li>
+                {/* Students and Postdocs section */}
+                <section className="group-section">
+                    <h2>Students and Postdocs</h2>
+                    <div className="members">
+                        {phdStudentsData.map((person, index) => (
+                            <Member
+                                key={index}
+                                name={person.name}
+                                position={person.position}
+                                details={person.details}
+                                imageSrc={person.imageSrc}
+                            />
                         ))}
-                    </ul>
-                </div>
-            </section>
+                    </div>
+                </section>
+
+                {/* Faculty section */}
+                <section className="group-section">
+                    <h2>Faculty</h2>
+                    <div className="members">
+                        {facultyData.map((person, index) => (
+                            <Member
+                                key={index}
+                                name={person.name}
+                                position={person.position}
+                                details={person.details}
+                                imageSrc={person.imageSrc}
+                            />
+                        ))}
+                    </div>
+                </section>
+
+                {/* Collaborators section */}
+                <section className="group-section">
+                    <h2>Collaborators</h2>
+                    <div className="members">
+                        <ul>
+                            {collaboratorsData.map((collaborator, index) => (
+                                <li key={index}>{collaborator}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
     );
 };
