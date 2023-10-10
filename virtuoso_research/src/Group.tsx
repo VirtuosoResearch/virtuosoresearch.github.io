@@ -32,117 +32,78 @@ const Member: React.FC<{ name: string, position: string, details: string[], imag
 const Group: React.FC = () => {
     const defaultImageSrc = "default.jpg"; // Default image source
 
-    // Data for staff
-    const staffData = [
+    // Data for faculty
+    const facultyData = [
         {
-            name: "Milan P Allan",
-            position: "Associate professor, started Jan 2015",
+            name: "Hongyang Ryan Zhang",
+            position: "Assistant Professor of Computer Science",
             details: [
-                "Master ETHZ, Diplomarbeit with J Osterwalder, University of Zurich",
-                "PhD St Andrews (while at Cornell University) with Felix Baumberger and JC Davis",
-                "Postdoc Cornell",
-                "ETH fellow at ETHZ with Andreas Wallraff",
-                "Bryan R. Coles Prize 2017",
+                "Ph.D. in computer science from Stanford",
+                "Postdoc at University of Pennsylvania",
+                "Etc",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
-        {
-            name: "Jianfeng (Jacky) Ge",
-            position: "Postdoc, started Oct 2019",
-            details: [
-                "Postdoc with Jenny Hoffman, Harvard University",
-                "PhD with Jinfeng Jia, Shanghai Jiao Tong University",
-                "B.S. East China University of Science and Technology",
-            ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
-        },
-        // Add more staff members as needed
     ];
 
-    // Data for PhD students
+    // Data for PhD students and postdocs
     const phdStudentsData = [
         {
-            name: "Ilse Kuijf",
+            name: "John Smith (PhD)",
             position: "Shared PhD student in the van Nieuwenburg group, working with us",
             details: [
-                "Master Leiden University",
+                "Northeastern University",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
         {
-            name: "Allen Ye",
+            name: "Richard Davison (PhD)",
             position: "Associate Researcher",
             details: [
-                "Master Leiden University",
+                "Northeastern University",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
-        // Add more PhD students as needed
+        {
+            name: "Bob Chang (PhD)",
+            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            details: [
+                "Northeastern University",
+            ],
+            imageSrc: defaultImageSrc, // Replace with actual image path
+        },
+        {
+            name: "Jessica Li (Masters)",
+            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            details: [
+                "Northeastern University",
+            ],
+            imageSrc: defaultImageSrc, // Replace with actual image path
+        },
+        {
+            name: "Alex Cao (Undergrad)",
+            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            details: [
+                "Northeastern University",
+            ],
+            imageSrc: defaultImageSrc, // Replace with actual image path
+        },
     ];
 
-    // Data for master students
-    const masterStudentsData = [
-        {
-            name: "David Dylan",
-            position: "Masters, started Nov 2022",
-            details: [
-                "B.S Northeastern University",
-            ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
-        },
-        // Add more master students as needed
-    ];
-
-    // Data for alumni
-    const alumniData = [
-        {
-            name: "Gijsbert Verdoes",
-            position: "In the Allan Lab 2015 - 2018, now Project manager at the FMD",
-            details: [
-                "Role: Fine mechanical engineer associated with the FMD working in our group",
-            ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
-        },
-        {
-            name: "Irene Battisti",
-            position: "In the Allan Lab Jan 2015 to June 2019, now R&D scientist at Nearfield Instruments",
-            details: [
-                "Role: PhD student",
-            ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
-        },
-        {
-            name: "Doohee Cho",
-            position: "In the Allan Lab May 2017 to June 2019, now assistant professor at Yonsei University",
-            details: [
-                "Role: Postdoc",
-            ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
-        },
-        // Add more alumni as needed
+    // Collaborators data
+    const collaboratorsData = [
+        "Gijsbert Verdoes",
+        "Irene Battisti",
+        "Doohee Cho",
+        // Add more collaborators as needed
     ];
 
     return (
         <div className="group-container">
-            {/* Staff section */}
-            <section className="group-section">
-                <h2>Staff</h2>
-                <div className="members">
-                    {staffData.map((person, index) => (
-                        <Member
-                            key={index}
-                            name={person.name}
-                            position={person.position}
-                            details={person.details}
-                            imageSrc={person.imageSrc}
-                        />
-                    ))}
-                </div>
-            </section>
 
-            {/* PhD Students section */}
+            {/* Students and Postdocs section */}
             <section className="group-section">
-                <h2>PhD Students</h2>
+                <h2>Students and Postdocs</h2>
                 <div className="members">
                     {phdStudentsData.map((person, index) => (
                         <Member
@@ -156,11 +117,11 @@ const Group: React.FC = () => {
                 </div>
             </section>
 
-            {/* Master Students section */}
+            {/* Faculty section */}
             <section className="group-section">
-                <h2>Master Students</h2>
+                <h2>Faculty</h2>
                 <div className="members">
-                    {masterStudentsData.map((person, index) => (
+                    {facultyData.map((person, index) => (
                         <Member
                             key={index}
                             name={person.name}
@@ -172,19 +133,15 @@ const Group: React.FC = () => {
                 </div>
             </section>
 
-            {/* Alumni section */}
+            {/* Collaborators section */}
             <section className="group-section">
-                <h2>Alumni</h2>
+                <h2>Collaborators</h2>
                 <div className="members">
-                    {alumniData.map((person, index) => (
-                        <Member
-                            key={index}
-                            name={person.name}
-                            position={person.position}
-                            details={person.details}
-                            imageSrc={person.imageSrc}
-                        />
-                    ))}
+                    <ul>
+                        {collaboratorsData.map((collaborator, index) => (
+                            <li key={index}>{collaborator}</li>
+                        ))}
+                    </ul>
                 </div>
             </section>
         </div>
