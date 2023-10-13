@@ -1,7 +1,7 @@
-// Group.tsx
+
 import React from 'react';
-import Header from './Header'; // Import the Header component
-import './Group.css';
+import Header from './Header';
+import './People.css';
 
 // Member component
 const Member: React.FC<{ name: string, position: string, details: string[], imageSrc: string }> = ({ name, position, details, imageSrc }) => {
@@ -47,7 +47,7 @@ const Group: React.FC = () => {
         },
     ];
 
-    // Data for PhD students and postdocs
+    // Data for students and postdocs
     const phdStudentsData = [
         {
             name: "John Smith (PhD)",
@@ -102,9 +102,9 @@ const Group: React.FC = () => {
     return (
         <div>
             <Header />
-        
+
             <div className="group-container">
-                
+
 
                 {/* Students and Postdocs section */}
                 <section className="group-section">
@@ -121,7 +121,6 @@ const Group: React.FC = () => {
                         ))}
                     </div>
                 </section>
-
                 {/* Faculty section */}
                 <section className="group-section">
                     <h2>Faculty</h2>
