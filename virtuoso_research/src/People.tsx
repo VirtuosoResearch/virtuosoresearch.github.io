@@ -96,8 +96,24 @@ const Group: React.FC = () => {
         "Gijsbert Verdoes",
         "Irene Battisti",
         "Doohee Cho",
+        "Bob Smith",
+        "Draga Padmini",
+        "Alice Johnson",
+        "Franklin White",
+        "Emily Davis",
+        "George Wilson",
+        "Hannah Brown",
+        "Isabella Lee",
+        "Jack Miller",
+        "Katherine Hall",
+        "Liam Adams",
+        "Olivia Harris",
+        "Mason Clark",
+        "Sophia Martin",
+        "William Turner",
         // Add more collaborators as needed
     ];
+
 
     return (
         <div>
@@ -137,8 +153,7 @@ const Group: React.FC = () => {
                     </div>
                 </section>
 
-                {/* Collaborators section */}
-                <section className="group-section">
+                <section className="group-section collaborators">
                     <h2>Collaborators</h2>
                     <div className="members">
                         <ul>
@@ -148,6 +163,7 @@ const Group: React.FC = () => {
                         </ul>
                     </div>
                 </section>
+
             </div>
         </div>
     );
