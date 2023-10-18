@@ -1,0 +1,60 @@
+.publications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the title and description */
+.publications-title {
+    margin-bottom: 20px;
+}
+
+/* Style the toggle button container */
+.toggle-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Style the toggle button */
+.toggle-button-container button {
+    background-color: #007BFF;
+    /* Example color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button-container button:hover {
+    background-color: #0056b3;
+    /* Example hover color */
+}
+
+/* Style the publications list */
+.publications-list {
+    text-align: left;
+}
+
+/* Style the sections (year and topic) */
+.publications-list h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: -100px;
+    /* Adjust the left margin as needed */
+}
+
+/* Style the list items (publications) */
+.publications-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 20px;
+}
