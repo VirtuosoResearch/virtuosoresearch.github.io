@@ -7,6 +7,7 @@ import People from './People';
 import Research from './Research';
 import Publications from './Publications';
 import AllNews from './AllNews';
+import Resources from './Resources';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/research" element={<Research />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/allnews" element={<AllNews />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
     </Router>
   );

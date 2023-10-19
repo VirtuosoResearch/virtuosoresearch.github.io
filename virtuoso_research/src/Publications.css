@@ -46,7 +46,6 @@
     font-size: 24px;
     margin-top: 20px;
     margin-left: -100px;
-    /* Adjust the left margin as needed */
 }
 
 /* Style the list items (publications) */
@@ -55,6 +54,34 @@
     padding: 0;
 }
 
+
+/* Reduce space between individual elements in each publication */
+.publications-list li p {
+    margin: 5px 0;
+}
+
+
+/* Style the list items (publications) */
 .publications-list li {
     margin-bottom: 20px;
+    /* Increase the margin between publications */
+}
+
+/* Style the publication title */
+.publications-list h3 {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    margin: 0;
+    /* Remove any additional margin */
+}
+
+/* Style the publication details (authors, publishing site, date) */
+.publications-list p {
+    margin: 5px 0;
+    /* Adjust the top and bottom margins for the details */
+}
+
+/* Style the authors to make them italic */
+.publications-list p.authors {
+    font-style: italic;
 }

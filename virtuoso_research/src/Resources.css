@@ -1,0 +1,92 @@
+/* Apply some general styles */
+.resources-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Style sections for Code, Datasets, and Articles */
+.section {
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.section h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+/* Style links and lists */
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section li {
+    margin: 10px 0;
+}
+
+.section a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section a:hover {
+    color: #0056b3;
+}
+
+/* Style the "Join Us" container */
+.join-us-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.join-us-container h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.join-us-container p {
+    margin: 10px 0;
+}
+
+.join-us-container strong {
+    font-weight: bold;
+}
+
+/* Center the "Resources" page */
+.resources-container {
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .section {
+        padding: 15px;
+    }
+
+    .section h3 {
+        font-size: 20px;
+    }
+
+    .join-us-container {
+        padding: 15px;
+    }
+
+    .join-us-container h2 {
+        font-size: 20px;
+    }
+}

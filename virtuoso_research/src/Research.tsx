@@ -6,7 +6,7 @@ const Research: React.FC = () => {
         <div>
             <Header/>
             <div>
-                Cool Research
+                Dive into some of our research!
             </div>
         </div>
     );
