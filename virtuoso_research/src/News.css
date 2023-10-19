@@ -1,40 +1,37 @@
 /* News.css */
 
-/* News.css */
-
 .news {
     background-color: #f2f2f2;
-    border: 1px solid #000;
-    /* Ensure border is defined only once */
+    border: 1px solid #666563;
     border-radius: 10px;
-    padding: 10px;
-}
-
-/* ... (other styles) */
-.news h2 {
-    margin-top: 0;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
 .news-item {
-    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px 0;
+
+}
+
+.news-date {
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
 }
 
 .news-link {
     text-decoration: none;
-    color: #000;
+    color: #007BFF;
 }
 
 .news-link:hover {
     text-decoration: underline;
-}
-
-.news-link {
-    text-decoration: none;
-    color: blue;
-    /* Blue color for the link */
-}
-
-.news-link:hover {
-    text-decoration: underline;
-    /* Underline the link on hover */
 }
