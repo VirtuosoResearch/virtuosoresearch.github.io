@@ -4,7 +4,7 @@
 .main-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 150px;
+    margin: 0 200px;
     /* 150px padding on both sides */
 }
 

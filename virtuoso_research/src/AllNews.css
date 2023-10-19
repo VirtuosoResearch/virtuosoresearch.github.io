@@ -1,0 +1,42 @@
+.allnews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered-title {
+    text-align: center;
+}
+
+.news-list {
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.news-date {
+    font-weight: bold;
+    margin: 0;
+}
+
+.news-content {
+    margin: 10px 0;
+}
+
+.all-news-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.all-news-link:hover {
+    text-decoration: underline;
+}

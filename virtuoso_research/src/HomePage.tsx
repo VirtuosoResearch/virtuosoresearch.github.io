@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
             <main className="main-container">
                 <div className="title-and-mission">
                     <TitleAndMission />
-                    <HomePageImage /> {/* Keep the ImageSlideshow component here */}
+                    <HomePageImage />
                 </div>
                 <div className="news">
                     <News />
