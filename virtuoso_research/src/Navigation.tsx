@@ -10,7 +10,7 @@ const Navigation: React.FC = () => {
                 <li><Link to="/people" className="nav-link">People</Link></li>
                 <li><Link to="/research" className="nav-link">Research</Link></li>
                 <li><Link to="/publications" className="nav-link">Publications</Link></li>
-                <li><Link to="/outreach" className="nav-link">Outreach</Link></li>
+                <li><Link to="/resources" className="nav-link">Resources</Link></li>
             </ul>
         </nav>
     );

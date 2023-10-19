@@ -15,7 +15,7 @@ const News: React.FC = () => {
             </div>
             <div className="news-item">
                 <div className="news-date">February, 2023</div>
-                <p>Daniel Silver presented his poster on Quantum Image Similarity Networks (SliQ) at AAAI-23, coauthored with Tirthak Patel, Aditya Ranjan, Harshitta Gandhi, and William Cutler</p>
+                <p>Daniel Silver presented his poster on Quantum Image Similarity Networks (SliQ) at AAAI-23, coauthored with fTirthak Patel, Aditya Ranjan, Harshitta Gandhi, and William Cutler</p>
             </div>
             <p><a href="/allnews" className="news-link">... see all News</a></p>
         </div>
