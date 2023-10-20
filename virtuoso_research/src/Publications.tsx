@@ -6,11 +6,11 @@ import './Publications.css';
 const publications = [
     {
         year: 2023,
-        title: "Data Mining Paper 1 (2023)",
-        authors: "John Doe, Jane Smith",
-        publishingSite: "Journal of Fake Science",
-        date: "January 1, 2023",
-        topic: "Data Mining",
+        title: "Robust Fine-Tuning of Deep Neural Networks with Hessian-based Generalization Guarantees",
+        authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
+        publishingSite: "ICML",
+        date: "2023",
+        topic: "Multitask Learning",
     },
     {
         year: 2022,

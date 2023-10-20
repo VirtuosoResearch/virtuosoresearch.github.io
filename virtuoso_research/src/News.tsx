@@ -6,8 +6,8 @@ const News: React.FC = () => {
         <div className="news">
             <h2>Recent Updates</h2>
             <div className="news-item">
-                <div className="news-date">April, 2023</div>
-                <p>Dr. Tirthak Patel successfully defended his Ph.D. thesis and graduated with his Ph.D.! He’ll be soon on his way to his faculty position at Rice University.</p>
+                <div className="news-date">Sep, 2023</div>
+                <p>One paper accepted into NeurIPS'23: Congrats Abhinav, Dongyue, and Haotian! We introduce a dataset of traffic accident labels and validate the efficiency of graph neural networks for predicting accident occurrence.</p>
             </div>
             <div className="news-item">
                 <div className="news-date">March, 2023</div>

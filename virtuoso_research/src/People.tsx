@@ -39,9 +39,9 @@ const Group: React.FC = () => {
             name: "Hongyang Ryan Zhang",
             position: "Assistant Professor of Computer Science",
             details: [
-                "Ph.D. in computer science from Stanford",
-                "Postdoc at University of Pennsylvania",
-                "Etc",
+//                "Ph.D. in computer science from Stanford",
+//                "Postdoc at University of Pennsylvania",
+//                "Etc",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
@@ -68,7 +68,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Haotian Ju",
-            position: "Ph.D. Student (2024, expected)",
+            position: "Ph.D. Student (2024, incoming)",
             details: [
                 "M.S. in Data Analytics Engineering",
 								"B.S. in Applied Mathematics, Tsinghua University"
@@ -111,24 +111,12 @@ const Group: React.FC = () => {
 
     // Collaborators data
     const collaboratorsData = [
-        "Gijsbert Verdoes",
-        "Irene Battisti",
-        "Doohee Cho",
-        "Bob Smith",
-        "Draga Padmini",
-        "Alice Johnson",
-        "Franklin White",
-        "Emily Davis",
-        "George Wilson",
-        "Hannah Brown",
-        "Isabella Lee",
-        "Jack Miller",
-        "Katherine Hall",
-        "Liam Adams",
-        "Olivia Harris",
-        "Mason Clark",
-        "Sophia Martin",
-        "William Turner",
+        "Tina Eliassi-Rad (Professor, Northeastern)",
+				"Haris Koutsopoulos (Professor, Northeastern)",
+				"Huy Nguyen (Assoc. Professor, Northeastern)", 
+				"Pedja Radivojac (Professor, Northeastern)",
+        "Aneesh Sharma (Software Engineer, Google)",
+        "Fan Yang (Asst. Professor, Tsinghua)",
         // Add more collaborators as needed
     ];
 

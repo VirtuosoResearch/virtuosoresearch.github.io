@@ -5,7 +5,7 @@ import Header from './Header';
 const AllNews: React.FC = () => {
     const newsItems = [
         {
-            date: "May 20, 2023",
+            date: "Sep 26, 2023",
             content: "Dr. Maria Garcia awarded a prestigious fellowship to advance research in quantum computing.",
         },
         {
