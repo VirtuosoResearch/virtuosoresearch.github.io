@@ -50,42 +50,60 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
-            name: "John Smith (PhD)",
-            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            name: "Dongyue (Oliver) Li",
+            position: "Ph.D. Student (2021-)",
             details: [
-                "Northeastern University",
+                "B.E. at Shanghai Jiao Tong University",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
         {
-            name: "Richard Davison (PhD)",
-            position: "Associate Researcher",
+            name: "Mahdi Haghifam",
+            position: "Khoury Postdoctral Fellow (2023-)",
             details: [
-                "Northeastern University",
+                "Ph.D. from University of Toronto",
+								"Jointly mentored by Prof. Jonathan Ullman"
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
         {
-            name: "Bob Chang (PhD)",
-            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            name: "Haotian Ju",
+            position: "Ph.D. Student (2024, expected)",
             details: [
-                "Northeastern University",
+                "M.S. in Data Analytics Engineering",
+								"B.S. in Applied Mathematics, Tsinghua University"
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
         {
-            name: "Jessica Li (Masters)",
-            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            name: "Abhinav Nippani",
+            position: "Master's Student (2023-)",
             details: [
-                "Northeastern University",
+                "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
         {
-            name: "Alex Cao (Undergrad)",
-            position: "Shared PhD student in the van Nieuwenburg group, working with us",
+            name: "Jinhong Yu",
+            position: "Master's Student",
             details: [
-                "Northeastern University",
+                "M.S. in AI, Northeastern University",
+            ],
+            imageSrc: defaultImageSrc, // Replace with actual image path
+        },
+        {
+            name: "Allen Ye",
+            position: "Undergraduate Researcher",
+            details: [
+                "B.S. in CS, Northeastern University",
+            ],
+            imageSrc: defaultImageSrc, // Replace with actual image path
+        },
+        {
+            name: "Debankita Basu",
+            position: "Master's Student Researcher",
+            details: [
+                "B.S. in CS, Northeastern University",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
