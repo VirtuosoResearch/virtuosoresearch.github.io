@@ -53,7 +53,7 @@ const Group: React.FC = () => {
             name: "Dongyue (Oliver) Li",
             position: "Ph.D. Student (2021-)",
             details: [
-                "B.E. at Shanghai Jiao Tong University",
+                "B.E. in CS, Shanghai Jiao Tong University",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
@@ -70,7 +70,7 @@ const Group: React.FC = () => {
             name: "Haotian Ju",
             position: "Ph.D. Student (2024, incoming)",
             details: [
-                "M.S. in Data Analytics Engineering",
+                "M.S. in Data Analytics Engineering, Northeastern University",
 								"B.S. in Applied Mathematics, Tsinghua University"
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
@@ -85,7 +85,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Jinhong Yu",
-            position: "Master's Student",
+            position: "Master's Student (2023-)",
             details: [
                 "M.S. in AI, Northeastern University",
             ],
@@ -103,10 +103,19 @@ const Group: React.FC = () => {
             name: "Debankita Basu",
             position: "Master's Student Researcher",
             details: [
-                "B.S. in CS, Northeastern University",
+                "B.S. in CS, UMass Amherst",
             ],
             imageSrc: defaultImageSrc, // Replace with actual image path
         },
+        {
+            name: "Kailai Chen",
+            position: "Visiting Student Researcher",
+            details: [
+                "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
+            ],
+            imageSrc: defaultImageSrc, // Replace with actual image path
+        },
+
     ];
 
     // Collaborators data
