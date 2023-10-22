@@ -4,7 +4,7 @@ import React from 'react';
 const ImageSlideshow: React.FC = () => {
     return (
         <div className="image-slideshow">
-            <img src="logo.png" alt="Lab Logo" />
+            {/*<img src="" alt="Lab Logo" />*/}
         </div>
     );
 };

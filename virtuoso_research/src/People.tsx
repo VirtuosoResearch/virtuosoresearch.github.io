@@ -93,7 +93,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Allen Ye",
-            position: "Undergraduate Researcher",
+            position: "Undergraduate Researcher (2023-)",
             details: [
                 "B.S. in CS, Northeastern University",
             ],
@@ -101,7 +101,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Debankita Basu",
-            position: "Master's Student Researcher",
+            position: "Master's Student Researcher (2023-)",
             details: [
                 "B.S. in CS, UMass Amherst",
             ],
@@ -109,7 +109,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Kailai Chen",
-            position: "Visiting Student Researcher",
+            position: "Visiting Student Researcher (2023-)",
             details: [
                 "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
             ],

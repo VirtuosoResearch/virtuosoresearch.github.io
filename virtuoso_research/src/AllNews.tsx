@@ -4,45 +4,21 @@ import Header from './Header';
 
 const AllNews: React.FC = () => {
     const newsItems = [
+				{
+						date: "Oct, 2023",
+						content: "Our group website is launched!"
+				},
         {
-            date: "Sep 26, 2023",
-            content: "Dr. Maria Garcia awarded a prestigious fellowship to advance research in quantum computing.",
+            date: "Sep, 2023",
+            content: "One paper accepted into NeurIPS'23: Congrats Abhinav, Dongyue, and Haotian! We introduce a dataset of traffic accident labels and validate the efficiency of graph neural networks for predicting accident occurrence.",
         },
         {
-            date: "April 5, 2023",
-            content: "Our lab collaborates with leading tech companies to develop state-of-the-art machine learning algorithms.",
+            date: "Sep, 2023",
+            content: "Welcome to Mahdi, joining Northeastern from University of Toronto, and Kailai, visiting from Xi'an Jiao Tong University!",
         },
         {
-            date: "March 1, 2023",
-            content: "Prof. Hongyang R Zhang delivers keynote speech at the International Symposium on Advanced Computing.",
-        },
-        {
-            date: "January 25, 2023",
-            content: "Our research on quantum cryptography featured in top scientific journals.",
-        },
-        {
-            date: "December 10, 2022",
-            content: "Virtuoso Research hosts a successful workshop on AI ethics and responsible technology.",
-        },
-        {
-            date: "October 15, 2022",
-            content: "New partnerships established to enhance research in artificial intelligence and quantum computing.",
-        },
-        {
-            date: "September 3, 2022",
-            content: "Recent breakthrough in quantum algorithms achieved by our research team.",
-        },
-        {
-            date: "July 12, 2022",
-            content: "Virtuoso Research joins an international initiative for advancing quantum technologies.",
-        },
-        {
-            date: "June 1, 2022",
-            content: "Our lab's work on quantum machine learning recognized with a prestigious award.",
-        },
-        {
-            date: "April 20, 2022",
-            content: "Virtuoso Research welcomes a group of talented undergraduate researchers for summer internships.",
+            date: "Aug, 2023",
+            content: "Dongyue presented a paper at KDD, Long Beach, about a new method for multitask learning on graph-structured data, the main idea being a clustering and then boosting procedure.",
         },
     ];
 

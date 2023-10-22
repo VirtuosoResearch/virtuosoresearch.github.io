@@ -2,25 +2,32 @@ import React from 'react';
 import './TitleAndMission.css';
 
 const TitleAndMission: React.FC = () => {
-    const text = "DeVeloping Intelligent AlgoRiThms to SUppOrt SOciety";
-    const highlightIndices = [2, 11, 27, 29, 38, 41, 45, 46];
+    const text = "developing intelligent algorithms to support the society";
+    const highlightIndices = [2, 11, 27, 29, 38, 41, 49, 50];
 
     return (
         <div className="title-and-mission">
-            <h2>Welcome to the Virtuoso Lab</h2>
-            <h4>
-                {text.split('').map((char, index) => (
+						{/*<h2>Welcome to the Virtuoso Lab</h2>*/}
+            {/*<h4>*/}
+            Virtuoso Research Lab focuses on the frontier research of Machine Learning, Algorithms, and Social Data. Our mission is to {text.split('').map((char, index) => (
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font">{char}</span>
                     ) : char
-                ))}
-            </h4>
+                ))}.
+            {/*</h4>*/}
             <p>
-                At Virtuoso Research, we're a dynamic team of dedicated computer science researchers who are passionate about developing intelligent algorithms that make a tangible impact on society. Our mission is to push the boundaries of high-performance computing (HPC) and quantum computing, striving to make these cutting-edge systems not only better but also more accessible to everyone.
+                The team comprises of a diverse team of students and post graduates who are passionate about advancing technology such as the foundations of AI and ML, at the same time hoping to make a tangible impact of using these technology to support the society.
             </p>
             <p>
-                Our research spans a wide spectrum of challenges and innovations. We delve into topics that address real-world problems, from enhancing road safety to devising novel approaches in task modeling and boosting multitask learning on graphs. We're committed to pioneering reguralized self-labeling techniques and continually pushing the boundaries of what's possible in the field of computer science. Our ultimate goal is to empower the next generation of students and educators, arming them with the knowledge and expertise to harness the full potential of parallel computing systems and tackle complex societal issues with groundbreaking solutions.
+                We are currently mainly working on two sets of projects.
+								<ul>
+										<li>On the machine learning side, we have been working on developing multitask learning methods, thinking about transfer, fine-tuning. Recently we have been looking to generative AI such as instruction tuning in language models, and diffusion models.</li>
+										<li>On the foundations side (algorithmic and theoretical), we are interested in studying algorithms on matrix and tensor shaped data, thinking about implicit regularization. We have also been working on developing nonvacuous generalization for deep neural networks using Hessian.</li>
+								</ul>
             </p>
+						<p>
+								To validate our solutions, we are particularly interested in validating solutions in social contexts. For instance, recently we've been looking to the prediction of traffic accidents using graph neural networks (by collecting a large-scale dataset of accident records and transport maps). 
+						</p>
         </div>
     );
 };
