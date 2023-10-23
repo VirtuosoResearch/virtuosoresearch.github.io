@@ -1,18 +1,19 @@
 import React from 'react';
 import Header from './Header';
 import { Link } from 'react-router-dom';
+import './ResearchBlogs.css';
 
 const ResearchBlogs: React.FC = () => {
     return (
         <div>
             <Header />
             <div className="blog-container">
-                <h1>Blog Posts</h1>
-                <Link to="/blog/embroid">
-                    <h2>Embroid: Correcting and Improving LLM Predictions Without Labels</h2>
+                <h1>Posts:</h1>
+                <Link to="/research/blog/healthcare">
+                    <h2>AI in Healthcare: Revolutionizing Patient Care with Smart Algorithms</h2>
                 </Link>
-                <Link to="/blog/simple-ai-system">
-                    <h2>A Paradigm Shift in ML Validation: Evaluating Workflows, Not Tasks</h2>
+                <Link to="/research/blog/quantam">
+                    <h2>Quantum Computing: The Next Frontier in Information Processing</h2>
                 </Link>
             </div>
         </div>

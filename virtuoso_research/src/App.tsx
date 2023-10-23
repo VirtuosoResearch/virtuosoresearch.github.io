@@ -8,7 +8,9 @@ import ResearchBlogs from './Research';
 import Publications from './Publications';
 import AllNews from './AllNews';
 import Resources from './Resources';
-import EmbroidBlog from './blogs/Embroid';
+
+import HealthcareBlog from './blogs/Healthcare';
+import QuantamBlog from './blogs/Quantam';
 
 const App: React.FC = () => {
   return (
@@ -23,7 +25,8 @@ const App: React.FC = () => {
 
 
 
-        <Route path="/blog/embroid" element={<EmbroidBlog />} />
+        <Route path="/research/blog/healthcare" element={<HealthcareBlog />} />
+        <Route path="/research/blog/quantam" element={<QuantamBlog />} />
       </Routes>
     </Router>
   );
