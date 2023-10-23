@@ -4,10 +4,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import HomePage from './HomePage';
 import People from './People';
-import Research from './Research';
+import ResearchBlogs from './Research';
 import Publications from './Publications';
 import AllNews from './AllNews';
 import Resources from './Resources';
+
+import HealthcareBlog from './blogs/Healthcare';
+import QuantamBlog from './blogs/Quantam';
 
 const App: React.FC = () => {
   return (
@@ -15,10 +18,15 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/people" element={<People />} />
-        <Route path="/research" element={<Research />} />
+        <Route path="/research" element={<ResearchBlogs />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/allnews" element={<AllNews />} />
         <Route path="/resources" element={<Resources />} />
+
+
+
+        <Route path="/research/blog/healthcare" element={<HealthcareBlog />} />
+        <Route path="/research/blog/quantam" element={<QuantamBlog />} />
       </Routes>
     </Router>
   );

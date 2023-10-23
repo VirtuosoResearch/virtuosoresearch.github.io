@@ -1,0 +1,32 @@
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Author's name */
+.blog-content p.author {
+    font-weight: bold;
+}
+
+/* Hyperlinks within the blog content */
+.blog-content a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.blog-content a:hover {
+    color: #0056b3;
+}
