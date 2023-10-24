@@ -2,8 +2,17 @@
 
 .header {
     background-color: #f2f2f2;
-    text-align: center;
-    padding: 20px 0;
+    padding: 20px 0; /*Padding from top of page*/
+    padding-left: 20px; /*Padding from left of page */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .header-title {
@@ -14,14 +23,14 @@
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
     text-decoration: none;
     color: #555;
-    margin: 0 15px;
+    margin: 0 15px; /*distance between each navigation link*/
     transition: color 0.3s;
 }
 

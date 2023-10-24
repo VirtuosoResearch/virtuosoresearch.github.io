@@ -1,0 +1,6 @@
+/* App.css */
+
+/* Hide the scrollbar in the entire document so the header isn't offset for some pages.*/
+body::-webkit-scrollbar {
+    display: none;
+}

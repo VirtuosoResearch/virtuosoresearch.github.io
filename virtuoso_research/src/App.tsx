@@ -11,6 +11,7 @@ import Resources from './Resources';
 
 import HealthcareBlog from './blogs/Healthcare';
 import QuantamBlog from './blogs/Quantam';
+import './App.css'
 
 const App: React.FC = () => {
   return (
