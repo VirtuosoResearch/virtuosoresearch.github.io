@@ -43,7 +43,7 @@ const Group: React.FC = () => {
 //                "Postdoc at University of Pennsylvania",
 //                "Etc",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "hongyang.png", // Replace with actual image path
         },
     ];
 
@@ -55,7 +55,7 @@ const Group: React.FC = () => {
             details: [
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "dongyue.jpg", // Replace with actual image path
         },
         {
             name: "Mahdi Haghifam",
@@ -85,11 +85,11 @@ const Group: React.FC = () => {
         },
         {
             name: "Jinhong Yu",
-            position: "Master's Student (2023-)",
+            position: "Master's Student (2021-)",
             details: [
                 "M.S. in AI, Northeastern University",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "jinhong.jpeg", // Replace with actual image path
         },
         {
             name: "Allen Ye",
@@ -97,7 +97,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in CS, Northeastern University",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "allen.png", // Replace with actual image path
         },
         {
             name: "Debankita Basu",
@@ -113,7 +113,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "kailai.jpg", // Replace with actual image path
         },
 
     ];
