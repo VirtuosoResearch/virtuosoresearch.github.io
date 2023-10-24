@@ -1,24 +1,26 @@
-import React from 'react';
-import './Blog.css';
+import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'markdown-to-jsx';
+import healthcareMarkdown from './Healthcare.md';
 import Header from '../Header';
+import './Blog.css'
 
 const HealthcareBlog: React.FC = () => {
+    const [markdown, setMarkdown] = useState('');
+
+    useEffect(() => {
+        // Load the Markdown content from the file
+        fetch(healthcareMarkdown)
+            .then((response) => response.text())
+            .then((data) => setMarkdown(data));
+    }, []);
+
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="blog-content">
-                <h1>AI in Healthcare: Revolutionizing Patient Care with Smart Algorithms</h1>
-                <p>Author: Chris</p>
-                <p>
-                    Artificial intelligence has the potential to transform the healthcare landscape by providing more accurate and timely diagnoses, predicting patient outcomes, and even streamlining administrative tasks. With machine learning algorithms, healthcare professionals can better analyze medical images, identify anomalies, and make early predictions for diseases such as cancer.
-
-                    AI-driven chatbots are enhancing patient engagement and support, providing 24/7 assistance for medical queries and scheduling appointments. Smart algorithms are also optimizing hospital operations by improving bed management and predicting equipment maintenance needs.
-
-                    In this blog post, we'll delve into the various ways AI is making a positive impact on patient care, highlighting some real-world applications and exploring the potential future developments.
-                </p>
+                <ReactMarkdown children={markdown} />
             </div>
         </div>
-        
     );
 };
 
