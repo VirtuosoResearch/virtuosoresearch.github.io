@@ -64,7 +64,7 @@ const Group: React.FC = () => {
                 "Ph.D. from University of Toronto",
 								"Jointly mentored by Prof. Jonathan Ullman"
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "Mahdi_Haghifam.jpg", // Replace with actual image path
         },
         {
             name: "Haotian Ju",
@@ -81,7 +81,7 @@ const Group: React.FC = () => {
             details: [
                 "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "Abhinav_Nippani.jpeg", // Replace with actual image path
         },
         {
             name: "Jinhong Yu",
@@ -105,7 +105,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in CS, UMass Amherst",
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "Debankita_Basu.jpeg", // Replace with actual image path
         },
         {
             name: "Kailai Chen",
