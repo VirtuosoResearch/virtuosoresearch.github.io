@@ -6,11 +6,8 @@
 
 .bright-font {
     color: #f5424b;
-    /* Set the color to a bright noticeable color (in this case, gold) */
     font-weight: bold;
-    /* Make it bold for emphasis */
     font-size: 24px;
-    /* Adjust the font size for emphasis */
 }
 
 li:not(:last-child) {

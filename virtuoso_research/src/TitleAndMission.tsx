@@ -1,5 +1,6 @@
 import React from 'react';
 import './TitleAndMission.css';
+import ImageSlideshow from './ImageSlideshow';
 
 const TitleAndMission: React.FC = () => {
     const text = "developing intelligent algorithms to support the society";
@@ -7,14 +8,11 @@ const TitleAndMission: React.FC = () => {
 
     return (
         <div className="title-and-mission">
-						{/*<h2>Welcome to the Virtuoso Lab</h2>*/}
-            {/*<h4>*/}
             Virtuoso Research Lab focuses on the frontier research of Machine Learning, Algorithms, and Social Data. Our mission is to {text.split('').map((char, index) => (
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font">{char}</span>
                     ) : char
                 ))}.
-            {/*</h4>*/}
             <p>
                 The team comprises of a diverse team of students and post graduates who are passionate about advancing technology such as the foundations of AI and ML, at the same time hoping to make a tangible impact of using these technology to support the society.
             </p>
@@ -27,7 +25,9 @@ const TitleAndMission: React.FC = () => {
             </p>
 						<p>
 								To validate our solutions, we are particularly interested in validating solutions in social contexts. For instance, recently we've been looking to the prediction of traffic accidents using graph neural networks (by collecting a large-scale dataset of accident records and transport maps). 
-						</p>
+            </p>
+            
+            <ImageSlideshow />
         </div>
     );
 };

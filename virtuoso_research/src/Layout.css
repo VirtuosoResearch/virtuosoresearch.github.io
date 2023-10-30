@@ -1,16 +1,16 @@
 /* Layout.css */
 
-/* Apply padding only to the sides, excluding the header */
 .main-container {
+    margin-top:50px;
     display: flex;
     justify-content: space-between;
-    margin: 0 200px;
-    /* 150px padding on both sides */
+    margin-left: 300px;
+    margin-right:300px;
 }
 
 .title-and-mission {
     flex: 1;
-    margin-right: 20px;
+    margin-right:50px;
 }
 
 .news {
