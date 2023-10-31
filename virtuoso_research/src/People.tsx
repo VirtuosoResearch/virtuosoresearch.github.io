@@ -73,7 +73,7 @@ const Group: React.FC = () => {
                 "M.S. in Data Analytics Engineering, Northeastern University",
 								"B.S. in Applied Mathematics, Tsinghua University"
             ],
-            imageSrc: defaultImageSrc, // Replace with actual image path
+            imageSrc: "haotian.png", // Replace with actual image path
         },
         {
             name: "Abhinav Nippani",
@@ -123,7 +123,7 @@ const Group: React.FC = () => {
         "Tina Eliassi-Rad (Professor, Northeastern)",
 				"Haris Koutsopoulos (Professor, Northeastern)",
 				"Huy Nguyen (Assoc. Professor, Northeastern)", 
-				"Pedja Radivojac (Professor, Northeastern)",
+				"Predrag Radivojac (Professor, Northeastern)",
         "Aneesh Sharma (Software Engineer, Google)",
         "Fan Yang (Asst. Professor, Tsinghua)",
         // Add more collaborators as needed

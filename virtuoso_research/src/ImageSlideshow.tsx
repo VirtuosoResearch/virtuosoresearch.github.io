@@ -4,9 +4,10 @@ import './ImageSlideshow.css';
 
 const ImageSlideshow: React.FC = () => {
     const imageUrls = [
-        'ai1.jpg',
-        'ai2.jpg',
-        'ai3.jpg',
+        'informs23.JPEG',
+				'task_modeling_poster.png',
+        'icml22.jpeg',
+//        'ai3.jpg',
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -23,7 +24,7 @@ const ImageSlideshow: React.FC = () => {
 
     useEffect(() => {
         // Set up a timer to automatically advance to the next image every 3 seconds
-        const timer = setInterval(nextImage, 6000);
+        const timer = setInterval(nextImage, 16000);
 
         // Clear the timer when the component unmounts
         return () => {
