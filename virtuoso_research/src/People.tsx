@@ -4,7 +4,7 @@ import Header from './Header';
 import './People.css';
 
 // Member component
-const Member: React.FC<{ name: string, position: string, details: string[], imageSrc: string }> = ({ name, position, details, imageSrc }) => {
+const Member: React.FC<{ name: string, position: string, details: string[], imageSrc: string, link: string}> = ({ name, position, details, imageSrc, link }) => {
     const imageWidth = 80; // Image width
 
     return (
@@ -18,7 +18,7 @@ const Member: React.FC<{ name: string, position: string, details: string[], imag
                 />
             </div>
             <div className="member-details">
-                <h3>{name}</h3>
+                <h3><a href={link}>{name}</a></h3>
                 <p>{position}</p>
                 <ul>
                     {details.map((detail, index) => (
@@ -44,6 +44,7 @@ const Group: React.FC = () => {
 //                "Etc",
             ],
             imageSrc: "hongyang.png", // Replace with actual image path
+            link: "https://www.hongyangzhang.com/"
         },
     ];
 
@@ -56,6 +57,7 @@ const Group: React.FC = () => {
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
             imageSrc: "dongyue.jpg", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Mahdi Haghifam",
@@ -65,6 +67,7 @@ const Group: React.FC = () => {
 								"Jointly mentored by Prof. Jonathan Ullman"
             ],
             imageSrc: "Mahdi_Haghifam.jpg", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Haotian Ju",
@@ -74,6 +77,7 @@ const Group: React.FC = () => {
 								"B.S. in Applied Mathematics, Tsinghua University"
             ],
             imageSrc: "haotian.png", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Abhinav Nippani",
@@ -82,6 +86,7 @@ const Group: React.FC = () => {
                 "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
             ],
             imageSrc: "Abhinav_Nippani.jpeg", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Jinhong Yu",
@@ -90,6 +95,7 @@ const Group: React.FC = () => {
                 "M.S. in AI, Northeastern University",
             ],
             imageSrc: "jinhong.jpeg", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Allen Ye",
@@ -98,6 +104,7 @@ const Group: React.FC = () => {
                 "B.S. in CS, Northeastern University",
             ],
             imageSrc: "allen.png", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Debankita Basu",
@@ -106,6 +113,7 @@ const Group: React.FC = () => {
                 "B.S. in CS, UMass Amherst",
             ],
             imageSrc: "Debankita_Basu.jpeg", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Kailai Chen",
@@ -114,6 +122,16 @@ const Group: React.FC = () => {
                 "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
             ],
             imageSrc: "kailai.jpg", // Replace with actual image path
+            link: "/"
+        },
+        {
+            name: "Kailai Chen",
+            position: "Visiting Student Researcher (2023-)",
+            details: [
+                "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
+            ],
+            imageSrc: "kailai.jpg", // Replace with actual image path
+            link: "/"
         },
 
     ];
@@ -148,6 +166,7 @@ const Group: React.FC = () => {
                                 position={person.position}
                                 details={person.details}
                                 imageSrc={person.imageSrc}
+                                link={person.link}
                             />
                         ))}
                     </div>
@@ -163,6 +182,7 @@ const Group: React.FC = () => {
                                 position={person.position}
                                 details={person.details}
                                 imageSrc={person.imageSrc}
+                                link={person.link}
                             />
                         ))}
                     </div>
