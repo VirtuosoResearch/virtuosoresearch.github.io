@@ -7,7 +7,6 @@ const Resources: React.FC = () => {
         <div>
             <Header />
             <div className="resources-container">
-                <h1>Resources</h1>
                 <section className="section">
                     <h3>Code</h3>
                     <ul>
@@ -54,12 +53,11 @@ const Resources: React.FC = () => {
                         </li>
                     </ul>
                 </section>*/}
-            </div>
-
-            <div className="join-us-container">
-                <h2>Contact</h2>
-                <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in algorithms and/or programming.</p>
-                <p><strong>Email:</strong> ho.zhang@northeastern.edu</p>
+                <div className="section">
+                    <h2>Contact</h2>
+                    <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in algorithms and/or programming.</p>
+                    <p><strong>Email:</strong> ho.zhang@northeastern.edu</p>
+                </div>
             </div>
         </div>
     );

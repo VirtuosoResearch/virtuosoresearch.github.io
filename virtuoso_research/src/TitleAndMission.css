@@ -1,13 +1,12 @@
 /* TitleAndMission.css */
 
 .title-and-mission {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .bright-font {
-    color: #f5424b;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 19px;
 }
 
 li:not(:last-child) {

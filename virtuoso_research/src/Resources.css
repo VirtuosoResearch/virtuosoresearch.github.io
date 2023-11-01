@@ -1,6 +1,6 @@
 /* Apply some general styles */
 .resources-container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: left;
     padding: 20px;
@@ -40,31 +40,6 @@
 
 .section a:hover {
     color: #0056b3;
-}
-
-/* Style the "Join Us" container */
-.join-us-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    text-align: left;
-}
-
-.join-us-container h2 {
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-}
-
-.join-us-container p {
-    margin: 10px 0;
-}
-
-.join-us-container strong {
-    font-weight: bold;
 }
 
 /* Center the "Resources" page */

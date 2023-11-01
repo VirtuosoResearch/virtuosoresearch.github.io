@@ -150,9 +150,8 @@ const Publications: React.FC = () => {
                                         .map((publication, index) => (
                                             <li key={index}>
                                                 <h3><a href={publication.link}>{publication.title}</a></h3>
-                                                <p>Authors: {publication.authors}</p>
-                                                <p>Publishing Site: {publication.publishingSite}</p>
-                                                <p>Date: {publication.date}</p>
+                                                <p><i>{publication.authors}</i></p>
+                                                <p>{publication.publishingSite} ({publication.date})</p>
                                             </li>
                                         ))}
                                 </ul>
@@ -170,9 +169,8 @@ const Publications: React.FC = () => {
                                             .map((publication, index) => (
                                                 <li key={index}>
                                                     <h3><a href={publication.link}>{publication.title}</a></h3>
-                                                    <p>Authors: {publication.authors}</p>
-                                                    <p>Publishing Site: {publication.publishingSite}</p>
-                                                    <p>Date: {publication.date}</p>
+                                                    <p><i>{publication.authors}</i></p>
+                                                    <p>{publication.publishingSite} ({publication.date})</p>
                                                 </li>
                                             ))}
                                     </ul>

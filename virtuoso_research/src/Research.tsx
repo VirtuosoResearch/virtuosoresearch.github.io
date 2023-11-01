@@ -12,9 +12,11 @@ const ResearchBlogs: React.FC = () => {
                 <Link to="/research/blog/healthcare">
                     <h2>AI in Healthcare: Revolutionizing Patient Care with Smart Algorithms</h2>
                 </Link>
-                <Link to="/research/blog/quantam">
+                <p>John Doe, 2023</p>
+                <Link to="/research/blog/quantum">
                     <h2>Quantum Computing: The Next Frontier in Information Processing</h2>
                 </Link>
+                <p>Jane Smith, 2023</p>
             </div>
         </div>
     );

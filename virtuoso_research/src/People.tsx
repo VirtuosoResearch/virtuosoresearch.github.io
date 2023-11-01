@@ -18,7 +18,7 @@ const Member: React.FC<{ name: string, position: string, details: string[], imag
                 />
             </div>
             <div className="member-details">
-                <h3><a href={link}>{name}</a></h3>
+                <h3><a href={link} target="_blank" rel="noopener noreferrer">{name}</a></h3> 
                 <p>{position}</p>
                 <ul>
                     {details.map((detail, index) => (
@@ -99,12 +99,12 @@ const Group: React.FC = () => {
         },
         {
             name: "Allen Ye",
-            position: "Undergraduate Researcher (2023-)",
+            position: "Undergraduate Researcher (2023)",
             details: [
                 "B.S. in CS, Northeastern University",
             ],
             imageSrc: "portraits/allen.png", // Replace with actual image path
-            link: "/"
+            link: "https://www.linkedin.com/in/allenye66/"
         },
         {
             name: "Debankita Basu",
