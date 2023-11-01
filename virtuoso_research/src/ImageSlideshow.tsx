@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react';
 import './ImageSlideshow.css';
 
 const ImageSlideshow: React.FC = () => {
+    // const path = require('path.join');
     const imageUrls = [
-        'informs23.JPEG',
-				'task_modeling_poster.png',
-        'icml22.jpeg',
+        'home_images/informs23.JPEG',
+		'home_images/task_modeling_poster.png',
+        'home_images/icml22.jpeg',
 //        'ai3.jpg',
     ];
 
@@ -42,11 +43,13 @@ const ImageSlideshow: React.FC = () => {
                     &gt;
                 </button>
             </div>
-            <img
-                src={imageUrls[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
-                className="slideshow-image"
-            />
+            <a href={imageUrls[currentImageIndex]}>
+                <img
+                    src={imageUrls[currentImageIndex]}
+                    alt={`Image ${currentImageIndex + 1}`}
+                    className="slideshow-image"
+                />
+            </a>
         </div>
     );
 };

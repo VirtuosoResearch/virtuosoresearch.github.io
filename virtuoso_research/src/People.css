@@ -91,8 +91,8 @@
 
 /* Style Collaborators list items */
 .collaborators ul {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     padding: 0;
     margin: 0;
     list-style: inside;
@@ -101,5 +101,6 @@
 
 /* Style individual collaborator items */
 .collaborators ul li {
-    width: 200px;
+    display: block;
+    /* width: 200px; */
 }

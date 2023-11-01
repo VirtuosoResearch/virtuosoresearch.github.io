@@ -6,7 +6,7 @@ import './People.css';
 // Member component
 const Member: React.FC<{ name: string, position: string, details: string[], imageSrc: string, link: string}> = ({ name, position, details, imageSrc, link }) => {
     const imageWidth = 80; // Image width
-
+    // var joinPath = require('path.join');
     return (
         <div className="member">
             <div className="member-image">
@@ -43,7 +43,7 @@ const Group: React.FC = () => {
 //                "Postdoc at University of Pennsylvania",
 //                "Etc",
             ],
-            imageSrc: "hongyang.png", // Replace with actual image path
+            imageSrc: "portraits/hongyang.png", // Replace with actual image path
             link: "https://www.hongyangzhang.com/"
         },
     ];
@@ -56,7 +56,7 @@ const Group: React.FC = () => {
             details: [
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
-            imageSrc: "dongyue.jpg", // Replace with actual image path
+            imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "/"
         },
         {
@@ -66,7 +66,7 @@ const Group: React.FC = () => {
                 "Ph.D. from University of Toronto",
 								"Jointly mentored by Prof. Jonathan Ullman"
             ],
-            imageSrc: "Mahdi_Haghifam.jpg", // Replace with actual image path
+            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
             link: "/"
         },
         {
@@ -76,7 +76,7 @@ const Group: React.FC = () => {
                 "M.S. in Data Analytics Engineering, Northeastern University",
 								"B.S. in Applied Mathematics, Tsinghua University"
             ],
-            imageSrc: "haotian.png", // Replace with actual image path
+            imageSrc: "portraits/haotian.png", // Replace with actual image path
             link: "/"
         },
         {
@@ -85,7 +85,7 @@ const Group: React.FC = () => {
             details: [
                 "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
             ],
-            imageSrc: "Abhinav_Nippani.jpeg", // Replace with actual image path
+            imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
             link: "/"
         },
         {
@@ -94,7 +94,7 @@ const Group: React.FC = () => {
             details: [
                 "M.S. in AI, Northeastern University",
             ],
-            imageSrc: "jinhong.jpeg", // Replace with actual image path
+            imageSrc: "portraits/jinhong.jpeg", // Replace with actual image path
             link: "/"
         },
         {
@@ -103,7 +103,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in CS, Northeastern University",
             ],
-            imageSrc: "allen.png", // Replace with actual image path
+            imageSrc: "portraits/allen.png", // Replace with actual image path
             link: "/"
         },
         {
@@ -112,7 +112,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in CS, UMass Amherst",
             ],
-            imageSrc: "Debankita_Basu.jpeg", // Replace with actual image path
+            imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
         },
         {
@@ -121,7 +121,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
             ],
-            imageSrc: "kailai.jpg", // Replace with actual image path
+            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
         },
         {
@@ -130,7 +130,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in Engineering Physics, Rose-Hulman Institute of Technology",
             ],
-            imageSrc: "aidan.jpg", // Replace with actual image path
+            imageSrc: "portraits/aidan.jpg", // Replace with actual image path
             link: "/"
         },
 
@@ -138,13 +138,36 @@ const Group: React.FC = () => {
 
     // Collaborators data
     const collaboratorsData = [
-        "Tina Eliassi-Rad (Professor, Northeastern)",
-				"Haris Koutsopoulos (Professor, Northeastern)",
-				"Huy Nguyen (Assoc. Professor, Northeastern)", 
-				"Predrag Radivojac (Professor, Northeastern)",
-        "Aneesh Sharma (Software Engineer, Google)",
-        "Fan Yang (Asst. Professor, Tsinghua)",
-        // Add more collaborators as needed
+        {
+            name: "Tina Eliassi-Rad",
+            describtion: "Professor, Northeastern",
+            link: "/"
+        },
+        {
+            name: "Haris Koutsopoulos",
+            describtion: "Professor, Northeastern",
+            link: "/"
+        },
+        {
+            name: "Huy Nguyen",
+            describtion: "Assoc. Professor, Northeastern",
+            link: "/"
+        },
+        {
+            name: "Predrag Radivojac ",
+            describtion: "Professor, Northeastern",
+            link: "/"
+        },
+        {
+            name: "Aneesh Sharma",
+            describtion: "Software Engineer, Google",
+            link: "/"
+        },
+        {
+            name: "Fan Yang",
+            describtion: "Asst. Professor, Tsinghua",
+            link: "/"
+        },
     ];
 
 
@@ -193,7 +216,10 @@ const Group: React.FC = () => {
                     <div className="members">
                         <ul>
                             {collaboratorsData.map((collaborator, index) => (
-                                <li key={index}>{collaborator}</li>
+                                <li key={index}>
+                                    <a href={collaborator.link}>{collaborator.name}</a>
+                                    <div>{collaborator.describtion}</div>
+                                </li>
                             ))}
                         </ul>
                     </div>
