@@ -129,10 +129,10 @@ const Publications: React.FC = () => {
         <div>
             <Header />
             <div className="publications-container">
-                <div className="publications-title">
+                {/* <div className="publications-title">
                     <h1>PUBLICATIONS:</h1>
                     <p>Below is a comprehensive list of my publications, sorted by date. To organize the list differently, use the button below.</p>
-                </div>
+                </div> */}
                 <div className="toggle-button-container">
                     <button onClick={toggleGrouping}>
                         {groupByTopic ? 'Group by Year' : 'Group by Topic'}
