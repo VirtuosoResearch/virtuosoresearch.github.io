@@ -1,0 +1,39 @@
+/* VideoSlideshow.css */
+
+.video-slideshow-container {
+    width: 640px; /* taken from line 45 in VideoSlideshow.tsx */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-slideshow-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.video-nav-button {
+    background: rgba(255, 255, 255, 1);
+    padding: 5px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.video-prev-button {
+    margin-left: 20px;
+}
+
+.video-next-button {
+    margin-right: 20px;
+}
+
+.video-nav-button:hover {
+    color: #007bff;
+}

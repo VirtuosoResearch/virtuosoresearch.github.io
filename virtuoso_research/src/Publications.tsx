@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import './Publications.css';
-
+import Footer from './Footer';
 
 const publications = [
     {
@@ -180,6 +180,7 @@ const Publications: React.FC = () => {
                     )}
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import './People.css';
+import Footer from './Footer';
 
 // Member component
 const Member: React.FC<{ name: string, position: string, details: string[], imageSrc: string, link: string}> = ({ name, position, details, imageSrc, link }) => {
@@ -226,6 +227,7 @@ const Group: React.FC = () => {
                 </section>
 
             </div>
+            <Footer/>
         </div>
     );
 };
