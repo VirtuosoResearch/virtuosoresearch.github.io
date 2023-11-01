@@ -2,8 +2,8 @@
 
 .header {
     background-color: #f2f2f2;
-    padding: 20px 0; /*Padding from top of page*/
-    padding-left: 20px; /*Padding from left of page */
+    padding: 20px 0;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
 }

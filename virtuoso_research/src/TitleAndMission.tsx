@@ -4,7 +4,7 @@ import ImageSlideshow from './ImageSlideshow';
 
 const TitleAndMission: React.FC = () => {
     const text = "developing intelligent algorithms to support society";
-    const highlightIndices = [2, 11, 27, 29, 38, 41, 49, 50];
+    const highlightIndices = [2, 11, 27, 29, 38, 41, 45, 46];
     const highlightColors = ["red", "blue", "green", "purple"];
 
     return (
