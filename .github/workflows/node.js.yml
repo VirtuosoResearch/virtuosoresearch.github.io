@@ -19,9 +19,7 @@ jobs:
       - run: npm install --save-dev gh-pages   
       - name: Set Git user identity
         run: |
-          git remote set-url origin https://hongyangsg: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@github.com/VirtuosoResearch/virtuosoresearch.github.io
           git config --global user.email "hongyang90@gmail.com"
           git config --global user.name "hongyangsg"
+          git remote set-url origin https://hongyangsg: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@github.com/VirtuosoResearch/virtuosoresearch.github.io
       - run: CI=false npm run deploy
-
-
