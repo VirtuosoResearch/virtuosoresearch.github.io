@@ -8,6 +8,7 @@ const ImageSlideshow: React.FC = () => {
         'home_images/informs23.JPEG',
 		'home_images/task_modeling_poster.png',
         'home_images/icml22.jpeg',
+				'home_images/AISTATS2023.jpg',
 //        'ai3.jpg',
     ];
 
