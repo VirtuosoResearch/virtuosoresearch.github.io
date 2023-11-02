@@ -6,4 +6,4 @@
 - Access the website at `http://localhost:3000`.
 
 
-To add content, visit here: https://docs.google.com/document/d/1ypDI88QZOk2s8ql-kRh6hCzH-siFSQTkenSG5DtKKRw/edit
+Work items: https://docs.google.com/document/d/1ypDI88QZOk2s8ql-kRh6hCzH-siFSQTkenSG5DtKKRw/edit
