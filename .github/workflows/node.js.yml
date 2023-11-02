@@ -20,7 +20,7 @@ jobs:
       - name: Set Git user identity
         run: |
           git config --global user.email "hongyang90@gmail.com"
-          git config --global user.name "hongyang"
+          git config --global user.name "VirtuosoResearch"
       - run: CI=false npm run deploy
 
 
