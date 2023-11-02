@@ -25,6 +25,8 @@ jobs:
       - name: Create Release
         run: CI=false npm run deploy
         env:
+          GH_PAT: ${{ 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 }}
           ACTIONS_DEPLOY_KEY: ${{ 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 }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
+
