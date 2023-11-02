@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './VideoSlideshow.css';
 
 const videoUrls = [
-		'https://www.youtube.com/embed/hkMp4N4Fghs',
+    'https://www.youtube.com/embed/hkMp4N4Fghs',
     'https://www.youtube.com/embed/Wm61qG0XVB0',
-    //'https://www.youtube.com/embed/NpEaa2P7qZI',
     // Add more video urls here
 ];
 
@@ -20,16 +19,6 @@ const VideoSlideshow: React.FC = () => {
             prevIndex === 0 ? videoUrls.length - 1 : prevIndex - 1
         );
     };
-
-    useEffect(() => {
-        // Set up a timer to automatically advance to the next video every 16 seconds (since you have two videos)
-        const timer = setInterval(nextVideo, 16000);
-
-        // Clear the timer when the component unmounts
-        return () => {
-            clearInterval(timer);
-        };
-    }, []);
 
     return (
         <div className="video-slideshow-container">
