@@ -167,7 +167,7 @@ const Group: React.FC = () => {
         {
             name: "Weijie Su",
             describtion: "Assoc. Professor, University of Pennsylvania",
-            link: "https://http://stat.wharton.upenn.edu/~suw/"
+            link: "http://stat.wharton.upenn.edu/~suw/"
         },
         {
             name: "Fan Yang",

@@ -5,9 +5,9 @@ import './ImageSlideshow.css';
 const ImageSlideshow: React.FC = () => {
     // const path = require('path.join');
     const imageUrls = [
-        'home_images/informs23.JPEG',
 		'home_images/task_modeling_poster.png',
         'home_images/icml22.jpeg',
+        'home_images/informs23.JPEG',
 				'home_images/AISTATS2023.jpg',
 //        'ai3.jpg',
     ];
