@@ -6,21 +6,12 @@ import Footer from './Footer';
 const publications = [
     {
         year: 2023,
-        title: "Graph Neural Networks for Road Safety Modeling: Datasets and Evaluations for Accident Analysis",
-        link: "",
-        authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, Hongyang R. Zhang",
-        publishingSite: "NeurIPS, Datasets and Benchmarks Track",
-        date: "2023",
-        topic: "Graph Neural Networks",
-    },
-    {
-        year: 2023,
         title: "Noise Stability Optimization for Flat Minima with Tight Rates",
         link: "https://arxiv.org/abs/2306.08553",
         authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
-        publishingSite: "arXiv",
-        date: "Oct, 2023",
-        topic: "Algorithms",
+        publishingSite: "NeurIPS Workshop on Optimization",
+        date: "2023",
+        topic: "Algorithms and Learning Theory",
     },
     {
         year: 2023,
@@ -30,6 +21,15 @@ const publications = [
         publishingSite: "Transactions on Machine Learning Research",
         date: "2023",
         topic: "Multitask Learning, Fine-Tuning",
+    },
+    {
+        year: 2023,
+        title: "Graph Neural Networks for Road Safety Modeling: Datasets and Evaluations for Accident Analysis",
+        link: "https://arxiv.org/abs/2311.00164",
+        authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, Hongyang R. Zhang",
+        publishingSite: "NeurIPS, Datasets and Benchmarks Track",
+        date: "2023",
+        topic: "Social Data",
     },
     {
         year: 2023,
@@ -47,7 +47,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, Aneesh Sharma, Hongyang R. Zhang",
         publishingSite: "AISTATS",
         date: "2023",
-        topic: "Generalization Bounds",
+        topic: "Algorithms and Learning Theory",
     },
     {
         year: 2023,
@@ -56,7 +56,7 @@ const publications = [
         authors: "Dongyue Li, Tina Eliassi-Rad, Hongyang R. Zhang",
         publishingSite: "SDM",
         date: "2023",
-        topic: "Algorithms",
+        topic: "Social Data",
     },
     {
         year: 2022,
@@ -74,7 +74,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
         publishingSite: "ICML",
         date: "2022",
-        topic: "Multitask Learning, Fine-Tuning",
+        topic: "Algorithms and Learning Theory",
     },
     {
         year: 2022,
@@ -92,7 +92,7 @@ const publications = [
         authors: "Ning Chen, Xiaotie Deng, Bo Tang, Hongyang R. Zhang, and Jie Zhang",
         publishingSite: "Information and Computation",
         date: "2022",
-        topic: "Algorithms",
+        topic: "Algorithmic game Theory",
     },
     {
         year: 2021,
@@ -112,6 +112,42 @@ const publications = [
         date: "2021",
         topic: "Multitask Learning, Fine-Tuning",
     },
+		{
+				year: 2020,
+				title: "Learning Over-Parametrized Two-Layer ReLU Neural Networks beyond NTK",
+				link: "https://arxiv.org/abs/2007.04596",
+				authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
+				publishingSite: "COLT",
+				date: "2020",
+				topic: "Algorithms and Learning Theory",
+		},
+		{
+				year: 2020,
+				title: "On the Generalization Effects of Linear Transformations in Data Augmentation",
+				link: "https://arxiv.org/abs/2005.00695",
+				authors: "Sen Wu, Hongyang R. Zhang, Gregory Valiant, and Christopher Ré",
+				publishingSite: "ICML",
+				date: "2020",
+				topic: "Algorithms and Learning Theory",
+		},
+		{
+				year: 2020,
+				title: "Understanding and Improving Information Transfer in Multi-Task Learning",
+				link: "",
+				authors: "Sen Wu, Hongyang R. Zhang, and Christopher Ré",
+				publishingSite: "ICLR",
+				date: "2020",
+				topic: "Multitask Learning, Fine-Tuning",
+		},
+		{
+				year: 2020,
+				title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
+				link: "https://arxiv.org/abs/2010.11750",
+				authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, and Weijie Su",
+				publishingSite: "arXiv",
+				date: "2020",
+				topic: "Algorithms and Learning Theory",
+		},
 ];
 
 const Publications: React.FC = () => {

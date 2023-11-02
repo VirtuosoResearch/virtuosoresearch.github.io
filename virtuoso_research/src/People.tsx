@@ -58,7 +58,7 @@ const Group: React.FC = () => {
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
-            link: "/"
+            link: "https://lidongyue12138.github.io/"
         },
         {
             name: "Mahdi Haghifam",
@@ -68,7 +68,7 @@ const Group: React.FC = () => {
 								"Jointly mentored by Prof. Jonathan Ullman"
             ],
             imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
-            link: "/"
+            link: "https://mhaghifam.github.io/mahdihaghifam/"
         },
         {
             name: "Haotian Ju",
@@ -78,7 +78,7 @@ const Group: React.FC = () => {
 								"B.S. in Applied Mathematics, Tsinghua University"
             ],
             imageSrc: "portraits/haotian.png", // Replace with actual image path
-            link: "/"
+            link: "http://www.haotianju.com/"
         },
         {
             name: "Abhinav Nippani",
@@ -131,7 +131,7 @@ const Group: React.FC = () => {
             details: [
                 "B.S. in Engineering Physics, Rose-Hulman Institute of Technology",
             ],
-            imageSrc: "portraits/aidan.jpg", // Replace with actual image path
+            imageSrc: "default.jpg", // Replace with actual image path
             link: "/"
         },
 
@@ -142,22 +142,22 @@ const Group: React.FC = () => {
         {
             name: "Tina Eliassi-Rad",
             describtion: "Professor, Northeastern",
-            link: "/"
+            link: "https://eliassi.org/"
         },
         {
             name: "Haris Koutsopoulos",
             describtion: "Professor, Northeastern",
-            link: "/"
+            link: "https://coe.northeastern.edu/people/koutsopoulos-haris/"
         },
         {
             name: "Huy Nguyen",
             describtion: "Assoc. Professor, Northeastern",
-            link: "/"
+            link: "https://www.ccs.neu.edu/home/hlnguyen/"
         },
         {
             name: "Predrag Radivojac ",
             describtion: "Professor, Northeastern",
-            link: "/"
+            link: "https://www.khoury.northeastern.edu/home/radivojac/"
         },
         {
             name: "Aneesh Sharma",
@@ -167,7 +167,7 @@ const Group: React.FC = () => {
         {
             name: "Fan Yang",
             describtion: "Asst. Professor, Tsinghua",
-            link: "/"
+            link: "https://yangf75.github.io/"
         },
     ];
 
