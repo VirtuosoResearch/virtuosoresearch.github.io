@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './VideoSlideshow.css';
 
 const videoUrls = [
+		'https://www.youtube.com/embed/hkMp4N4Fghs',
     'https://www.youtube.com/embed/Wm61qG0XVB0',
-    'https://www.youtube.com/embed/NpEaa2P7qZI',
+    //'https://www.youtube.com/embed/NpEaa2P7qZI',
     // Add more video urls here
 ];
 
