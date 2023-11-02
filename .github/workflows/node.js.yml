@@ -22,4 +22,7 @@ jobs:
           git config --global user.email "hongyang90@gmail.com"
           git config --global user.name "hongyangsg"
           git remote set-url origin https://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@github.com/VirtuosoResearch/virtuosoresearch.github.io
-      - run: CI=false npm run deploy
+      - name: Create Release
+        run: CI=false npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
