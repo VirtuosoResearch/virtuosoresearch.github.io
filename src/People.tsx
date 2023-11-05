@@ -53,7 +53,7 @@ const Group: React.FC = () => {
     const phdStudentsData = [
         {
             name: "Dongyue (Oliver) Li",
-            position: "Ph.D. Student (2021-)",
+            position: "Ph.D. Student (2021)",
             details: [
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
@@ -62,7 +62,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Mahdi Haghifam",
-            position: "Khoury Postdoctral Fellow (2023-)",
+            position: "Khoury Postdoctral Fellow (2023)",
             details: [
                 "Ph.D. from University of Toronto",
 								"Jointly mentored by Prof. Jonathan Ullman"
@@ -82,7 +82,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Abhinav Nippani",
-            position: "Master's Student (2023-)",
+            position: "Master's Student (2023)",
             details: [
                 "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
             ],
@@ -91,7 +91,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Jinhong Yu",
-            position: "Master's Student (2021-)",
+            position: "Master's Student Researcher (2023)",
             details: [
                 "M.S. in AI, Northeastern University",
             ],
@@ -109,7 +109,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Debankita Basu",
-            position: "Master's Student Researcher (2023-)",
+            position: "Master's Student Researcher (2023)",
             details: [
                 "B.S. in CS, UMass Amherst",
             ],
@@ -118,7 +118,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Kailai Chen",
-            position: "Visiting Student Researcher (2023-)",
+            position: "Visiting Student Researcher (2023)",
             details: [
                 "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
             ],
@@ -127,7 +127,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Aidan McKnight",
-            position: "Master's Student Researcher (2021-)",
+            position: "Master's Student Researcher (2021)",
             details: [
                 "B.S. in Engineering Physics, Rose-Hulman Institute of Technology",
             ],
@@ -218,7 +218,7 @@ const Group: React.FC = () => {
                 </section>
 
                 <section className="group-section collaborators">
-                    <h2>Collaborators</h2>
+                    <h2>Research Collaborators</h2>
                     <div className="members">
                         <ul>
                             {collaboratorsData.map((collaborator, index) => (
@@ -229,6 +229,9 @@ const Group: React.FC = () => {
                             ))}
                         </ul>
                     </div>
+										<p>
+											We are grateful to our collaborators (listed above) for working with us. 
+										</p>
                 </section>
 
             </div>

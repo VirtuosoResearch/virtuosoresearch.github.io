@@ -14,7 +14,7 @@ const TitleAndMission: React.FC = () => {
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font" style={{ color: highlightColors[highlightIndices.indexOf(index) % highlightColors.length] }}>{char}</span>
                     ) : char
-                ))}. To achieve this mission, our approach is two-fold:
+                ))} (virtuoso). To achieve this mission, our approach is two-fold:
                 <ul>
                     <li> By educating the next-generation of researchers and engineers who are passionate about technology. </li>
                     <li> By advancing the frontiers of knowledge in computer science, focusing on the foundational aspects. </li>
@@ -31,6 +31,10 @@ const TitleAndMission: React.FC = () => {
                 </p>
 
                 <ImageSlideshow />
+
+								<p>
+										Here are several representative talks from us.
+								</p>
                 <VideoSlideshow />
             </div>
 

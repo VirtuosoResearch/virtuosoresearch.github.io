@@ -31,6 +31,15 @@ const publications = [
         date: "2023",
         topic: "Social Data",
     },
+		{
+        year: 2023,
+        title: "Boosting Multitask Learning on Graphs through Higher-Order Task Affinities",
+        link: "https://arxiv.org/abs/2306.14009",
+        authors: "Dongyue Li, Haotian Ju, Aneesh Sharma, Hongyang R. Zhang",
+        publishingSite: "KDD",
+        date: "2023",
+        topic: "Multitask Learning, Fine-Tuning",
+		},
     {
         year: 2023,
         title: "Identification of Negative Transfers in Multitask Learning Using Surrogate Models",
