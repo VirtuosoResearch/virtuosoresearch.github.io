@@ -26,7 +26,7 @@ const ImageSlideshow: React.FC = () => {
 
     useEffect(() => {
         // Set up a timer to automatically advance to the next image every 3 seconds
-        const timer = setInterval(nextImage, 16000);
+        const timer = setInterval(nextImage, 26000);
 
         // Clear the timer when the component unmounts
         return () => {
