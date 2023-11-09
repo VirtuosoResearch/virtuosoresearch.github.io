@@ -26,7 +26,7 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization properties of fine-tuning using Hessian</a>
                         </li>
 
-                        
+
                     </ul>
                 </section>
 
@@ -34,7 +34,7 @@ const Resources: React.FC = () => {
                     <h3>Datasets</h3>
                     <ul>
                         <li>
-                            A dataset for traffic accident analysis in US states: <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">ML4RoadSafety</a>
+                            A dataset for traffic accident analysis in the US: <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">ML4RoadSafety</a>
                         </li>
                         {/*<li>
                             Geolocation Dataset <a href="/datasets/dataset2">[Visit Dataset]</a>
