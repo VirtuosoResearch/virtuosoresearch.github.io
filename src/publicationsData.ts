@@ -1,8 +1,3 @@
-import React, { useState } from 'react';
-import Header from './Header';
-import './Publications.css';
-import Footer from './Footer';
-
 const publications = [
     {
         year: 2023,
@@ -31,7 +26,7 @@ const publications = [
         date: "2023",
         topic: "Social Data",
     },
-		{
+    {
         year: 2023,
         title: "Boosting Multitask Learning on Graphs through Higher-Order Task Affinities",
         link: "https://arxiv.org/abs/2306.14009",
@@ -39,7 +34,7 @@ const publications = [
         publishingSite: "KDD",
         date: "2023",
         topic: "Multitask Learning, Fine-Tuning",
-		},
+    },
     {
         year: 2023,
         title: "Identification of Negative Transfers in Multitask Learning Using Surrogate Models",
@@ -121,113 +116,42 @@ const publications = [
         date: "2021",
         topic: "Multitask Learning, Fine-Tuning",
     },
-		{
-				year: 2020,
-				title: "Learning Over-Parametrized Two-Layer ReLU Neural Networks beyond NTK",
-				link: "https://arxiv.org/abs/2007.04596",
-				authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
-				publishingSite: "COLT",
-				date: "2020",
-				topic: "Algorithms and Learning Theory",
-		},
-		{
-				year: 2020,
-				title: "On the Generalization Effects of Linear Transformations in Data Augmentation",
-				link: "https://arxiv.org/abs/2005.00695",
-				authors: "Sen Wu, Hongyang R. Zhang, Gregory Valiant, and Christopher Ré",
-				publishingSite: "ICML",
-				date: "2020",
-				topic: "Algorithms and Learning Theory",
-		},
-		{
-				year: 2020,
-				title: "Understanding and Improving Information Transfer in Multi-Task Learning",
-				link: "",
-				authors: "Sen Wu, Hongyang R. Zhang, and Christopher Ré",
-				publishingSite: "ICLR",
-				date: "2020",
-				topic: "Multitask Learning, Fine-Tuning",
-		},
-		{
-				year: 2020,
-				title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
-				link: "https://arxiv.org/abs/2010.11750",
-				authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, and Weijie Su",
-				publishingSite: "arXiv",
-				date: "2020",
-				topic: "Algorithms and Learning Theory",
-		},
+    {
+        year: 2020,
+        title: "Learning Over-Parametrized Two-Layer ReLU Neural Networks beyond NTK",
+        link: "https://arxiv.org/abs/2007.04596",
+        authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
+        publishingSite: "COLT",
+        date: "2020",
+        topic: "Algorithms and Learning Theory",
+    },
+    {
+        year: 2020,
+        title: "On the Generalization Effects of Linear Transformations in Data Augmentation",
+        link: "https://arxiv.org/abs/2005.00695",
+        authors: "Sen Wu, Hongyang R. Zhang, Gregory Valiant, and Christopher Ré",
+        publishingSite: "ICML",
+        date: "2020",
+        topic: "Algorithms and Learning Theory",
+    },
+    {
+        year: 2020,
+        title: "Understanding and Improving Information Transfer in Multi-Task Learning",
+        link: "",
+        authors: "Sen Wu, Hongyang R. Zhang, and Christopher Ré",
+        publishingSite: "ICLR",
+        date: "2020",
+        topic: "Multitask Learning, Fine-Tuning",
+    },
+    {
+        year: 2020,
+        title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
+        link: "https://arxiv.org/abs/2010.11750",
+        authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, and Weijie Su",
+        publishingSite: "arXiv",
+        date: "2020",
+        topic: "Algorithms and Learning Theory",
+    },
 ];
 
-const Publications: React.FC = () => {
-    const [groupByTopic, setGroupByTopic] = useState(false);
-
-    //function for toggling between grouping by year and grouping by topic
-    const toggleGrouping = () => {
-        setGroupByTopic((prevGroupByTopic) => !prevGroupByTopic);
-    };
-
-    //get the unique topics from the publications
-    const uniqueTopics = [...new Set(publications.map((pub) => pub.topic))];
-
-    return (
-        <div>
-            <Header />
-            <div className="publications-container">
-                {/* <div className="publications-title">
-                    <h1>PUBLICATIONS:</h1>
-                    <p>Below is a comprehensive list of my publications, sorted by date. To organize the list differently, use the button below.</p>
-                </div> */}
-                <div className="toggle-button-container">
-                    <button onClick={toggleGrouping}>
-                        {groupByTopic ? 'Group by Year' : 'Group by Topic'}
-                    </button>
-                </div>
-                <div className="publications-list">
-                    {groupByTopic ? (
-                        // Group by topic
-                        uniqueTopics.map((topic) => (
-                            <div key={topic}>
-                                <h2>{topic}</h2>
-                                <ul>
-                                    {publications
-                                        .filter((publication) => publication.topic === topic)
-                                        .map((publication, index) => (
-                                            <li key={index}>
-                                                <h3><a href={publication.link}>{publication.title}</a></h3>
-                                                <p><i>{publication.authors}</i></p>
-                                                <p>{publication.publishingSite} ({publication.date})</p>
-                                            </li>
-                                        ))}
-                                </ul>
-                            </div>
-                        ))
-                    ) : (
-                        // Group by year
-                        <div>
-                            {Array.from(new Set(publications.map((pub) => pub.year)).values()).map((year) => (
-                                <div key={year}>
-                                    <h2>{year}</h2>
-                                    <ul>
-                                        {publications
-                                            .filter((publication) => publication.year === year)
-                                            .map((publication, index) => (
-                                                <li key={index}>
-                                                    <h3><a href={publication.link}>{publication.title}</a></h3>
-                                                    <p><i>{publication.authors}</i></p>
-                                                    <p>{publication.publishingSite} ({publication.date})</p>
-                                                </li>
-                                            ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            </div>
-            <Footer/>
-        </div>
-    );
-};
-
-export default Publications;
+export default publications;

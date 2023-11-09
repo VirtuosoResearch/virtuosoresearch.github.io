@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import People from './People';
 import ResearchBlogs from './Research';
-import Publications from './Publications';
+import PublicationsByYear from './PublicationsByYear';
+import PublicationsByTopic from './PublicationsByTopic';
 import AllNews from './AllNews';
 import Resources from './Resources';
 
@@ -20,7 +21,9 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/people" element={<People />} />
         <Route path="/research" element={<ResearchBlogs />} />
-        <Route path="/publications" element={<Publications />} />
+        <Route path="/publications" element={<PublicationsByYear />} />
+        <Route path="/publications/year" element={<PublicationsByYear />} />
+        <Route path="/publications/topic" element={<PublicationsByTopic />} />
         <Route path="/allnews" element={<AllNews />} />
         <Route path="/resources" element={<Resources />} />
 
