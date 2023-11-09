@@ -21,10 +21,11 @@
     width:1000px; /*Adjust to space out the members */
     /* Adjust this for space between rows and columns */
 }
+
 /* Style member images */
 .member-image img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     /* Create rounded images */
     margin-right: 20px;
