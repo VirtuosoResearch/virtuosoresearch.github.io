@@ -6,6 +6,15 @@ import Footer from './Footer';
 const publications = [
     {
         year: 2023,
+        title: "Graph Neural Networks for Road Safety Modeling: Datasets and Evaluations for Accident Analysis",
+        link: "https://arxiv.org/abs/2311.00164",
+        authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, Hongyang R. Zhang",
+        publishingSite: "NeurIPS, Datasets and Benchmarks Track",
+        date: "2023",
+        topic: "Social Data",
+    },
+    {
+        year: 2023,
         title: "Noise Stability Optimization for Flat Minima with Tight Rates",
         link: "https://arxiv.org/abs/2306.08553",
         authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
@@ -21,15 +30,6 @@ const publications = [
         publishingSite: "Transactions on Machine Learning Research",
         date: "2023",
         topic: "Multitask Learning, Fine-Tuning",
-    },
-    {
-        year: 2023,
-        title: "Graph Neural Networks for Road Safety Modeling: Datasets and Evaluations for Accident Analysis",
-        link: "https://arxiv.org/abs/2311.00164",
-        authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, Hongyang R. Zhang",
-        publishingSite: "NeurIPS, Datasets and Benchmarks Track",
-        date: "2023",
-        topic: "Social Data",
     },
 		{
         year: 2023,
