@@ -12,7 +12,7 @@ const TitleAndMission: React.FC = () => {
     return (
         <div>
             <div className="title-and-mission">
-                Virtuoso Research Lab focuses on the frontier research of Machine Learning, Algorithms, and Social Data. Our mission is to {text.split('').map((char, index) => (
+                Virtuoso Research Lab focuses on the frontier research of Machine Learning (theory and methods), Algorithms, and Social Data (e.g., social networks). Our mission is to {text.split('').map((char, index) => (
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font" style={{ color: highlightColors[highlightIndices.indexOf(index) % highlightColors.length] }}>{char}</span>
                     ) : char
@@ -33,7 +33,7 @@ const TitleAndMission: React.FC = () => {
                     </ul>
                 </p>
                 <p>
-                    To validate our solutions, we are particularly interested in problems and datasets that arise in social contexts (and relevant to social sciences). For instance, recently we've been looking to a problem around predicting traffic accidents using graph neural networks, by collecting a large-scale dataset of accident records and transportation maps.
+                    To validate our solutions, we are particularly interested in problems and datasets that arise in social contexts, in the hope of making a broader impact down the road. For instance, recently we've been looking to a problem around predicting traffic accidents using graph neural networks, by collecting a large-scale dataset of accident records and transportation maps.
                 </p>
 
                 <ImageSlideshow />
