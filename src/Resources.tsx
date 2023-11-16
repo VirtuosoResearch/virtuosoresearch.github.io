@@ -8,25 +8,32 @@ const Resources: React.FC = () => {
             <Header />
             <div className="resources-container">
                 <section className="section">
-                    <h3>Code</h3>
+                    <h1>Multitask learning algorithms</h1>
                     <ul>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization properties of graph neural networks</a>
+                            <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships using surrogate models</a>
                         </li>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships with surrogate modeling</a>
+                            <a href="https://github.com/VirtuosoResearch/boosting-multitask-learning-on-graphs" target="_blank" rel="noopener noreferrer">Multitask learning on graph-structured data</a>
+                        </li>
+                    </ul>
+                    <h1>Fine-tuning algorithms</h1>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Graph neural networks</a>
                         </li>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/boosting-multitask-learning-on-graphs" target="_blank" rel="noopener noreferrer">A boosting procedure for multitask learning on graph-structured data</a>
+                            <a href="https://github.com/VirtuosoResearch/Regularized-Self-Labeling" target="_blank" rel="noopener noreferrer">Regularization methods for fine-tuning</a>
                         </li>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Regularized-Self-Labeling" target="_blank" rel="noopener noreferrer">A regularized self-labeling approach to improve the robustness of fine-tuned models</a>
-                        </li>
+                            <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization using Hessian</a>
+                        </li>                        
+                    </ul>
+                    <h1>References and State-of-the-arts</h1>
+                    <ul>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization properties of fine-tuning using Hessian</a>
+                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications in language models</a>
                         </li>
-
-                        
                     </ul>
                 </section>
 
@@ -55,7 +62,7 @@ const Resources: React.FC = () => {
                 </section>*/}
                 <div className="section">
                     <h2>Contact</h2>
-                    <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in algorithms and/or programming.</p>
+                    <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in mathematics, algorithms, or programming.</p>
                     <p><strong>Email:</strong> ho.zhang@northeastern.edu</p>
                 </div>
             </div>
