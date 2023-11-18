@@ -20,6 +20,9 @@ const Resources: React.FC = () => {
                     <h1>Fine-tuning algorithms</h1>
                     <ul>
                         <li>
+                            <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
+                        </li>
+                        <li>
                             <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Graph neural networks</a>
                         </li>
                         <li>
