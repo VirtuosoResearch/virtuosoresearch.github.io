@@ -71,14 +71,13 @@ const Group: React.FC = () => {
             link: "https://mhaghifam.github.io/mahdihaghifam/"
         },
         {
-            name: "Haotian Ju",
-            position: "Ph.D. Student (2024, incoming)",
+            name: "Jinhong Yu",
+            position: "Master's Student Researcher (2023)",
             details: [
-                "M.S. in Data Analytics Engineering, Northeastern University",
-								"B.S. in Applied Mathematics, Tsinghua University"
+                "M.S. in AI, Northeastern University",
             ],
-            imageSrc: "portraits/haotian.png", // Replace with actual image path
-            link: "http://www.haotianju.com/"
+            imageSrc: "portraits/jinhong.jpeg", // Replace with actual image path
+            link: "/"
         },
         {
             name: "Abhinav Nippani",
@@ -90,12 +89,12 @@ const Group: React.FC = () => {
             link: "/"
         },
         {
-            name: "Jinhong Yu",
-            position: "Master's Student Researcher (2023)",
+            name: "Kailai Chen",
+            position: "Visiting Student Researcher (2023)",
             details: [
-                "M.S. in AI, Northeastern University",
+                "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
             ],
-            imageSrc: "portraits/jinhong.jpeg", // Replace with actual image path
+            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
         },
         {
@@ -117,15 +116,6 @@ const Group: React.FC = () => {
             link: "/"
         },
         {
-            name: "Kailai Chen",
-            position: "Visiting Student Researcher (2023)",
-            details: [
-                "B.S. in Maths and Statistics (2024, expected), Xi'an Jiao Tong University",
-            ],
-            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
-            link: "/"
-        },
-        {
             name: "Aidan McKnight",
             position: "Master's Student Researcher (2021)",
             details: [
@@ -133,6 +123,16 @@ const Group: React.FC = () => {
             ],
             imageSrc: "default.jpg", // Replace with actual image path
             link: "/"
+        },
+        {
+            name: "Haotian Ju",
+            position: "Alumni (Now working as a quantitative researcher)",
+            details: [
+                "M.S. in Data Analytics Engineering, Northeastern University, 2022",
+								"B.S. in Applied Mathematics, Tsinghua University"
+            ],
+            imageSrc: "portraits/haotian.png", // Replace with actual image path
+            link: "http://www.haotianju.com/"
         },
 
     ];
@@ -230,7 +230,7 @@ const Group: React.FC = () => {
                         </ul>
                     </div>
 										<p>
-											We are grateful to our collaborators (listed above) for working with us. 
+											We are grateful to our collaborators (listed above) for collaborating on various projects with us. 
 										</p>
                 </section>
 
