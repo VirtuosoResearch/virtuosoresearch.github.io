@@ -141,32 +141,32 @@ const Group: React.FC = () => {
     const collaboratorsData = [
         {
             name: "Tina Eliassi-Rad",
-            describtion: "Professor, Northeastern",
+            describtion: "Northeastern",
             link: "https://eliassi.org/"
         },
         {
             name: "Haris Koutsopoulos",
-            describtion: "Professor, Northeastern",
+            describtion: "Northeastern",
             link: "https://coe.northeastern.edu/people/koutsopoulos-haris/"
         },
         {
             name: "Huy Nguyen",
-            describtion: "Assoc. Professor, Northeastern",
+            describtion: "Northeastern",
             link: "https://www.ccs.neu.edu/home/hlnguyen/"
         },
         {
             name: "Predrag Radivojac ",
-            describtion: "Professor, Northeastern",
+            describtion: "Northeastern",
             link: "https://www.khoury.northeastern.edu/home/radivojac/"
         },
         {
             name: "Aneesh Sharma",
-            describtion: "Software Engineer, Google",
+            describtion: "Google",
             link: "/"
         },
         {
             name: "Weijie Su",
-            describtion: "Assoc. Professor, University of Pennsylvania",
+            describtion: "University of Pennsylvania",
             link: "http://stat.wharton.upenn.edu/~suw/"
         },
         {
@@ -219,19 +219,18 @@ const Group: React.FC = () => {
 
                 <section className="group-section collaborators">
                     <h2>Research Collaborators</h2>
+										<p>
+											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing them below (any omission from this list is due to our own mistake): 
+										</p>
                     <div className="members">
                         <ul>
                             {collaboratorsData.map((collaborator, index) => (
                                 <li key={index}>
-                                    <a href={collaborator.link}>{collaborator.name}</a>
-                                    <div>{collaborator.describtion}</div>
+                                    <a href={collaborator.link}>{collaborator.name}</a>  ({collaborator.describtion})
                                 </li>
                             ))}
                         </ul>
                     </div>
-										<p>
-											We are grateful to our collaborators (listed above) for collaborating on various projects with us. 
-										</p>
                 </section>
 
             </div>
