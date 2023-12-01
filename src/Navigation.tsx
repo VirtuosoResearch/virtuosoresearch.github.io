@@ -1,4 +1,5 @@
 // Navigation.tsx
+// <li><Link to="/research" className="nav-link">Blogs</Link></li>
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
@@ -9,7 +10,6 @@ const Navigation: React.FC = () => {
             <ul className="nav-list">
                 <li><Link to="/" className="nav-link">About</Link></li>
                 <li><Link to="/people" className="nav-link">People</Link></li>
-                <li><Link to="/research" className="nav-link">Blogs</Link></li>
                 <li className="nav-dropdown">
                     <span className="nav-link">Publications</span>
                     <div className="nav-dropdown-content">
