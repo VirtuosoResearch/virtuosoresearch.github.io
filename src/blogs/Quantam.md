@@ -9,3 +9,9 @@ The very unique principles of quantum mechanics have opened the door to a new er
 In this blog post, we'll explore the fundamentals of quantum computing, its real-world applications, and the challenges it presents. We'll discuss how quantum computing holds the promise of transforming industries and revolutionizing the way we approach computational challenges.
 
 Feel free to use or modify this content for your research blog.
+
+<LaTeX>\frac{a}{b}</LaTeX>
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$

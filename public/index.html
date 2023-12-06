@@ -25,6 +25,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Virtuoso Research</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+      MathJax = {
+        loader: {load: ['a11y/semantic-enrich']},
+        options: {
+          sre: {
+            speech: 'shallow'  // one of: 'deep', 'shallow', or 'none'
+          },
+          renderActions: {
+            //
+            // Force speech enrichment regardless of the menu settings
+            //
+            enrich: {'[+]': [
+              function (doc) {doc.enrich(true)},
+              function (math, doc) {math.enrich(doc, true)}  
+            ]}
+          }
+        },
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+      };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
