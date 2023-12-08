@@ -71,17 +71,6 @@ const Group: React.FC = () => {
             link: "https://mhaghifam.github.io/mahdihaghifam/"
         },
         {
-            name: "Haotian Ju",
-            position: "Master's Student Researcher (Currently working as a quantitative researcher)",
-            details: [
-								"Ph.D., Northeastern University, fall 2024 incoming",
-                "M.S. in Data Analytics Engineering, Northeastern University, 2022",
-								"B.S. in Applied Mathematics, Tsinghua University, 2017"
-            ],
-            imageSrc: "portraits/haotian.png", // Replace with actual image path
-            link: "http://www.haotianju.com/"
-        },
-        {
             name: "Abhinav Nippani",
             position: "Master's Student (2023)",
             details: [
@@ -91,6 +80,26 @@ const Group: React.FC = () => {
             link: "/"
         },
         {
+            name: "Kailai Chen",
+            position: "Visiting Undergraduate Researcher (2023)",
+            details: [
+                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, expected in 2024",
+            ],
+            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
+            link: "/"
+        },
+        {
+            name: "Haotian Ju",
+            position: "Ph.D. (starting fall 2024)",
+            details: [
+								"Research Assistant, Northeastern University, 2022",
+                "M.S. in Data Analytics Engineering, Northeastern University, 2021",
+								"B.S. in Applied Mathematics, Tsinghua University, 2017"
+            ],
+            imageSrc: "portraits/haotian.png", // Replace with actual image path
+            link: "http://www.haotianju.com/"
+        },
+        {
             name: "Jinhong Yu",
             position: "Master's Student Researcher (2023)",
             details: [
@@ -98,15 +107,6 @@ const Group: React.FC = () => {
 								"B.E. in Mechanical Engineering, South China Agriculture University, 2017"
             ],
             imageSrc: "portraits/jinhong.jpeg", // Replace with actual image path
-            link: "/"
-        },
-        {
-            name: "Kailai Chen",
-            position: "Visiting Undergraduate Researcher (2023)",
-            details: [
-                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, expected in 2024",
-            ],
-            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
         },
         {
