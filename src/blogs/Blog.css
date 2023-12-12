@@ -30,3 +30,14 @@
 .blog-content a:hover {
     color: #0056b3;
 }
+
+.blog-content img {
+    display: block;
+    width : 60%;
+    margin : auto;
+}
+
+.blog-content .colab{
+    display: flex;
+    width: 30%;
+}

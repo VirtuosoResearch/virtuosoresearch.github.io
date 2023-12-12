@@ -15,6 +15,61 @@ In this blog post, we'll delve into the various ways AI is making a positive imp
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-$$x = -b \pm \sqrt{b^2-4ac} \over 2a.$$
+$$x_{1+2}  = -b \pm \sqrt{b^2-4ac} \over 2a.$$
 
-$$\frac{111}{222}$$
+$$P(A\_{t-2} | B_{t-1}) = {\frac{P(A \cap B)}{P(B)}}$$
+
+<p>
+\begin{align}
+\dot{x} & = \sigma(y-x) \\\\
+\dot{y} & = \rho x - y - xz \\\\
+\dot{z} & = -\beta z + xy 
+\end{align}
+</p>
+
+<h2>The Cauchy-Schwarz Inequality</h2>
+
+
+<h2>A Cross Product Formula</h2>
+
+<p>
+\\\[
+\mathbf{V}_1 \times \mathbf{V}_2 =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\\\
+\frac{\partial X}{\partial u} & \frac{\partial Y}{\partial u} & 0 \\\\
+\frac{\partial X}{\partial v} & \frac{\partial Y}{\partial v} & 0 \\\\
+\end{vmatrix}
+\\\]
+</p>
+
+<h2>The probability of getting \(k\) heads when flipping \(n\) coins is:</h2>
+
+<p>\\\[P(E) = {n \choose k} p^k (1-p)^{ n-k} \\\]</p>
+
+<h2>An Identity of Ramanujan</h2>
+
+<p>\\\[
+    \frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
+        1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+        {1+\frac{e^{-8\pi}} {1+\ldots} } } }
+\\\]</p>
+
+<h2>A Rogers-Ramanujan Identity</h2>
+
+<p>\\\[
+    1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
+    \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
+        \quad\quad \text{for $|q| &lt; 1$}.
+\\\]</p>
+
+<h2>Maxwell's Equations</h2>
+
+<p>
+\begin{align}
+    \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\\\
+    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\\\
+    \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\\\
+    \nabla \cdot \vec{\mathbf{B}} & = 0
+\end{align}
+</p>

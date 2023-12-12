@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'markdown-to-jsx';
-import Markdown from './Healthcare.md';
+import Markdown from './DDPMLearningNote.md';
 import Header from '../Header';
 import './Blog.css'
 
-const Healthcare: React.FC = () => {
+const DDPMLearningNote: React.FC = () => {
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const Healthcare: React.FC = () => {
             .then((response) => response.text())
             .then((data) => setMarkdown(data));
     }, []);
-
+    
     return (
         <div>
             <Header />
@@ -23,4 +23,4 @@ const Healthcare: React.FC = () => {
     );
 };
 
-export default Healthcare;
+export default DDPMLearningNote;

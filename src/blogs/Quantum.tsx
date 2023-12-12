@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'markdown-to-jsx';
-import Markdown from './Healthcare.md';
+import quantumMarkdown from './Quantum.md';
 import Header from '../Header';
 import './Blog.css'
 
-const Healthcare: React.FC = () => {
+const Quantum: React.FC = () => {
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
-        fetch(Markdown)
+        // Load the Markdown content from the file;
+        fetch(quantumMarkdown)
             .then((response) => response.text())
             .then((data) => setMarkdown(data));
     }, []);
-
+    
     return (
         <div>
             <Header />
@@ -23,4 +24,4 @@ const Healthcare: React.FC = () => {
     );
 };
 
-export default Healthcare;
+export default Quantum;

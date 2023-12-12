@@ -1,6 +1,8 @@
 // src/App.tsx
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+// import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 import HomePage from './HomePage';
 import People from './People';
@@ -10,13 +12,16 @@ import PublicationsByTopic from './PublicationsByTopic';
 import AllNews from './AllNews';
 import Resources from './Resources';
 
-import HealthcareBlog from './blogs/Healthcare';
-import QuantamBlog from './blogs/Quantam';
+import Healthcare from './blogs/Healthcare';
+import Quantum from './blogs/Quantum';
+import DDPMLearningNote from './blogs/DDPMLearningNote';
 import './App.css'
 
 const App: React.FC = () => {
+
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL} >
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/people" element={<People />} />
@@ -27,12 +32,11 @@ const App: React.FC = () => {
         <Route path="/allnews" element={<AllNews />} />
         <Route path="/resources" element={<Resources />} />
 
-
-
-        <Route path="/research/blog/healthcare" element={<HealthcareBlog />} />
-        <Route path="/research/blog/quantam" element={<QuantamBlog />} />
+        <Route path="/research/blog/healthcare" element={<Healthcare />} />
+        <Route path="/research/blog/quantum" element={<Quantum />} />
+        <Route path="/research/blog/DDPMLearningNote" element={<DDPMLearningNote />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
