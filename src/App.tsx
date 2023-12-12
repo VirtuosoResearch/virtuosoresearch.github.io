@@ -1,7 +1,7 @@
 // src/App.tsx
 import React from 'react';
 // import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 import HomePage from './HomePage';
@@ -20,7 +20,7 @@ import './App.css'
 const App: React.FC = () => {
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL} >
+    <HashRouter basename={process.env.PUBLIC_URL} >
       
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -36,7 +36,7 @@ const App: React.FC = () => {
         <Route path="/research/blog/quantum" element={<Quantum />} />
         <Route path="/research/blog/DDPMLearningNote" element={<DDPMLearningNote />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
