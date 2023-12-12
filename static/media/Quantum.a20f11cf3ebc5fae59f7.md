@@ -10,8 +10,15 @@ In this blog post, we'll explore the fundamentals of quantum computing, its real
 
 Feel free to use or modify this content for your research blog.
 
-<LaTeX>\frac{a}{b}</LaTeX>
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+<p>
+\begin{align}
+\dot{x} &amp; = \sigma(y-x) \\\\
+\dot{y} &amp; = \rho x - y - xz \\\\
+\dot{z} &amp; = -\beta z + xy
+\end{align}
+</p>
