@@ -1,5 +1,6 @@
 // Navigation.tsx
 // <li><Link to="/research" className="nav-link">Blogs</Link></li>
+//                <li><Link to="/research" className="nav-link">Blogs</Link></li>
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
@@ -17,7 +18,6 @@ const Navigation: React.FC = () => {
                         <Link to="/publications/topic" className="nav-dropdown-link">Group by Topic</Link>
                     </div>
                 </li>
-                <li><Link to="/research" className="nav-link">Blogs</Link></li>
                 <li><Link to="/resources" className="nav-link">Resources</Link></li>
             </ul>
         </nav>

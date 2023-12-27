@@ -5,11 +5,16 @@ import './ImageSlideshow.css';
 const ImageSlideshow: React.FC = () => {
     // const path = require('path.join');
     const imageUrls = [
+		'home_images/NeurIPS_2021_Poster.png',
 		'home_images/task_modeling_poster.png',
-//        'home_images/icml22.jpeg',
-//        'home_images/informs23.JPEG',
-				'home_images/AISTATS2023.jpg',
+		'home_images/NeurIPS_2023_Poster.png',
+		'home_images/AISTATS2023.jpg',
+		'home_images/noise-stability-optimization-poster.png',
+		'home_images/NeurIPS_Instruction_Workshop_2023.png',
+		'home_images/SDM_2023_Poster.png',
 //        'ai3.jpg',
+////        'home_images/icml22.jpeg',
+//        'home_images/informs23.JPEG',
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

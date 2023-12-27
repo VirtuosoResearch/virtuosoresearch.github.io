@@ -5,6 +5,28 @@ import './People.css';
 import Footer from './Footer';
 
 // Member component
+//        {
+//            name: "Jinhong Yu",
+//            position: "Master's Student Researcher (2023)",
+//            details: [
+//                "M.S. in AI, Northeastern University, 2023",
+//								"B.E. in Mechanical Engineering, South China Agriculture University, 2017"
+//            ],
+//            imageSrc: "portraits/jinhong.jpeg", // Replace with actual image path
+//            link: "/"
+//        },
+//       {
+//            name: "Aidan McKnight",
+//            position: "Master's Student Researcher (2023)",
+//            details: [
+//								"M.S. in CS, Northeastern University, 2023",
+//                "B.S. in Engineering Physics, Rose-Hulman Institute of Technology, 2021",
+//            ],
+//            imageSrc: "default.jpg", // Replace with actual image path
+//            link: "/"
+//        },
+
+
 const Member: React.FC<{ name: string, position: string, details: string[], imageSrc: string, link: string}> = ({ name, position, details, imageSrc, link }) => {
     const imageWidth = 80; // Image width
     // var joinPath = require('path.join');
@@ -70,25 +92,7 @@ const Group: React.FC = () => {
             imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
             link: "https://mhaghifam.github.io/mahdihaghifam/"
         },
-        {
-            name: "Abhinav Nippani",
-            position: "Master's Student (2023)",
-            details: [
-                "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
-            ],
-            imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
-            link: "/"
-        },
-        {
-            name: "Kailai Chen",
-            position: "Visiting Undergraduate Researcher (2023)",
-            details: [
-                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, expected in 2024",
-            ],
-            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
-            link: "/"
-        },
-        {
+         {
             name: "Haotian Ju",
             position: "Ph.D. (starting fall 2024)",
             details: [
@@ -100,13 +104,21 @@ const Group: React.FC = () => {
             link: "http://www.haotianju.com/"
         },
         {
-            name: "Jinhong Yu",
-            position: "Master's Student Researcher (2023)",
+            name: "Abhinav Nippani",
+            position: "Master's Student (2023)",
             details: [
-                "M.S. in AI, Northeastern University, 2023",
-								"B.E. in Mechanical Engineering, South China Agriculture University, 2017"
+                "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
             ],
-            imageSrc: "portraits/jinhong.jpeg", // Replace with actual image path
+            imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
+            link: "/"
+        },
+       {
+            name: "Kailai Chen",
+            position: "Visiting Undergraduate Researcher (2023)",
+            details: [
+                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, expected in 2024",
+            ],
+            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
         },
         {
@@ -127,17 +139,7 @@ const Group: React.FC = () => {
             imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
         },
-        {
-            name: "Aidan McKnight",
-            position: "Master's Student Researcher (2023)",
-            details: [
-								"M.S. in CS, Northeastern University, 2023",
-                "B.S. in Engineering Physics, Rose-Hulman Institute of Technology, 2021",
-            ],
-            imageSrc: "default.jpg", // Replace with actual image path
-            link: "/"
-        },
-    ];
+     ];
 
     // Collaborators data
     const collaboratorsData = [
