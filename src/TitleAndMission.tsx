@@ -12,7 +12,7 @@ const TitleAndMission: React.FC = () => {
     return (
         <div>
             <div className="title-and-mission">
-                Virtuoso Research Lab focuses on the frontier research of Machine Learning (theory and methods), Algorithms, and Social Data (e.g., social networks). Our mission is to {text.split('').map((char, index) => (
+                Virtuoso Research Lab focuses on the frontier research of machine learning theory and methods, algorithmic foundations, and graphs. Our mission is to {text.split('').map((char, index) => (
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font" style={{ color: highlightColors[highlightIndices.indexOf(index) % highlightColors.length] }}>{char}</span>
                     ) : char
