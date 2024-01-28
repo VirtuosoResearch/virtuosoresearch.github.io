@@ -8,7 +8,7 @@ const Resources: React.FC = () => {
             <Header />
             <div className="resources-container">
                 <section className="section">
-                    <h1>Multitask learning algorithms</h1>
+                    <h1>Multitask learning methods</h1>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships using surrogate models</a>
@@ -17,7 +17,7 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/boosting-multitask-learning-on-graphs" target="_blank" rel="noopener noreferrer">Multitask learning on graph-structured data</a>
                         </li>
                     </ul>
-                    <h1>Fine-tuning algorithms</h1>
+                    <h1>Fine-tuning and robustness</h1>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
@@ -32,7 +32,7 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization using Hessian</a>
                         </li>                        
                     </ul>
-                    <h1>References and State-of-the-arts</h1>
+                    <h1>References</h1>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications in language models</a>
@@ -65,8 +65,8 @@ const Resources: React.FC = () => {
                 </section>*/}
                 <div className="section">
                     <h2>Contact</h2>
-                    <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in mathematics, algorithms, or programming.</p>
-                    <p><strong>Email:</strong> ho.zhang@northeastern.edu</p>
+                    <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in mathematics and/or programming.</p>
+                    <p><strong>Email:</strong> hongyang90@gmail.com</p>
                 </div>
             </div>
         </div>
