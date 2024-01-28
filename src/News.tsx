@@ -6,6 +6,15 @@ const News: React.FC = () => {
         <div className="news">
             <h2>Recent Updates</h2>
             <div className="news-item">
+                <div className="news-date">Jan, 2024</div>
+                <p>Hongyang is excited to serve as a meta-reviewer of ICML 2024!</p>
+            </div>
+            <div className="news-item">
+                <div className="news-date">Dec, 2023</div>
+                <p>Our paper on the traffic accident analysis using graph neural networks is now on <a href="https://arxiv.org/abs/2311.00164">arxiv!</a>
+ </p>
+            </div>
+            <div className="news-item">
                 <div className="news-date">Nov, 2023</div>
                 <p>We will present a research progress about designing clustering methods for instruction fine-tuning at NeurIPS Workshop on instruction tuning and instruction following.</p>
             </div>

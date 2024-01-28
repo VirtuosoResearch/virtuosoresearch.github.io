@@ -59,7 +59,7 @@ const Group: React.FC = () => {
     // Data for faculty
     const facultyData = [
         {
-            name: "Hongyang Ryan Zhang",
+            name: "Hongyang R. Zhang",
             position: "Assistant Professor of Computer Science",
             details: [
 //                "Ph.D. in computer science from Stanford",
@@ -74,23 +74,13 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
-            name: "Dongyue (Oliver) Li",
+            name: "Dongyue Li",
             position: "Ph.D. Student (2021)",
             details: [
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
-        },
-        {
-            name: "Mahdi Haghifam",
-            position: "Khoury Postdoctral Fellow (2023)",
-            details: [
-                "Ph.D. from University of Toronto",
-								"Jointly mentored by Prof. Jonathan Ullman"
-            ],
-            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
-            link: "https://mhaghifam.github.io/mahdihaghifam/"
         },
          {
             name: "Haotian Ju",
@@ -104,6 +94,16 @@ const Group: React.FC = () => {
             link: "http://www.haotianju.com/"
         },
         {
+            name: "Mahdi Haghifam",
+            position: "Postdoctral Researcher (2023)",
+            details: [
+                "Ph.D. in ECE, University of Toronto, 2023",
+								"Mentor: Prof. Jonathan Ullman"
+            ],
+            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
+            link: "https://mhaghifam.github.io/mahdihaghifam/"
+        },
+        {
             name: "Abhinav Nippani",
             position: "Master's Student (2023)",
             details: [
@@ -112,32 +112,41 @@ const Group: React.FC = () => {
             imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
             link: "/"
         },
-       {
-            name: "Kailai Chen",
-            position: "Visiting Undergraduate Researcher (2023)",
-            details: [
-                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, expected in 2024",
-            ],
-            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
-            link: "/"
-        },
-        {
-            name: "Allen Ye",
-            position: "Undergraduate Researcher (2023)",
-            details: [
-                "B.S. in CS, Northeastern University",
-            ],
-            imageSrc: "portraits/allen.png", // Replace with actual image path
-            link: "https://www.linkedin.com/in/allenye66/"
-        },
         {
             name: "Debankita Basu",
-            position: "Master's Student Researcher (2023)",
+            position: "Master's Student (2023)",
             details: [
                 "B.S. in CS, UMass Amherst",
             ],
             imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
+        },
+       {
+            name: "Kailai Chen",
+            position: "Visiting Undergraduate Researcher (2023)",
+            details: [
+                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, 2024",
+            ],
+            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
+            link: "/"
+        },
+				{
+						name: "Yangnan Lin",
+						position: "Visiting Undergraduate Researcher (2023)",
+            details: [
+                "B.S. in CS, Shanghai Jiao Tong University",
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "/"
+				},
+        {
+            name: "Allen Ye",
+            position: "Alumni",
+            details: [
+                "B.S. in CS, Northeastern University, 2023",
+            ],
+            imageSrc: "portraits/allen.png", // Replace with actual image path
+            link: "https://www.linkedin.com/in/allenye66/"
         },
      ];
 
@@ -158,11 +167,11 @@ const Group: React.FC = () => {
             describtion: "Northeastern",
             link: "https://www.ccs.neu.edu/home/hlnguyen/"
         },
-        {
-            name: "Predrag Radivojac ",
-            describtion: "Northeastern",
-            link: "https://www.khoury.northeastern.edu/home/radivojac/"
-        },
+//        {
+//            name: "Predrag Radivojac ",
+//            describtion: "Northeastern",
+//            link: "https://www.khoury.northeastern.edu/home/radivojac/"
+//        },
         {
             name: "Aneesh Sharma",
             describtion: "Google",
@@ -190,7 +199,7 @@ const Group: React.FC = () => {
 
                 {/* Students and Postdocs section */}
                 <section className="group-section">
-                    <h2>Students and Postdocs</h2>
+                    <h2>Students</h2>
                     <div className="members">
                         {phdStudentsData.map((person, index) => (
                             <Member
@@ -224,7 +233,7 @@ const Group: React.FC = () => {
                 <section className="group-section collaborators">
                     <h2>Research Collaborators</h2>
 										<p>
-											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing them below (any omission from this list is due to our own mistake): 
+											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing colleagues who collaborated with us on recent publications below: 
 										</p>
                     <div className="members">
                         <ul>
