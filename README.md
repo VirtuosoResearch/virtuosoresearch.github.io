@@ -1,6 +1,3 @@
-# Introduction
-The repository for a lab website built with react app.
-
 # Setup
 Please follow [React App Setup](/ReactAppSetup.md) to setup a local host for debugging.
 
