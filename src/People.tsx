@@ -98,7 +98,7 @@ const Group: React.FC = () => {
             position: "Postdoctral Researcher (2023)",
             details: [
                 "Ph.D. in ECE, University of Toronto, 2023",
-								"Mentor: Prof. Jonathan Ullman"
+		"Joint Mentor: Jonathan Ullman"
             ],
             imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
             link: "https://mhaghifam.github.io/mahdihaghifam/"

@@ -65,7 +65,7 @@ const Resources: React.FC = () => {
                 </section>*/}
                 <div className="section">
                     <h2>Contact</h2>
-                    <p>We are always looking for students to join us. If you have ideas, we would love to chat. You can take a look at our recent papers and projects. The ideal student needs to be self-motivated, and have a strong background in mathematics and/or programming.</p>
+                    <p>We are actively looking for students to join our research projects. If you have ideas, we would love to chat. You may take a look at our recent papers and projects first. The ideal student should to be self-motivated, and have a strong background in mathematics and/or programming.</p>
                     <p><strong>Email:</strong> hongyang90@gmail.com</p>
                 </div>
             </div>
