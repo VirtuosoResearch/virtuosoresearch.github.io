@@ -6,6 +6,14 @@ const News: React.FC = () => {
         <div className="news">
             <h2>Recent Updates</h2>
             <div className="news-item">
+                <div className="news-date">Mar, 2024</div>
+                <p> A <a href="https://www.hongyangzhang.com/mtl_slides.pdf">talk slide</a> that summarizes our work on developing multitask neural networks over the past few years! </p>
+            </div>
+            <div className="news-item">
+                <div className="news-date">Feb, 2024</div>
+                <p> We are working on organizing a session at INFORMS, about "Multitask and federated learning: Challenges of optimization under heterogeneity" (along with Tianbao Yang from TAMU) </p>
+            </div>
+            <div className="news-item">
                 <div className="news-date">Jan, 2024</div>
                 <p>Hongyang is excited to serve as a meta-reviewer of ICML 2024!</p>
             </div>
