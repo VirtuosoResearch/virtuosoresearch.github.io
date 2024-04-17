@@ -75,34 +75,50 @@ const Group: React.FC = () => {
     const phdStudentsData = [
         {
             name: "Dongyue Li",
-            position: "Ph.D. Student (2021)",
+            position: "CS PhD Student (2021)",
             details: [
                 "B.E. in CS, Shanghai Jiao Tong University",
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
         },
-         {
+        {
             name: "Haotian Ju",
-            position: "Ph.D. (starting fall 2024)",
+            position: "MS, then as an RA  (2021)",
             details: [
-								"Research Assistant, Northeastern University, 2022",
-                "M.S. in Data Analytics Engineering, Northeastern University, 2021",
 								"B.S. in Applied Mathematics, Tsinghua University, 2017"
             ],
             imageSrc: "portraits/haotian.png", // Replace with actual image path
-            link: "http://www.haotianju.com/"
+            link: "http://virtuosoresearch.github.io/"
         },
         {
             name: "Mahdi Haghifam",
-            position: "Postdoctral Researcher (2023)",
+            position: "Khoury (distinguished) Postdoctral Fellow (2023)",
             details: [
                 "Ph.D. in ECE, University of Toronto, 2023",
-		"Joint Mentor: Jonathan Ullman"
+								"Joint Mentor: Jonathan Ullman"
             ],
             imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
             link: "https://mhaghifam.github.io/mahdihaghifam/"
         },
+				{
+	          name: "Michael Zhang",
+            position: "CS PhD (2024)",
+            details: [
+                "B.S. in CS from UESTC"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://ziniuzhang.github.io/"
+				},
+				{
+	          name: "Zhenshuo Zhang",
+            position: "CS PhD (2024)",
+            details: [
+                "B.S. and MS in CS from Zhe Jiang University"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://zhenshuozhang.github.io/"
+				},
         {
             name: "Abhinav Nippani",
             position: "Master's Student (2023)",

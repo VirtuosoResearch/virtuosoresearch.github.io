@@ -6,6 +6,14 @@ const News: React.FC = () => {
         <div className="news">
             <h2>Recent Updates</h2>
             <div className="news-item">
+                <div className="news-date">Apr, 2024</div>
+                <p> We are looking for undergraduate students to join our team as part of Northeastern's coop program </p>
+            </div>
+            <div className="news-item">
+                <div className="news-date">Apr, 2024</div>
+                <p> We are glad that there'll be two students joining as CS PhD in the upcoming fall </p>
+            </div>
+            <div className="news-item">
                 <div className="news-date">Mar, 2024</div>
                 <p> A <a href="https://www.hongyangzhang.com/mtl_slides.pdf">talk slide</a> that summarizes our work on developing multitask neural networks over the past few years! </p>
             </div>
