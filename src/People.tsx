@@ -77,7 +77,7 @@ const Group: React.FC = () => {
             name: "Dongyue Li",
             position: "CS PhD Student (2021)",
             details: [
-                "B.E. in CS, Shanghai Jiao Tong University",
+                "BEng in CS, Shanghai Jiao Tong University",
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
@@ -86,7 +86,7 @@ const Group: React.FC = () => {
             name: "Haotian Ju",
             position: "MS, then as an RA  (2021)",
             details: [
-								"B.S. in Applied Mathematics, Tsinghua University, 2017"
+								"BS in Applied Maths, Tsinghua University"
             ],
             imageSrc: "portraits/haotian.png", // Replace with actual image path
             link: "http://virtuosoresearch.github.io/"
@@ -95,8 +95,7 @@ const Group: React.FC = () => {
             name: "Mahdi Haghifam",
             position: "Khoury (distinguished) Postdoctral Fellow (2023)",
             details: [
-                "Ph.D. in ECE, University of Toronto, 2023",
-								"Joint Mentor: Jonathan Ullman"
+                "PhD from the University of Toronto. Joint Mentor: Jonathan Ullman"
             ],
             imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
             link: "https://mhaghifam.github.io/mahdihaghifam/"
@@ -105,7 +104,7 @@ const Group: React.FC = () => {
 	          name: "Michael Zhang",
             position: "CS PhD (2024)",
             details: [
-                "B.S. in CS from UESTC"
+                "BEng in CS from UESTC"
             ],
             imageSrc: "default.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
@@ -114,7 +113,7 @@ const Group: React.FC = () => {
 	          name: "Zhenshuo Zhang",
             position: "CS PhD (2024)",
             details: [
-                "B.S. and MS in CS from Zhe Jiang University"
+                "BEng and MS in CS from Zhe Jiang University"
             ],
             imageSrc: "default.jpg", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
@@ -132,7 +131,7 @@ const Group: React.FC = () => {
             name: "Debankita Basu",
             position: "Master's Student (2023)",
             details: [
-                "B.S. in CS, UMass Amherst",
+                "BS in CS, UMass Amherst",
             ],
             imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
@@ -141,7 +140,7 @@ const Group: React.FC = () => {
             name: "Kailai Chen",
             position: "Visiting Undergraduate Researcher (2023)",
             details: [
-                "B.S. in Maths and Statistics, Xi'an Jiao Tong University, 2024",
+                "BS in Maths and Statistics from Xi'An Jiao Tong University",
             ],
             imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
@@ -150,7 +149,7 @@ const Group: React.FC = () => {
 						name: "Yangnan Lin",
 						position: "Visiting Undergraduate Researcher (2023)",
             details: [
-                "B.S. in CS, Shanghai Jiao Tong University",
+                "BEng in CS from Shanghai Jiao Tong University",
             ],
             imageSrc: "default.jpg", // Replace with actual image path
             link: "/"
@@ -159,7 +158,7 @@ const Group: React.FC = () => {
             name: "Allen Ye",
             position: "Alumni",
             details: [
-                "B.S. in CS, Northeastern University, 2023",
+                "Bachelor's in CS, Northeastern University, 2023",
             ],
             imageSrc: "portraits/allen.png", // Replace with actual image path
             link: "https://www.linkedin.com/in/allenye66/"

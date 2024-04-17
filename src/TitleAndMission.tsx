@@ -12,7 +12,7 @@ const TitleAndMission: React.FC = () => {
     return (
         <div>
             <div className="title-and-mission">
-                Virtuoso Research Lab focuses on advancing the research frontier of machine learning algorithms, learning theory, algorithmic foundations, and graph-structured data. The lab has an ambitious aim to {text.split('').map((char, index) => (
+                Virtuoso Research Lab focuses on advancing the research frontier of machine learning, learning theory, design and analysis of algorithms, social and information networks. Our mission is to {text.split('').map((char, index) => (
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font" style={{ color: highlightColors[highlightIndices.indexOf(index) % highlightColors.length] }}>{char}</span>
                     ) : char
@@ -20,25 +20,31 @@ const TitleAndMission: React.FC = () => {
                     highlightIndices2.includes(index) ? (
                         <span key={index} className="bright-font" style={{ color: highlightColors[highlightIndices2.indexOf(index) % highlightColors.length] }}>{char}</span>
                     ) : char
-                ))}). Towards achieving this, we strive to work on cutting-edge research, while ensuring their dissemination.
+                ))}). We believe that intelligent heuristic are the future of computing, and we hope to make tangible impact on the society through innovation.
                 <ul>
-                    <li> By fostering the next-generation of researchers and engineers who are passionate about technology, we hope to contribute positively to the society. </li>
-                    <li> By focusing on producing high-quality and fundamental research, we hope to spark new directions and ideas towards the next wave of innovations. </li>
+                    <li> We are commited to pursuing fundamental research, hoping to spark new directions and ideas towards the next wave of innovation. </li>
+                    <li> We are always looking for researchers (and engineers) who are passionate about technology, by connecting that to our society in a positive way. </li>
                 </ul>
                 <p>
                     The team comprises of a diverse team of students and researchers who are passionate about advancing technology, at the same time hoping to make a tangible impact. We are currently mainly working on two sets of projects:
                     <ul>
-                        <li>On the algorithmic foundations side, we are interested in matrix and tensor methods, generalization in neural networks, and optimization. For instance, we have been working on developing nonvacuous generalization bounds for deep neural networks using Hessian.</li>
-                        <li>On the robust intelligence side, we have been working on developing multitask neural networks. Recently we have been studying the fundamentals of transformer networks such as their reasoning capabilities. To validate our solutions, we are interested in problems and datasets that can contribute positively to our society. For instance, recently we made some progress by looking at a problem of predicting traffic accidents using graph neural networks. We collected a large-scale dataset of traffic accident records and traffic networks.</li>
+                        <li>On the theoretical / algorithmic side, we have been working on matrix and tensor methods, generalization of neural networks, and optimization. We have been developing non-vacuous generalization measures for deep neural networks, though a novel technique of Hessian, which we developed in an ICML'22 paper.</li>
+                        <li>On the machine learning side, we have been working on developing neural networks for simultaneously optimizing multiple task objectives. This classical problem is relevant again today thanks to developments in LLMs, federated learning, etc. We have also been exploring new, emerging directions, for instance the reasoning ability of transformers, exploring new applications of diffusion models. We have also been trying out different sorts of applications, one recent example being road safety.</li>
                     </ul>
+										Here are conference posters from our prior presentations.
                 </p>
 
                 <ImageSlideshow />
 
 								<p>
-										Here are several representative talks from us.
+										Here are several recorded talks.
 								</p>
+
                 <VideoSlideshow />
+
+								<p>
+										We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback!
+								</p>
             </div>
 
            
