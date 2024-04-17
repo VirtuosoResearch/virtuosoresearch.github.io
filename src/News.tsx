@@ -19,11 +19,11 @@ const News: React.FC = () => {
             </div>
             <div className="news-item">
                 <div className="news-date">Feb, 2024</div>
-                <p> We are working on organizing a session at INFORMS, about "Multitask and federated learning: Challenges of optimization under heterogeneity" (along with Tianbao Yang from TAMU) </p>
+                <p> We are working on organizing a session at INFORMS 2024, about "Multitask and federated learning: Challenges of optimization under heterogeneity" (along with Prof. T. Yang from TAMU) </p>
             </div>
             <div className="news-item">
                 <div className="news-date">Jan, 2024</div>
-                <p>Hongyang is excited to serve as a meta-reviewer of ICML 2024!</p>
+                <p> Hongyang is excited to serve as a meta-reviewer of ICML 2024! </p>
             </div>
             <div className="news-item">
                 <div className="news-date">Dec, 2023</div>
