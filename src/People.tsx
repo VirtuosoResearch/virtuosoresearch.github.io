@@ -145,15 +145,6 @@ const Group: React.FC = () => {
             imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
         },
-				{
-						name: "Yangnan Lin",
-						position: "Visiting Undergraduate Researcher (2023)",
-            details: [
-                "BEng in CS from Shanghai Jiao Tong University",
-            ],
-            imageSrc: "default.jpg", // Replace with actual image path
-            link: "/"
-				},
         {
             name: "Allen Ye",
             position: "Alumni",
