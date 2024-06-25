@@ -106,7 +106,7 @@ const Group: React.FC = () => {
             details: [
                 "BEng in CS from UESTC"
             ],
-            imageSrc: "default.jpg", // Replace with actual image path
+            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
 				},
 				{
