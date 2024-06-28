@@ -6,17 +6,17 @@ const publications = [
         authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, Hongyang R. Zhang",
         publishingSite: "NeurIPS, Datasets and Benchmarks Track",
         date: "2023",
-        topic: "Graph Neural Networks, Social Networks",
+        topic: "Transportation Networks",
     },
-    {
-        year: 2023,
-        title: "Noise Stability Optimization for Flat Minima with Tight Rates",
-        link: "https://arxiv.org/abs/2306.08553",
-        authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
-        publishingSite: "NeurIPS Workshop on Optimization",
-        date: "2023",
-        topic: "Algorithms, Learning Theory, Generalization Bounds",
-    },
+//    {
+//        year: 2023,
+//        title: "Noise Stability Optimization for Flat Minima with Tight Rates",
+//        link: "https://arxiv.org/abs/2306.08553",
+//        authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
+//        publishingSite: "NeurIPS Workshop on Optimization",
+//        date: "2023",
+//        topic: "Algorithms, Learning Theory, Generalization Bounds",
+//    },
     {
         year: 2023,
         title: "Improved Group Robustness via Classifier Retraining on Independent Splits",
@@ -24,7 +24,7 @@ const publications = [
         authors: "Thien Hang Nguyen, Hongyang R. Zhang, and Huy L. Nguyen",
         publishingSite: "Transactions on Machine Learning Research",
         date: "2023",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Fine-Tuning",
     },
     {
         year: 2023,
@@ -33,7 +33,7 @@ const publications = [
         authors: "Dongyue Li, Haotian Ju, Aneesh Sharma, Hongyang R. Zhang",
         publishingSite: "KDD",
         date: "2023",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Multitask Learning",
     },
     {
         year: 2023,
@@ -42,7 +42,7 @@ const publications = [
         authors: "Dongyue Li, Huy N. Nguyen, Hongyang R. Zhang",
         publishingSite: "Transactions on Machine Learning Research, Featured Certification",
         date: "2023",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Multitask Learning",
     },
     {
         year: 2023,
@@ -51,7 +51,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, Aneesh Sharma, Hongyang R. Zhang",
         publishingSite: "AISTATS",
         date: "2023",
-        topic: "Algorithms, Learning Theory, Generalization Bounds",
+        topic: "Generalization",
     },
     {
         year: 2023,
@@ -60,7 +60,7 @@ const publications = [
         authors: "Dongyue Li, Tina Eliassi-Rad, Hongyang R. Zhang",
         publishingSite: "SDM",
         date: "2023",
-        topic: "Graph Neural Networks, Social Networks",
+        topic: "Mobility Networks",
     },
     {
         year: 2022,
@@ -69,7 +69,7 @@ const publications = [
         authors: "Dongyue Li, Huy L. Nguyen Hongyang R. Zhang",
         publishingSite: "NeurIPS Workshop on Distribution Shifts",
         date: "2022",
-        topic: "Multitask Learning, Fine-Tuning",
+        topic: "Multitask Learning",
     },
     {
         year: 2022,
@@ -78,7 +78,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, Hongyang R. Zhang",
         publishingSite: "ICML",
         date: "2022",
-        topic: "Algorithms, Learning Theory, Generalization Bounds",
+        topic: "Fine-Tuning",
     },
     {
         year: 2022,
@@ -87,7 +87,7 @@ const publications = [
         authors: "Michael Zhang, Nimit Sohoni, Hongyang R. Zhang, Chelsea Finn, and Christopher Ré",
         publishingSite: "ICML",
         date: "2022",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Robustness",
     },
     {
         year: 2022,
@@ -105,7 +105,7 @@ const publications = [
         authors: "Dongyue Li, Hongyang R. Zhang",
         publishingSite: "NeurIPS",
         date: "2021",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Fine-Tuning",
     },
     {
         year: 2021,
@@ -114,7 +114,7 @@ const publications = [
         authors: "Khaled Saab, Sarah Hooper, Nimit Sohoni, ..., Hongyang R. Zhang, Daniel Rubin, and Christopher Ré",
         publishingSite: "MICCAI",
         date: "2021",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Weak Supervision",
     },
     {
         year: 2020,
@@ -123,7 +123,7 @@ const publications = [
         authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
         publishingSite: "COLT",
         date: "2020",
-        topic: "Algorithms, Learning Theory, Generalization Bounds",
+        topic: "Machine Learning Theory",
     },
     {
         year: 2020,
@@ -132,7 +132,7 @@ const publications = [
         authors: "Sen Wu, Hongyang R. Zhang, Gregory Valiant, and Christopher Ré",
         publishingSite: "ICML",
         date: "2020",
-        topic: "Algorithms, Learning Theory, Generalization Bounds",
+        topic: "Data Augmentation",
     },
     {
         year: 2020,
@@ -141,7 +141,7 @@ const publications = [
         authors: "Sen Wu, Hongyang R. Zhang, and Christopher Ré",
         publishingSite: "ICLR",
         date: "2020",
-        topic: "Multitask Learning, Fine-Tuning, Robustness",
+        topic: "Multitask Learning",
     },
     {
         year: 2020,
@@ -150,7 +150,7 @@ const publications = [
         authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, and Weijie Su",
         publishingSite: "arXiv",
         date: "2020",
-        topic: "Algorithms, Learning Theory, Generalization Bounds",
+        topic: "Transfer Learning",
     },
 ];
 

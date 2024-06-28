@@ -9,9 +9,14 @@ const PublicationsByTopic: React.FC = () => {
     
     //order the unique topics from the publications
     const topicOrder = [
-        'Algorithms, Learning Theory, Generalization Bounds',
-        'Multitask Learning, Fine-Tuning, Robustness',
-        'Graph Neural Networks, Social Networks',
+				'Generalization',
+        'Machine Learning Theory',
+				'Multitask Learning',
+				'Fine-Tuning',
+				'Robustness',
+				'Data Augmentation',
+        'Transportation Networks',
+        'Mobility Networks',
         'Algorithmic game Theory',
     ];
 

@@ -8,7 +8,7 @@ const Resources: React.FC = () => {
             <Header />
             <div className="resources-container">
                 <section className="section">
-                    <h1>Multitask learning methods</h1>
+                    <h1>Multitask learning</h1>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships using surrogate models</a>
@@ -17,13 +17,10 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/boosting-multitask-learning-on-graphs" target="_blank" rel="noopener noreferrer">Multitask learning on graph-structured data</a>
                         </li>
                     </ul>
-                    <h1>Fine-tuning and robustness</h1>
+                    <h1>Fine-tuning</h1>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Graph neural networks</a>
                         </li>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Regularized-Self-Labeling" target="_blank" rel="noopener noreferrer">Regularization methods for fine-tuning</a>
@@ -32,10 +29,14 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization using Hessian</a>
                         </li>                        
                     </ul>
-                    <h1>References</h1>
+										<h1>Graph neural networks</h1>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization</a>
+                        </li>
+                    <h1>Pointers</h1>
                     <ul>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications in language models</a>
+                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications</a>
                         </li>
                     </ul>
                 </section>
