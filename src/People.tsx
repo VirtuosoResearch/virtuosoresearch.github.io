@@ -205,7 +205,7 @@ const Group: React.FC = () => {
 
                 {/* Students and Postdocs section */}
                 <section className="group-section">
-                    <h2>Students</h2>
+                    <h2>Members</h2>
                     <div className="members">
                         {phdStudentsData.map((person, index) => (
                             <Member
@@ -237,7 +237,7 @@ const Group: React.FC = () => {
                 </section>
 
                 <section className="group-section collaborators">
-                    <h2>Research Collaborators</h2>
+                    <h2>Collaborators</h2>
 										<p>
 											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing colleagues who collaborated with us on recent publications below: 
 										</p>
