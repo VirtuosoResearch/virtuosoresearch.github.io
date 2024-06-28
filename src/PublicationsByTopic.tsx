@@ -17,6 +17,7 @@ const PublicationsByTopic: React.FC = () => {
 				'Data Augmentation',
         'Transportation Networks',
         'Mobility Networks',
+				'Transfer Learning',
         'Algorithmic game Theory',
     ];
 
