@@ -75,7 +75,7 @@ const Group: React.FC = () => {
     const phdStudentsData = [
         {
             name: "Dongyue Li",
-            position: "CS PhD Student (2021)",
+            position: "Ph.D.",
             details: [
                 "BEng, Shanghai Jiao Tong University",
             ],
@@ -84,7 +84,7 @@ const Group: React.FC = () => {
         },
 				{
 	          name: "Michael Zhang",
-            position: "CS PhD (2024)",
+            position: "Ph.D.",
             details: [
                 "BEng, UESTC"
             ],
@@ -93,7 +93,7 @@ const Group: React.FC = () => {
 				},
 				{
 	          name: "Zhenshuo Zhang",
-            position: "CS PhD (2024)",
+            position: "Ph.D.",
             details: [
                 "BEng/MS, ZheJiang University"
             ],
@@ -102,7 +102,7 @@ const Group: React.FC = () => {
 				},
         {
             name: "Mahdi Haghifam",
-            position: "Postdoctral Researcher (2023)",
+            position: "Postdoc",
             details: [
                 "PhD, University of Toronto"
             ],
@@ -111,7 +111,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Haotian Ju",
-            position: "MS, then as an RA  (2021)",
+            position: "M.S.",
             details: [
 								"BS, Tsinghua University"
             ],
@@ -120,7 +120,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Abhinav Nippani",
-            position: "Master's Student (2023)",
+            position: "M.S.",
             details: [
                 "BEng, BITS Pilani (Hyderabad)",
             ],
@@ -129,7 +129,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Debankita Basu",
-            position: "Master's Student (2023)",
+            position: "M.S.",
             details: [
                 "BS, UMass Amherst",
             ],
@@ -138,7 +138,7 @@ const Group: React.FC = () => {
         },
        {
             name: "Kailai Chen",
-            position: "Visiting Undergraduate Researcher (2023)",
+            position: "Undergrad",
             details: [
                 "BS (Maths and Statistics), Xi'An Jiao Tong University",
             ],
@@ -147,7 +147,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Allen Ye",
-            position: "Alumni",
+            position: "Undergrad",
             details: [
                 "BS, Northeastern University (2023)",
             ],
@@ -239,7 +239,7 @@ const Group: React.FC = () => {
                 <section className="group-section collaborators">
                     <h2>Collaborators</h2>
 										<p>
-											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing colleagues who collaborated with us on recent publications below: 
+											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing colleagues who collaborated with us on recent projects below: 
 										</p>
                     <div className="members">
                         <ul>
