@@ -30,9 +30,11 @@ const Resources: React.FC = () => {
                         </li>                        
                     </ul>
 										<h1>Graph neural networks</h1>
+										<ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization</a>
                         </li>
+										</ul>
                     <h1>Pointers</h1>
                     <ul>
                         <li>
