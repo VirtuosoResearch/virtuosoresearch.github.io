@@ -6,6 +6,10 @@ const News: React.FC = () => {
         <div className="news">
             <h2>Recent Updates</h2>
             <div className="news-item">
+                <div className="news-date">Jun, 2024</div>
+                <p> Gave a talk at MSOM'24 within the session on "Advances in machine learning techniques." Slides <a href="https://www.hongyangzhang.com/mtl_slides_short.pdf">here</a> </p>
+            </div>
+            <div className="news-item">
                 <div className="news-date">Apr, 2024</div>
                 <p> We are looking for undergraduate students to join our team as part of Northeastern's coop program </p>
             </div>
@@ -23,7 +27,7 @@ const News: React.FC = () => {
             </div>
             <div className="news-item">
                 <div className="news-date">Jan, 2024</div>
-                <p> Hongyang is excited to serve as a meta-reviewer of ICML 2024! </p>
+                <p> We are excited to serve as meta-reviewer and reviewers of ICML 2024! </p>
             </div>
             <div className="news-item">
                 <div className="news-date">Dec, 2023</div>
