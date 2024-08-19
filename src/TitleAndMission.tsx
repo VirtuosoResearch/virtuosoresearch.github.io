@@ -2,6 +2,8 @@ import React from 'react';
 import './TitleAndMission.css';
 import ImageSlideshow from './ImageSlideshow';
 import VideoSlideshow from './VideoSlideshow';
+//import Image from 'react-image-resizer';
+
 const TitleAndMission: React.FC = () => {
     const text = "develop intelligent algorithms to support our society";
     const highlightIndices = [2, 8, 24, 31, 35, 42, 46, 47];
@@ -46,8 +48,22 @@ const TitleAndMission: React.FC = () => {
 										We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback!
 								</p>
             </div>
-
-           
+            
+            <div>
+                <p>
+                    <b>Acknowlegement:</b> Our research has received generous support from the following organizations:
+                </p>
+                <img
+                    src="images/NSF_Official_logo_Med_Res.png"
+                    alt="NSF"
+                    className='funding'
+                />
+                <img
+                    src="images/JPMC.png"
+                    alt="NSF"
+                    className="funding"
+                />
+            </div>
         </div>
 
     );

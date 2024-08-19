@@ -13,3 +13,8 @@ li:not(:last-child) {
     margin-bottom: 10px;
 }
 
+.funding {
+    width: 30%;
+    display:center;
+    padding: 10px 10px;
+}
