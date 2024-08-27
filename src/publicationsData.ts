@@ -2,20 +2,11 @@ const publications = [
     {
         year: 2024,
         title: "Learning Tree-Structured Composition of Data Augmentation",
-        link: "",
+        link: "http://arxiv.org/abs/2408.14381",
         authors: "Dongyue Li, Kailai Chen, Predrag Radivojac, Hongyang R. Zhang",
         publishingSite: "Transactions on Machine Learning Research",
         date: "2024",
         topic: "Data Augmentation",
-    },    
-    {
-        year: 2024,
-        title: "Scalable Multitask Learning Using Gradient-based Estimation of Task Affinity",
-        link: "",
-        authors: "Dongyue Li, Aneesh Sharma, Hongyang R. Zhang",
-        publishingSite: "KDD",
-        date: "2024",
-        topic: "Multitask Learning",
     },
     {
         year: 2023,

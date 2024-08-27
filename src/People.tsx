@@ -60,7 +60,7 @@ const Group: React.FC = () => {
     const facultyData = [
         {
             name: "Ryan Zhang",
-            position: "Assist Prof. of Computer Science",
+            position: "Assistant Professor of Computer Science",
             details: [
 //                "Ph.D. in computer science from Stanford",
 //                "Postdoc at University of Pennsylvania",
