@@ -3,11 +3,6 @@ import './TitleAndMission.css';
 import ImageSlideshow from './ImageSlideshow';
 import VideoSlideshow from './VideoSlideshow';
 //import Image from 'react-image-resizer';
-//                <img
-//src="images/NSF_Official_logo_Med_Res.png"
-//alt="NSF"
-//className='funding'
-///>
 //    {
 //    year: 2024,
 //    title: "Scalable Multitask Learning Using Gradient-based Estimation of Task Affinity",
@@ -67,7 +62,11 @@ const TitleAndMission: React.FC = () => {
                 <p>
                     <b>Acknowlegement:</b> Our research has received generous support from the following organizations:
                 </p>
-
+                <img
+                    src="images/Northeastern.png"
+                    alt="Northeastern"
+                    className='funding'
+                />
                 <img
                     src="images/JPMC.png"
                     alt="JPMC"
