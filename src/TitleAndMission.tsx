@@ -59,6 +59,11 @@ const TitleAndMission: React.FC = () => {
                     className='funding'
                 />
                 <img
+                    src="images/NSF_Official_logo_Med_Res.png"
+                    alt="NSF"
+                    className="funding"
+                />
+                <img
                     src="images/JPMC.png"
                     alt="JPMC"
                     className="funding"
