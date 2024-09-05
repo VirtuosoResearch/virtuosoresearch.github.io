@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.421d58f5.css",
-    "main.js": "/static/js/main.cd7bb324.js",
+    "main.js": "/static/js/main.80baa88e.js",
     "static/js/787.c9fd1f87.chunk.js": "/static/js/787.c9fd1f87.chunk.js",
     "static/media/DDPMLearningNote.md": "/static/media/DDPMLearningNote.375626a5c9eabc14cbc2.md",
     "static/media/Healthcare.md": "/static/media/Healthcare.e31141370772a3d44f08.md",
     "static/media/Quantum.md": "/static/media/Quantum.a20f11cf3ebc5fae59f7.md",
     "index.html": "/index.html",
     "main.421d58f5.css.map": "/static/css/main.421d58f5.css.map",
-    "main.cd7bb324.js.map": "/static/js/main.cd7bb324.js.map",
+    "main.80baa88e.js.map": "/static/js/main.80baa88e.js.map",
     "787.c9fd1f87.chunk.js.map": "/static/js/787.c9fd1f87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.421d58f5.css",
-    "static/js/main.cd7bb324.js"
+    "static/js/main.80baa88e.js"
   ]
 }
