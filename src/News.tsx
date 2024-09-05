@@ -9,6 +9,11 @@ const News: React.FC = () => {
 
 	          <div className="news-item">
 		          <div className="news-date">Aug, 2024</div>
+				      <p> <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671835">New paper</a> on a linearization technique for scaling up multitask learning (appeared in KDD24) </p>
+						</div>
+
+	          <div className="news-item">
+		          <div className="news-date">Aug, 2024</div>
 				      <p> Serve as a Senior PC of AAAI'25 and a reviewer of ACL Rolling Review </p>
 						</div>
 

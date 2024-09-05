@@ -3,15 +3,6 @@ import './TitleAndMission.css';
 import ImageSlideshow from './ImageSlideshow';
 import VideoSlideshow from './VideoSlideshow';
 //import Image from 'react-image-resizer';
-//    {
-//    year: 2024,
-//    title: "Scalable Multitask Learning Using Gradient-based Estimation of Task Affinity",
-//    link: "",
-//    authors: "Dongyue Li, Aneesh Sharma, Hongyang R. Zhang",
-//    publishingSite: "KDD",
-//    date: "2024",
-//    topic: "Multitask Learning",
-//},
 
 const TitleAndMission: React.FC = () => {
     const text = "develop intelligent algorithms to support our society";
