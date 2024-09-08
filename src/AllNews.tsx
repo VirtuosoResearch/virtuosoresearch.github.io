@@ -6,10 +6,10 @@ import Footer from './Footer';
 
 const AllNews: React.FC = () => {
     const newsItems = [
-				{
-						date: "Oct, 2023",
-						content: "Our group website is launched!"
-				},
+		{
+			date: "Oct, 2023",
+			content: "Our group website is launched!"
+		},
         {
             date: "Sep, 2023",
             content: "One paper accepted into NeurIPS'23: Congrats Abhinav, Dongyue, and Haotian! We introduce a dataset of traffic accident labels and validate the efficiency of graph neural networks for predicting accident occurrence.",
@@ -28,10 +28,9 @@ const AllNews: React.FC = () => {
         <div>
             <Header/>
             <div className="allnews-container">
-								<div>
-                <h2 className="centered-title">All News and Updates</h2>
-								</div>
-
+				<div>
+        	        <h2 className="centered-title">All News and Updates</h2>
+				</div>
                 <div className="news-list">
 
 				          <div className="news-item">
@@ -90,9 +89,8 @@ const AllNews: React.FC = () => {
                     ))}
                 </div>
             </div>
-						<Footer/>
+			<Footer/>
         </div>
-        
     );
 };
 

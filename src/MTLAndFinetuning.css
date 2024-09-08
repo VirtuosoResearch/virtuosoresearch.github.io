@@ -1,0 +1,26 @@
+/* MTLAndFinetuning.css */
+
+.MTL {
+    max-width: 1200px;
+    margin-left: 100px;
+}
+
+.bright-font {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.funding {
+    width: 20%;
+    display:center;
+    padding: 10px 10px;
+}
+
+.centered-title {
+    text-align: center;
+	display: flex;
+}

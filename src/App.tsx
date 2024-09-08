@@ -11,9 +11,7 @@ import PublicationsByYear from './PublicationsByYear';
 import PublicationsByTopic from './PublicationsByTopic';
 import AllNews from './AllNews';
 import Resources from './Resources';
-
-import Healthcare from './blogs/Healthcare';
-import Quantum from './blogs/Quantum';
+import MTLAndFinetuning from './MTLAndFinetuning';
 import DDPMLearningNote from './blogs/DDPMLearningNote';
 import './App.css'
 
@@ -31,9 +29,7 @@ const App: React.FC = () => {
         <Route path="/publications/topic" element={<PublicationsByTopic />} />
         <Route path="/allnews" element={<AllNews />} />
         <Route path="/resources" element={<Resources />} />
-
-        <Route path="/research/blog/healthcare" element={<Healthcare />} />
-        <Route path="/research/blog/quantum" element={<Quantum />} />
+        <Route path="/mtlandfinetuning" element={<MTLAndFinetuning />} />
         <Route path="/research/blog/DDPMLearningNote" element={<DDPMLearningNote />} />
       </Routes>
     </HashRouter>

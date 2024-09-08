@@ -2,6 +2,7 @@ import React from 'react';
 import './TitleAndMission.css';
 import ImageSlideshow from './ImageSlideshow';
 import VideoSlideshow from './VideoSlideshow';
+import { Link } from 'react-router-dom';
 //import Image from 'react-image-resizer';
 
 const TitleAndMission: React.FC = () => {
@@ -33,25 +34,27 @@ const TitleAndMission: React.FC = () => {
                         <li>On the theoretical / algorithmic side, we have been working on matrix and tensor methods, generalization of neural networks, and optimization. We have been developing non-vacuous generalization measures for deep neural networks, though a novel technique of Hessian, which we developed in an ICML'22 paper. We are actively working on advancing the efficiency of using large neural networks.</li>
                         <li>On the machine learning side, we have been working on developing neural networks for simultaneously optimizing multiple task objectives. This classical problem is relevant again today thanks to developments in language models, federated learning, etc. We have also been exploring new, emerging directions, for instance scalable fine-tuning, algorithmic reasoning of transformer networks, multimodal learning, robustness of diffusion models. We have also been trying out different sorts of applications, one recent example being road safety in transportation.</li>
                     </ul>
-										Here are conference posters from our prior presentations.
+                <p>
+                    Link to our projects:
+                    <ul>
+                        <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning</Link>
+                        </li>
+                    </ul>
                 </p>
-
-                <ImageSlideshow />
-
-								<p>
-										Here are several recorded talks.
-								</p>
-
-                <VideoSlideshow />
-
-								<p>
-										We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback!
-								</p>
+                <h2 className="centered-title">Presentations</h2>
+                </p>
+					Here are conference posters from our prior presentations.
+                    <ImageSlideshow/>
+					<p> Here are several recorded talks. </p>
+                    <VideoSlideshow/>
+					<p> We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback! </p>
             </div>
-            
             <div>
                 <p>
-                    <b>Acknowlegement:</b> Our research has received generous support from the following organizations:
+                    <h2 className="centered-title">Acknowlegement</h2>
+                </p>
+                <p>
+                    We greatefully acknowledge the following organizations for their generous support on our research:
                 </p>
                 <img
                     src="images/Northeastern.png"
