@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './Header';
+import ImageSlideshow from './ImageSlideshow';
+import VideoSlideshow from './VideoSlideshow';
 import './Resources.css';
 
 const Resources: React.FC = () => {
@@ -75,11 +77,15 @@ const Resources: React.FC = () => {
                         </li>
                     </ul>
                 </section>*/}
-                <div className="section">
-                    <h2>Contact</h2>
-                    <p>We are actively looking for students to join our research projects. If you have ideas, we would love to chat. You may take a look at our recent papers and projects first. The ideal student should to be self-motivated, and have a strong background in mathematics and/or programming.</p>
-                    <p><strong>Email:</strong> hongyang90@gmail.com</p>
-                </div>
+
+                <section className="section">
+                    <h1>Presentation materials</h1>
+                    Here are conference posters from our prior presentations.
+                    <ImageSlideshow/>
+					<p> Here are several recorded talks. </p>
+                    <VideoSlideshow/>
+					<p> We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback! </p>
+                </section>
             </div>
         </div>
     );
