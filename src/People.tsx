@@ -100,15 +100,15 @@ const Group: React.FC = () => {
             imageSrc: "portraits/zhenshuo.jpg", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
 				},
-        {
-            name: "Mahdi Haghifam",
-            position: "Postdoc",
-            details: [
-                "PhD, University of Toronto"
-            ],
-            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
-            link: "https://mhaghifam.github.io/mahdihaghifam/"
-        },
+//        {
+//            name: "Mahdi Haghifam",
+//            position: "Postdoc",
+//            details: [
+//                "PhD, University of Toronto"
+//            ],
+//            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
+//            link: "https://mhaghifam.github.io/mahdihaghifam/"
+//        },
         {
             name: "Haotian Ju",
             position: "M.S.",

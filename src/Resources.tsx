@@ -16,6 +16,9 @@ const Resources: React.FC = () => {
                         <li>
                             <a href="https://github.com/VirtuosoResearch/boosting-multitask-learning-on-graphs" target="_blank" rel="noopener noreferrer">Multitask learning on graph-structured data</a>
                         </li>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/ScalableMTL" target="_blank" rel="noopener noreferrer">Scaling up multitask learning using a linearization technique</a>
+                        </li>
                     </ul>
                     <h1>Fine-tuning</h1>
                     <ul>
@@ -33,6 +36,12 @@ const Resources: React.FC = () => {
 										<ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization</a>
+                        </li>
+										</ul>
+										<h1>Data augmentation</h1>
+										<ul>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/Tree-data-augmentation" target="_blank" rel="noopener noreferrer">A simple, tree-structured data augmentation scheme</a>
                         </li>
 										</ul>
                     <h1>Pointers</h1>
