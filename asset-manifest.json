@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.421d58f5.css",
-    "main.js": "/static/js/main.fad15817.js",
+    "main.css": "/static/css/main.8ae6f933.css",
+    "main.js": "/static/js/main.a26189d5.js",
     "static/js/787.c9fd1f87.chunk.js": "/static/js/787.c9fd1f87.chunk.js",
     "static/media/DDPMLearningNote.md": "/static/media/DDPMLearningNote.375626a5c9eabc14cbc2.md",
-    "static/media/Healthcare.md": "/static/media/Healthcare.e31141370772a3d44f08.md",
-    "static/media/Quantum.md": "/static/media/Quantum.a20f11cf3ebc5fae59f7.md",
     "index.html": "/index.html",
-    "main.421d58f5.css.map": "/static/css/main.421d58f5.css.map",
-    "main.fad15817.js.map": "/static/js/main.fad15817.js.map",
+    "main.8ae6f933.css.map": "/static/css/main.8ae6f933.css.map",
+    "main.a26189d5.js.map": "/static/js/main.a26189d5.js.map",
     "787.c9fd1f87.chunk.js.map": "/static/js/787.c9fd1f87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.421d58f5.css",
-    "static/js/main.fad15817.js"
+    "static/css/main.8ae6f933.css",
+    "static/js/main.a26189d5.js"
   ]
 }
