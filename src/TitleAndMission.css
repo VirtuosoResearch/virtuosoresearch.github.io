@@ -14,8 +14,9 @@ li:not(:last-child) {
 }
 
 .funding {
-    width: 15%;
-    display:center;
+    max-width: 150px;
+    max-height: 150px;
+    display: center;
     padding: 10px 10px;
 }
 
