@@ -158,41 +158,41 @@ const Group: React.FC = () => {
 
     // Collaborators data
     const collaboratorsData = [
-        {
-            name: "Tina Eliassi-Rad",
-            describtion: "Northeastern",
-            link: "https://eliassi.org/"
-        },
-        {
-            name: "Haris Koutsopoulos",
-            describtion: "Northeastern",
-            link: "https://coe.northeastern.edu/people/koutsopoulos-haris/"
-        },
-        {
-            name: "Huy Nguyen",
-            describtion: "Northeastern",
-            link: "https://www.ccs.neu.edu/home/hlnguyen/"
-        },
-        {
-            name: "Predrag Radivojac",
-            describtion: "Northeastern",
-            link: "https://www.khoury.northeastern.edu/home/radivojac/"
-        },
-        {
-            name: "Aneesh Sharma",
-            describtion: "Google",
-            link: "https://www.linkedin.com/in/aneesh-sharma-15011b17/"
-        },
-        {
-            name: "Weijie Su",
-            describtion: "University of Pennsylvania",
-            link: "http://stat.wharton.upenn.edu/~suw/"
-        },
-        {
-            name: "Fan Yang",
-            describtion: "Tsinghua",
-            link: "https://yangf75.github.io/"
-        },
+        //{
+        //    name: "Tina Eliassi-Rad",
+        //    describtion: "Northeastern",
+        //    link: "https://eliassi.org/"
+        //},
+        //{
+        //    name: "Haris Koutsopoulos",
+        //    describtion: "Northeastern",
+        //    link: "https://coe.northeastern.edu/people/koutsopoulos-haris/"
+        //},
+        //{
+        //    name: "Huy Nguyen",
+        //    describtion: "Northeastern",
+        //    link: "https://www.ccs.neu.edu/home/hlnguyen/"
+        //},
+        //{
+        //    name: "Predrag Radivojac",
+        //    describtion: "Northeastern",
+        //    link: "https://www.khoury.northeastern.edu/home/radivojac/"
+        //},
+        //{
+        //    name: "Aneesh Sharma",
+        //    describtion: "Google",
+        //    link: "https://www.linkedin.com/in/aneesh-sharma-15011b17/"
+        //},
+        //{
+        //    name: "Weijie Su",
+        //    describtion: "University of Pennsylvania",
+        //    link: "http://stat.wharton.upenn.edu/~suw/"
+        //},
+        //{
+        //    name: "Fan Yang",
+        //    describtion: "Tsinghua",
+        //    link: "https://yangf75.github.io/"
+        //},
     ];
 
 
@@ -236,21 +236,7 @@ const Group: React.FC = () => {
                     </div>
                 </section>
 
-                <section className="group-section collaborators">
-                    <h2>Collaborators</h2>
-										<p>
-											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing colleagues who collaborated with us on recent projects below: 
-										</p>
-                    <div className="members">
-                        <ul>
-                            {collaboratorsData.map((collaborator, index) => (
-                                <li key={index}>
-                                    <a href={collaborator.link}>{collaborator.name}</a>  ({collaborator.describtion})
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </section>
+
 
             </div>
             <Footer/>

@@ -45,30 +45,15 @@ const TitleAndMission: React.FC = () => {
             <div className="section">
                 <h3>Contact</h3>
                 <p>We are always looking for students to join our research projects. If you have ideas, we would love to chat. You may take a look at our recent papers and projects first. The ideal student should to be self-motivated, and have a strong background in mathematics and/or programming.</p>
-                <p><strong>Email:</strong> hongyang90@gmail.com</p>
             </div>
             <div>
                 <p>
-                    <b>Acknowlegement:</b> We greatefully acknowledge the following organizations for their generous support on our research.
                 </p>
-                <img
-                    src="images/Northeastern.png"
-                    alt="Northeastern"
-                    className='funding'
-                />
-                <img
-                    src="images/NSF_Official_logo_Med_Res_sq.png"
-                    alt="NSF"
-                    className="funding"
-                />
-                <img
-                    src="images/JPMC.png"
-                    alt="JPMC"
-                    className="funding"
-                />
             </div>            
         </div>
     );
 };
 
 export default TitleAndMission;
+
+//                <p><strong>Email:</strong> hongyang90@gmail.com</p>
