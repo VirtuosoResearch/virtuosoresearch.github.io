@@ -35,8 +35,9 @@ const TitleAndMission: React.FC = () => {
                 </p>    
             </div>
             <div className="section">
-                <h3>Projects</h3>
+                <h3>Research</h3>
                 <p>
+                    Here are links to some of our ongoing projects with more information
                     <ul>
                         <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning</Link></li>
                     </ul>
