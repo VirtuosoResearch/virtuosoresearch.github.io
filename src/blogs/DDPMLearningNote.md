@@ -1,6 +1,6 @@
 Dec 11, 2023
 
-## Learning Note : Denoise Diffusion Probabilistic Model
+## Learning Notes: Denoise Diffusion Probabilistic Models
 
 #### Jinhong Yu
 

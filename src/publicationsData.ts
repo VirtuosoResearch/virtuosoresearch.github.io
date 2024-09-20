@@ -1,5 +1,14 @@
 const publications = [
     {
+        year: 2024,
+        title: "Scalable Fine-Tuning from Multiple Data Sources: A First-Order Approximation Approach",
+        link: "",
+        authors: "Dongyue Li, Ziniu Zhang, Lu Wang, Hongyang R. Zhang",
+        publishingSite: "EMNLP Findings",
+        date: "2024",
+        topic: "Fine-Tuning",
+    },
+    {
 		year: 2024,
 		title: "Scalable Multitask Learning Using Gradient-based Estimation of Task Affinity",
 		link: "https://dl.acm.org/doi/abs/10.1145/3637528.3671835",
