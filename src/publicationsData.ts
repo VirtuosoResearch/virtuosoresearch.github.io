@@ -1,6 +1,15 @@
 const publications = [
     {
         year: 2024,
+        title: "Noise Stability Optimization for Finding Flat Minima: A Hessian-based Regularization Approach",
+        link: "http://arxiv.org/abs/2306.08553",
+        authors: "Hongyang R. Zhang, Dongyue Li, Haotian Ju",
+        publishingSite: "TMLR",
+        date: "2024",
+        topic: "Generalization",
+    },
+    {
+        year: 2024,
         title: "Scalable Fine-Tuning from Multiple Data Sources: A First-Order Approximation Approach",
         link: "",
         authors: "Dongyue Li, Ziniu Zhang, Lu Wang, Hongyang R. Zhang",
@@ -9,14 +18,14 @@ const publications = [
         topic: "Fine-Tuning",
     },
     {
-		year: 2024,
-		title: "Scalable Multitask Learning Using Gradient-based Estimation of Task Affinity",
-		link: "https://dl.acm.org/doi/abs/10.1145/3637528.3671835",
-		authors: "Dongyue Li, Aneesh Sharma, Hongyang R. Zhang",
-		publishingSite: "KDD",
-		date: "2024",
-		topic: "Multitask Learning",
-	},
+	year: 2024,
+	title: "Scalable Multitask Learning Using Gradient-based Estimation of Task Affinity",
+	link: "https://dl.acm.org/doi/abs/10.1145/3637528.3671835",
+	authors: "Dongyue Li, Aneesh Sharma, Hongyang R. Zhang",
+	publishingSite: "KDD",
+	date: "2024",
+	topic: "Multitask Learning",
+    },
     {
         year: 2024,
         title: "Learning Tree-Structured Composition of Data Augmentation",
