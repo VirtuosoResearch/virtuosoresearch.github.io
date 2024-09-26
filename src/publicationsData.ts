@@ -159,7 +159,7 @@ const publications = [
         authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
         publishingSite: "COLT",
         date: "2020",
-        topic: "Machine Learning Theory",
+        topic: "Gradient Descent",
     },
     {
         year: 2020,
