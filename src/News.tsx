@@ -8,7 +8,7 @@ const News: React.FC = () => {
             <h2>Recent Updates</h2>
 	        <div className="news-item">
 		        <div className="news-date">Sep, 2024</div>
-				<p> <a href="">New paper at EMNLP</a> on a scalable finetuning approach tested on a wide range of language models, as well as a <a href="http://arxiv.org/abs/2306.08553">two-point gradient estimate</a> for finding flat solutions in loss surfaces at TMLR </p>
+				<p> New paper at EMNLP on a scalable finetuning approach tested on a wide range of language models, as well as a <a href="http://arxiv.org/abs/2306.08553">two-point gradient estimate</a> for finding flat solutions in loss surfaces at TMLR </p>
 		</div>
 		<div className="news-item">
 		        <div className="news-date">Aug, 2024</div>
