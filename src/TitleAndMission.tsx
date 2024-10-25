@@ -13,7 +13,7 @@ const TitleAndMission: React.FC = () => {
     return (
         <div>
             <div className="title-and-mission">
-                Virtuoso Research Lab focuses on advancing the research frontier of machine learning, design and analysis of algorithms, data, and networks. Our mission is to {text.split('').map((char, index) => (
+                Virtuoso Research Lab focuses on advancing the research frontier of machine learning, design and analysis of algorithms, learning theory data, and neural networks. Our mission is to {text.split('').map((char, index) => (
                     highlightIndices.includes(index) ? (
                         <span key={index} className="bright-font" style={{ color: highlightColors[highlightIndices.indexOf(index) % highlightColors.length] }}>{char}</span>
                     ) : char
@@ -29,8 +29,8 @@ const TitleAndMission: React.FC = () => {
                 <p>
                     The team comprises of a diverse team of students and researchers who are passionate about advancing technology, at the same time hoping to make a tangible impact. We are currently mainly working on two sets of projects:
                     <ul>
-                        <li>On the theoretical / algorithmic side, we have been working on matrix and tensor methods, generalization of neural networks, and optimization. We have been developing non-vacuous generalization measures for deep neural networks, though a novel technique of Hessian, which we developed in an ICML'22 paper. We are actively working on advancing the efficiency of using large neural networks.</li>
-                        <li>On the machine learning side, we have been working on developing neural networks for simultaneously optimizing multiple task objectives. This classical problem is relevant again today thanks to developments in language models, federated learning, etc. We have also been exploring new, emerging directions, for instance scalable fine-tuning, algorithmic reasoning of transformer networks, multimodal learning, robustness of diffusion models. We have also been trying out different sorts of applications, one recent example being road safety in transportation.</li>
+                        <li>On the theoretical / algorithmic side, we have been working on generalization of neural networks, matrix and tensor methods, and optimization algorithms. We have been developing non-vacuous generalization measures for deep neural networks, though a novel technique of Hessian (in an <a href="https://arxiv.org/abs/2206.02659">ICML'22 paper</a>). We are actively working on advancing the efficiency of using large neural networks (see our <a href="https://arxiv.org/abs/2409.19458">EMNLP'24 paper</a>).</li>
+                        <li>On the machine learning side, we have been working on developing neural networks for simultaneously optimizing multiple task objectives. This problem has applications in language models, federated learning, to name a few. We have been trying out various applications, one example is to predict traffic accidents (see our <a href="https://arxiv.org/abs/2311.00164">NeurIPS'23 paper</a>).</li>
                     </ul>
                 </p>    
             </div>
@@ -39,7 +39,9 @@ const TitleAndMission: React.FC = () => {
                 <p>
                     Here are links to some of our ongoing projects with more information
                     <ul>
-                        <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning</Link></li>
+                        <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning</Link> (measurements and algorithms for representational transfer)</li>
+			<li> Efficient algorithmic primitives for modern machine learning (see an <a href="https://arxiv.org/abs/2206.02659">ICML'22 paper</a>, and <a href="http://arxiv.org/abs/2302.04451">AISTATS'23 paper</a>) </li>
+			<li> <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">Data analysis for aiding road safety with graph neural networks</a> </li>
                     </ul>
                 </p>
             </div>
