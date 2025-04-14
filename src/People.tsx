@@ -77,8 +77,8 @@ const Group: React.FC = () => {
             name: "Minxuan Duan",
             position: "Ph.D.",
             details: [
-                "BS, Peking University",
-                "MS, University of Chicago"
+                "B.S., Peking University",
+                "M.S., University of Chicago"
             ],
             imageSrc: "default.jpg", // Replace with actual image path
             link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
@@ -87,7 +87,7 @@ const Group: React.FC = () => {
             name: "Dongyue Li",
             position: "Ph.D.",
             details: [
-                "BEng, Shanghai Jiao Tong University",
+                "B.Eng., Shanghai Jiao Tong University",
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
@@ -96,7 +96,7 @@ const Group: React.FC = () => {
 	          name: "Michael Zhang",
             position: "Ph.D.",
             details: [
-                "BEng, UESTC"
+                "B.Eng., UESTC"
             ],
             imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
@@ -105,7 +105,7 @@ const Group: React.FC = () => {
 	          name: "Zhenshuo Zhang",
             position: "Ph.D.",
             details: [
-                "BEng/MS, ZheJiang University"
+                "B.Eng./M.S., ZheJiang University"
             ],
             imageSrc: "portraits/zhenshuo.jpg", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
@@ -159,7 +159,7 @@ const Group: React.FC = () => {
             name: "Abhinav Nippani",
             position: "M.S. alumni",
             details: [
-                "BEng, BITS Pilani (Hyderabad)",
+                "B.Eng., BITS Pilani (Hyderabad)",
             ],
             imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
             link: "/"
@@ -168,7 +168,7 @@ const Group: React.FC = () => {
             name: "Debankita Basu",
             position: "M.S. alumni",
             details: [
-                "BS, UMass Amherst",
+                "B.S., UMass Amherst",
             ],
             imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
@@ -177,7 +177,7 @@ const Group: React.FC = () => {
             name: "Kailai Chen",
             position: "Undergrad, alumni",
             details: [
-                "BS (Maths and Statistics), Xi'An Jiao Tong University",
+                "B.S. (Maths and Statistics), Xi'An Jiao Tong University",
             ],
             imageSrc: "portraits/kailai.jpg", // Replace with actual image path
             link: "/"
@@ -186,7 +186,7 @@ const Group: React.FC = () => {
             name: "Allen Ye",
             position: "Undergrad, alumni",
             details: [
-                "BS, Northeastern University (2023)",
+                "B.S., Northeastern University (2023)",
             ],
             imageSrc: "portraits/allen.png", // Replace with actual image path
             link: "https://www.linkedin.com/in/allenye66/"
