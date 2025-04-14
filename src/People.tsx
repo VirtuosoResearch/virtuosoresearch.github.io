@@ -74,6 +74,16 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
+            name: "Minxuan Duan",
+            position: "Ph.D.",
+            details: [
+                "BS, Peking University",
+                "MS, University of Chicago"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
+        },
+        {
             name: "Dongyue Li",
             position: "Ph.D.",
             details: [
@@ -135,6 +145,15 @@ const Group: React.FC = () => {
             ],
             imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
+        },
+        {
+            name: "Xin Wang",
+            position: "M.S.",
+            details: [
+                "BS, Nanjing University"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
         },
        {
             name: "Kailai Chen",
