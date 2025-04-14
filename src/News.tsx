@@ -9,7 +9,7 @@ const News: React.FC = () => {
             <h2>Recent Updates</h2>
 			<div className="news-item">
 				<div className="news-date">Apr, 2025</div>
-				<p> Welcome Minxuan Duan to our lab! </p>
+				<p> Welcome Minxuan Duan (joining from U-Chicago) to our lab in the fall! </p>
 			</div>
 	        <div className="news-item">
 		        <div className="news-date">Oct, 2024</div>
