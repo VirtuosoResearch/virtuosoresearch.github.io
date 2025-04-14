@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 const News: React.FC = () => {
     return (
         <div className="news">
+
             <h2>Recent Updates</h2>
+			<div className="news-item">
+				<div className="news-date">Apr, 2025</div>
+				<p> Welcome Minxuan Duan to our lab! </p>
+			</div>
 	        <div className="news-item">
 		        <div className="news-date">Oct, 2024</div>
 				<p> We're looking for one or two Ph.D. students to join our lab in the upcoming season. If you are interested, please mention my name in your <a href="https://www.khoury.northeastern.edu/apply/phd-apply/">CS PhD application as potential advisor</a>. You can also send me an email about your application (I may not have the capacity to respond to every email request). Students coming from underrepresented demographics may be eligible for a one-year departmental PhD fellowship. </p>
