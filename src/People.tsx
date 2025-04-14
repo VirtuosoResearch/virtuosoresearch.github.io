@@ -59,7 +59,7 @@ const Group: React.FC = () => {
     // Data for faculty
     const facultyData = [
         {
-            name: "Ryan Zhang",
+            name: "Hongyang Ryan Zhang",
             position: "Assistant Professor of Computer Science",
             details: [
 //                "Ph.D. in computer science from Stanford",
@@ -110,6 +110,33 @@ const Group: React.FC = () => {
             imageSrc: "portraits/zhenshuo.jpg", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
 				},
+            {
+                name: "Xin Wang",
+                position: "M.S.",
+                details: [
+                    "B.S., Nanjing University"
+                ],
+                imageSrc: "default.jpg", // Replace with actual image path
+                link: "/"
+            },
+            {
+                name: "Can He",
+                position: "M.S.",
+                details: [
+                    "M.S.",
+                ],
+                imageSrc: "default.jpg", // Replace with actual image path
+                link: "/"
+            },
+            {
+                name: "Youran Ye",
+                position: "M.S.",
+                details: [
+                    "B.S., Fudan University",
+                ],
+                imageSrc: "default.jpg", // Replace with actual image path
+                link: "/"
+            },
 //        {
 //            name: "Mahdi Haghifam",
 //            position: "Postdoc",
@@ -121,7 +148,7 @@ const Group: React.FC = () => {
 //        },
         {
             name: "Haotian Ju",
-            position: "M.S.",
+            position: "M.S. alumni",
             details: [
 								"BS, Tsinghua University"
             ],
@@ -130,7 +157,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Abhinav Nippani",
-            position: "M.S.",
+            position: "M.S. alumni",
             details: [
                 "BEng, BITS Pilani (Hyderabad)",
             ],
@@ -139,25 +166,16 @@ const Group: React.FC = () => {
         },
         {
             name: "Debankita Basu",
-            position: "M.S.",
+            position: "M.S. alumni",
             details: [
                 "BS, UMass Amherst",
             ],
             imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
             link: "/"
         },
-        {
-            name: "Xin Wang",
-            position: "M.S.",
-            details: [
-                "BS, Nanjing University"
-            ],
-            imageSrc: "default.jpg", // Replace with actual image path
-            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
-        },
        {
             name: "Kailai Chen",
-            position: "Undergrad",
+            position: "Undergrad, alumni",
             details: [
                 "BS (Maths and Statistics), Xi'An Jiao Tong University",
             ],
@@ -166,7 +184,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Allen Ye",
-            position: "Undergrad",
+            position: "Undergrad, alumni",
             details: [
                 "BS, Northeastern University (2023)",
             ],
