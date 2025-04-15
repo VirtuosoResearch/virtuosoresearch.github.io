@@ -157,35 +157,35 @@ const Group: React.FC = () => {
         {
             name: "Haotian Ju",
             position: "M.S. alumni",
-            details: ["BS, Tsinghua University"],
+            details: ["Now working as a quantitative researcher"],
             imageSrc: "portraits/haotian.png",
-            link: "http://virtuosoresearch.github.io/"
+            link: "https://scholar.google.com/citations?user=wpKgvpwAAAAJ&hl=en"
         },
         {
             name: "Abhinav Nippani",
             position: "M.S. alumni",
-            details: ["B.Eng., BITS Pilani (Hyderabad)"],
+            details: ["Now working on a stealth startup"],
             imageSrc: "portraits/Abhinav_Nippani.jpeg",
-            link: "/"
+            link: "https://www.linkedin.com/in/abhinav-nippani/"
         },
         {
             name: "Debankita Basu",
             position: "M.S. alumni",
             details: ["B.S., UMass Amherst"],
             imageSrc: "portraits/Debankita_Basu.jpeg",
-            link: "/"
+            link: "https://www.linkedin.com/in/debankitabasu/"
         },
         {
             name: "Kailai Chen",
             position: "Undergrad, alumni",
-            details: ["B.S. (Maths and Statistics), Xi'An Jiao Tong University"],
+            details: ["Now is a PhD student at Northwestern"],
             imageSrc: "portraits/kailai.jpg",
-            link: "/"
+            link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
         {
             name: "Allen Ye",
             position: "Undergrad, alumni",
-            details: ["B.S., Northeastern University (2023)"],
+            details: ["Now working as an SWE at Tesla"],
             imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
         }
