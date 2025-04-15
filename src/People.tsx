@@ -109,25 +109,25 @@ const Group: React.FC = () => {
 	          name: "Zhenshuo Zhang",
             position: "Ph.D.",
             details: [
-                "B.Eng./M.S., ZheJiang University"
+                "B.Eng. and M.S., Zhejiang University"
             ],
             imageSrc: "portraits/zhenshuo.jpg", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
 				},
             {
-                name: "Xin Wang",
+                name: "Can He",
                 position: "M.S.",
                 details: [
-                    "B.S., Nanjing University"
+                    "M.S.",
                 ],
                 imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
                 link: "/"
             },
             {
-                name: "Can He",
+                name: "Xin Wang",
                 position: "M.S.",
                 details: [
-                    "M.S.",
+                    "B.S., Nanjing University"
                 ],
                 imageSrc: "default.jpg", // Replace with actual image path
                 link: "/"
@@ -177,14 +177,14 @@ const Group: React.FC = () => {
         },
         {
             name: "Kailai Chen",
-            position: "Undergrad, alumni",
-            details: ["Now is a PhD student at Northwestern"],
+            position: "Undergrad alumni",
+            details: ["Will join Northwestern as a Ph.D. student"],
             imageSrc: "portraits/kailai.jpg",
             link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
         {
             name: "Allen Ye",
-            position: "Undergrad, alumni",
+            position: "Undergrad alumni",
             details: ["Now working as an SWE at Tesla"],
             imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
