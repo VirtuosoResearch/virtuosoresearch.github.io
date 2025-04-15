@@ -177,14 +177,14 @@ const Group: React.FC = () => {
         },
         {
             name: "Kailai Chen",
-            position: "Undergrad, alumni",
-            details: ["Now is a PhD student at Northwestern"],
+            position: "Undergrad alumni",
+            details: ["Will join Northwestern as a Ph.D. student"],
             imageSrc: "portraits/kailai.jpg",
             link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
         {
             name: "Allen Ye",
-            position: "Undergrad, alumni",
+            position: "Undergrad alumni",
             details: ["Now working as an SWE at Tesla"],
             imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
