@@ -115,15 +115,6 @@ const Group: React.FC = () => {
             link: "https://zhenshuozhang.github.io/"
 				},
             {
-                name: "Xin Wang",
-                position: "M.S.",
-                details: [
-                    "B.S., Nanjing University"
-                ],
-                imageSrc: "portraits/XinWang.jpg", // Replace with actual image path
-                link: "/"
-            },
-            {
                 name: "Can He",
                 position: "M.S.",
                 details: [
@@ -133,12 +124,21 @@ const Group: React.FC = () => {
                 link: "/"
             },
             {
+                name: "Xin Wang",
+                position: "M.S.",
+                details: [
+                    "B.S., Nanjing University"
+                ],
+                imageSrc: "portraits/default.jpg", // Replace with actual image path
+                link: "/"
+            },
+            {
                 name: "Youran Ye",
                 position: "M.S.",
                 details: [
                     "B.S., Fudan University",
                 ],
-                imageSrc: "portraits/youranye.jpg", // Replace with actual image path
+                imageSrc: "portraits/default.jpg", // Replace with actual image path
                 link: "/"
             },
 //        {
