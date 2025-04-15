@@ -52,6 +52,10 @@ const Member: React.FC<{ name: string, position: string, details: string[], imag
         </div>
     );
 };
+const SimpleMember: React.FC<{ name: string, position: string }> = ({ name, position }) => (
+    <p><strong>{name}</strong> {position}</p>
+);
+
 
 const Group: React.FC = () => {
     const defaultImageSrc = "default.jpg"; // Default image source
@@ -146,53 +150,48 @@ const Group: React.FC = () => {
 //            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
 //            link: "https://mhaghifam.github.io/mahdihaghifam/"
 //        },
+
+     ];
+    
+     const alumniData = [
         {
             name: "Haotian Ju",
             position: "M.S. alumni",
-            details: [
-								"BS, Tsinghua University"
-            ],
-            imageSrc: "portraits/haotian.png", // Replace with actual image path
+            details: ["BS, Tsinghua University"],
+            imageSrc: "portraits/haotian.png",
             link: "http://virtuosoresearch.github.io/"
         },
         {
             name: "Abhinav Nippani",
             position: "M.S. alumni",
-            details: [
-                "B.Eng., BITS Pilani (Hyderabad)",
-            ],
-            imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
+            details: ["B.Eng., BITS Pilani (Hyderabad)"],
+            imageSrc: "portraits/Abhinav_Nippani.jpeg",
             link: "/"
         },
         {
             name: "Debankita Basu",
             position: "M.S. alumni",
-            details: [
-                "B.S., UMass Amherst",
-            ],
-            imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
+            details: ["B.S., UMass Amherst"],
+            imageSrc: "portraits/Debankita_Basu.jpeg",
             link: "/"
         },
-       {
+        {
             name: "Kailai Chen",
             position: "Undergrad, alumni",
-            details: [
-                "B.S. (Maths and Statistics), Xi'An Jiao Tong University",
-            ],
-            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
+            details: ["B.S. (Maths and Statistics), Xi'An Jiao Tong University"],
+            imageSrc: "portraits/kailai.jpg",
             link: "/"
         },
         {
             name: "Allen Ye",
             position: "Undergrad, alumni",
-            details: [
-                "B.S., Northeastern University (2023)",
-            ],
-            imageSrc: "portraits/allen.png", // Replace with actual image path
+            details: ["B.S., Northeastern University (2023)"],
+            imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
-        },
-     ];
+        }
+    ];
 
+    
     // Collaborators data
     const collaboratorsData = [
         //{
@@ -256,6 +255,23 @@ const Group: React.FC = () => {
                         ))}
                     </div>
                 </section>
+                
+                {/* Students and Postdocs section */}
+                <section className="group-section">
+                    <h2>Alumni</h2>
+                    <div className="members">
+                        {alumniData.map((person, index) => (
+                            <Member
+                                key={index}
+                                name={person.name}
+                                position={person.position}
+                                details={person.details}
+                                imageSrc={person.imageSrc}
+                                link={person.link}
+                            />
+                        ))}
+                    </div>
+                </section>
                 {/* Faculty section */}
                 <section className="group-section">
                     <h2>Faculty</h2>
@@ -273,7 +289,14 @@ const Group: React.FC = () => {
                     </div>
                 </section>
 
-
+                {/* <section className="group-section">
+                    <h2>Alumni</h2>
+                    <div className="alumni-list">
+                        {alumniData.map((alum, index) => (
+                            <SimpleMember key={index} name={alum.name} position={alum.position} />
+                        ))}
+                    </div>
+                </section> */}
 
             </div>
             <Footer/>
