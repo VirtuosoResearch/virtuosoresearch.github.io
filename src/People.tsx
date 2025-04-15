@@ -102,7 +102,7 @@ const Group: React.FC = () => {
             details: [
                 "B.Eng., UESTC"
             ],
-            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
+            imageSrc: "portraits/ziniuzhang.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
 				},
 				{
@@ -120,7 +120,7 @@ const Group: React.FC = () => {
                 details: [
                     "B.S., Nanjing University"
                 ],
-                imageSrc: "portraits/XinWang.jpg", // Replace with actual image path
+                imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
                 link: "/"
             },
             {
@@ -138,7 +138,7 @@ const Group: React.FC = () => {
                 details: [
                     "B.S., Fudan University",
                 ],
-                imageSrc: "portraits/youranye.jpg", // Replace with actual image path
+                imageSrc: "portraits/youranye2.jpg", // Replace with actual image path
                 link: "/"
             },
 //        {
