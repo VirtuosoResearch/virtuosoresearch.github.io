@@ -109,7 +109,7 @@ const Group: React.FC = () => {
 	          name: "Zhenshuo Zhang",
             position: "Ph.D.",
             details: [
-                "B.Eng./M.S., ZheJiang University"
+                "B.Eng. and M.S., Zhejiang University"
             ],
             imageSrc: "portraits/zhenshuo.jpg", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
