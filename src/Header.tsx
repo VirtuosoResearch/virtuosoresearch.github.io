@@ -6,7 +6,10 @@ import './Header.css'; // Import the CSS file
 const Header: React.FC = () => {
     return (
         <header className="header">
-            <h2 className="header-title">VirtuosoResearch</h2>
+            <div className="header-content">
+                <img src="/Vlab.png" alt="Logo" className="header-logo" />
+                <h2 className="header-title">VirtuosoResearch</h2>
+            </div>
             <Navigation />
         </header>
     );

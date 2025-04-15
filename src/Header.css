@@ -5,14 +5,21 @@
     padding: 20px 0;
     padding-left: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.header-logo {
+    width: 50px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 10px; /* Space between logo and title */
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+    /*max-width: 800px;*/
+    /*margin: 0 auto;*/
 }
 
 .header-title {
