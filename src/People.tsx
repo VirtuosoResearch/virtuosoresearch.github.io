@@ -120,7 +120,7 @@ const Group: React.FC = () => {
                 details: [
                     "M.S.",
                 ],
-                imageSrc: "portraits/xinwang.jpgdefault.jpg", // Replace with actual image path
+                imageSrc: "default.jpg", // Replace with actual image path
                 link: "/"
             },
             {
