@@ -120,7 +120,7 @@ const Group: React.FC = () => {
                 details: [
                     "B.S., Nanjing University"
                 ],
-                imageSrc: "default.jpg", // Replace with actual image path
+                imageSrc: "portraits/XinWang.jpg", // Replace with actual image path
                 link: "/"
             },
             {
@@ -138,7 +138,7 @@ const Group: React.FC = () => {
                 details: [
                     "B.S., Fudan University",
                 ],
-                imageSrc: "default.jpg", // Replace with actual image path
+                imageSrc: "portraits/youranye.jpg", // Replace with actual image path
                 link: "/"
             },
 //        {
@@ -171,7 +171,7 @@ const Group: React.FC = () => {
         {
             name: "Debankita Basu",
             position: "M.S. alumni",
-            details: ["B.S., UMass Amherst"],
+            details: ["Now working as a data scientist at Health Innovators"],
             imageSrc: "portraits/Debankita_Basu.jpeg",
             link: "https://www.linkedin.com/in/debankitabasu/"
         },
