@@ -84,7 +84,7 @@ const Group: React.FC = () => {
                 "B.S., Peking University",
                 "M.S., University of Chicago"
             ],
-            imageSrc: "default.jpg", // Replace with actual image path
+            imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
             link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
         },
         {
