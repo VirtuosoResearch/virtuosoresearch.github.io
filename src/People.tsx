@@ -100,9 +100,9 @@ const Group: React.FC = () => {
 	          name: "Michael Zhang",
             position: "Ph.D.",
             details: [
-                "B.Eng., UESTC"
+                "B.Eng., University of Electronic Science and Technology"
             ],
-            imageSrc: "portraits/ziniuzhang.jpg", // Replace with actual image path
+            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
 				},
 				{
@@ -118,10 +118,9 @@ const Group: React.FC = () => {
                 name: "Can He",
                 position: "M.S.",
                 details: [
-                    "M.S.",
                 ],
                 imageSrc: "default.jpg", // Replace with actual image path
-                link: "/"
+                link: "https://www.linkedin.com/in/canhenortheastern/"
             },
             {
                 name: "Xin Wang",
@@ -138,7 +137,7 @@ const Group: React.FC = () => {
                 details: [
                     "B.S., Fudan University",
                 ],
-                imageSrc: "portraits/youranye2.jpg", // Replace with actual image path
+                imageSrc: "default.jpg", // Replace with actual image path
                 link: "/"
             },
 //        {
@@ -155,6 +154,13 @@ const Group: React.FC = () => {
     
      const alumniData = [
         {
+            name: "Debankita Basu",
+            position: "M.S. alumni",
+            details: ["Now working as a data scientist at Health Innovators"],
+            imageSrc: "portraits/Debankita_Basu.jpeg",
+            link: "https://www.linkedin.com/in/debankitabasu/"
+        },        
+        {
             name: "Haotian Ju",
             position: "M.S. alumni",
             details: ["Now working as a quantitative researcher"],
@@ -167,13 +173,6 @@ const Group: React.FC = () => {
             details: ["Now working on a stealth startup"],
             imageSrc: "portraits/Abhinav_Nippani.jpeg",
             link: "https://www.linkedin.com/in/abhinav-nippani/"
-        },
-        {
-            name: "Debankita Basu",
-            position: "M.S. alumni",
-            details: ["Now working as a data scientist at Health Innovators"],
-            imageSrc: "portraits/Debankita_Basu.jpeg",
-            link: "https://www.linkedin.com/in/debankitabasu/"
         },
         {
             name: "Kailai Chen",
