@@ -25,6 +25,9 @@ const Resources: React.FC = () => {
                     <h1>Fine-tuning</h1>
                     <ul>
                         <li>
+                            <a href="https://github.com/VirtuosoResearch/EnsembleLoRA" target="_blank" rel="noopener noreferrer">EnsembleLoRA</a>
+                        </li>
+                        <li>
                             <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
                         </li>
                         <li>

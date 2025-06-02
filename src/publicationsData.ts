@@ -1,5 +1,14 @@
 const publications = [
     {
+        year: 2025,
+        title: "Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets",
+        link: "https://arxiv.org/abs/2505.21930",
+        authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
+        publishingSite: "ACL",
+        date: "2025",
+        topic: "Fine-Tuning",
+    },
+    {
         year: 2024,
         title: "Noise Stability Optimization for Finding Flat Minima: A Hessian-based Regularization Approach",
         link: "http://arxiv.org/abs/2306.08553",
@@ -13,7 +22,7 @@ const publications = [
         title: "Scalable Fine-Tuning from Multiple Data Sources: A First-Order Approximation Approach",
         link: "",
         authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
-        publishingSite: "EMNLP Findings",
+        publishingSite: "Findings of EMNLP",
         date: "2024",
         topic: "Fine-Tuning",
     },
