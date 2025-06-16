@@ -17,7 +17,7 @@ const News: React.FC = () => {
 		
 		<div className="news-item">
 			<div className="news-date">Jun, 2025</div>
-			<p> Excited that our project on <a href="https://arxiv.org/abs/2010.11750">transfer learning random matrices</a> are accepted to JMLR! Thanks to the reviewers and editors for great feedback! </p>
+			<p> Excited that our project on <a href="https://arxiv.org/abs/2010.11750">transfer learning random matrices</a> is accepted to JMLR! Thanks to the reviewers and editors for great feedback! </p>
 		</div>
 	
 		<div className="news-item">
