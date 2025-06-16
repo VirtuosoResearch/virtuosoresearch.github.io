@@ -39,8 +39,8 @@ const TitleAndMission: React.FC = () => {
                 <p>
                     Links to some of our ongoing projects with further description
                     <ul>
-                        <li> Statistical learning for modeling modern AI/ML (<a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>) </li>
-                        <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning</Link> (measurements and algorithms for representational transfer)</li>
+                        <li> Statistical learning for modeling modern AI/ML (<a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a>) </li>
+                        <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning: Measurements and algorithms for representational transfer</Link></li>
 			            <li> <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">Data analytics for aiding road safety with graph neural networks</a> </li>
                     </ul>
                 </p>

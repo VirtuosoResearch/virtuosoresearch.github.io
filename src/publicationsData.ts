@@ -1,6 +1,15 @@
 const publications = [
     {
         year: 2025,
+        title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
+        link: "https://arxiv.org/abs/2010.11750",
+        authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, Weijie Su",
+        publishingSite: "Journal of Machine Learning Research",
+        date: "2025",
+        topic: "Transfer Learning",
+    },
+    {
+        year: 2025,
         title: "Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets",
         link: "https://arxiv.org/abs/2505.21930",
         authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
@@ -187,15 +196,6 @@ const publications = [
         publishingSite: "ICLR",
         date: "2020",
         topic: "Multitask Learning",
-    },
-    {
-        year: 2020,
-        title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
-        link: "https://arxiv.org/abs/2010.11750",
-        authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, and Weijie Su",
-        publishingSite: "arXiv",
-        date: "2020",
-        topic: "Transfer Learning",
     },
 ];
 
