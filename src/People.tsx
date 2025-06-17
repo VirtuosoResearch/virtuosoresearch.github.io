@@ -85,7 +85,7 @@ const Group: React.FC = () => {
                 "M.S., University of Chicago"
             ],
             imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
-            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
+            link: "http://minxuanduan.com"
         },
         {
             name: "Dongyue Li",
@@ -100,7 +100,7 @@ const Group: React.FC = () => {
 	          name: "Michael Zhang",
             position: "Ph.D.",
             details: [
-                "B.Eng., University of Electronic Science and Technology"
+                "B.Eng., University of Electronic Science and Technology of China"
             ],
             imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
