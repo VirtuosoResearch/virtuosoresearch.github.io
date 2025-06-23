@@ -66,9 +66,8 @@ const Group: React.FC = () => {
             name: "Hongyang Ryan Zhang",
             position: "Assistant Professor of Computer Science",
             details: [
-//                "Ph.D. in computer science from Stanford",
-//                "Postdoc at University of Pennsylvania",
-//                "Etc",
+                "Ph.D. in Computer Science, Stanford University",
+                "Postdoc at The Wharton School, University of Pennsylvania"
             ],
             imageSrc: "portraits/hongyang.png", // Replace with actual image path
             link: "https://www.hongyangzhang.com/"
@@ -173,6 +172,13 @@ const Group: React.FC = () => {
             details: ["Now working on a stealth startup"],
             imageSrc: "portraits/Abhinav_Nippani.jpeg",
             link: "https://www.linkedin.com/in/abhinav-nippani/"
+        },
+        {
+            name: "Jinhong Yu",
+            position: "M.S. alumni",
+            details: ["Now an intern at Cardinal Operations"],
+            imageSrc: "portraits/jinhong.jpeg",
+            link: "https://www.linkedin.com/in/yjh849625800/"
         },
         {
             name: "Kailai Chen",

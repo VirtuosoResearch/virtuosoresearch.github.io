@@ -12,15 +12,15 @@ const ResearchBlogs: React.FC = () => {
                 <Link reloadDocument to="/blogs/blog/healthcare">
                     <h2>AI in Healthcare: Revolutionizing Patient Care with Smart Algorithms</h2>
                 </Link>
-                <p>John Doe, 2023</p>
-                <Link reloadDocument to="/blogs/blog/quantum">
-                    <h2>Quantum Computing: The Next Frontier in Information Processing</h2>
+                <p>John Doe, 2023</p> */}
+                <Link reloadDocument to="/blogs/blog/NoteJune">
+                    <h2>Reflection of the past academic year</h2>
                 </Link>
-                <p>Jane Smith, 2023</p> */}
+                <p>Hongyang Ryan Zhang, June 2025</p>
                 <Link reloadDocument to="/blogs/blog/DDPMLearningNote">
-                    <h2>Learning Notes: Denoise Diffusion Probabilistic Models</h2>
+                    <h2>Denoising Diffusion Probabilistic Models</h2>
                 </Link>
-                <p>Jinhong Yu, 2023</p>
+                <p>Jinhong Yu, December 2023</p>
             </div>
         </div>
     );
