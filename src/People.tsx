@@ -67,7 +67,7 @@ const Group: React.FC = () => {
             position: "Assistant Professor of Computer Science",
             details: [
                 "Ph.D. in Computer Science, Stanford University",
-                "Postdoc at The Wharton School, University of Pennsylvania"
+                "Postdoc in Statistics and Data Science at The Wharton School, University of Pennsylvania"
             ],
             imageSrc: "portraits/hongyang.png", // Replace with actual image path
             link: "https://www.hongyangzhang.com/"
@@ -113,14 +113,14 @@ const Group: React.FC = () => {
             imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
 				},
-            {
-                name: "Can He",
-                position: "M.S.",
-                details: [
-                ],
-                imageSrc: "default.jpg", // Replace with actual image path
-                link: "https://www.linkedin.com/in/canhenortheastern/"
-            },
+//            {
+//                name: "Can He",
+//                position: "M.S.",
+//                details: [
+//                ],
+//                imageSrc: "default.jpg", // Replace with actual image path
+//                link: "https://www.linkedin.com/in/canhenortheastern/"
+//            },
             {
                 name: "Xin Wang",
                 position: "M.S.",
