@@ -82,8 +82,8 @@ const Resources: React.FC = () => {
                 </section>*/}
 
                 <section className="section">
-                    <h1>Presentation materials</h1>
-                    Here are conference posters from our prior presentations.
+                    <h1>Presentation materials and group photos</h1>
+                    Here are some of our conference posters and group photos.
                     <ImageSlideshow/>
 					<p> Here are several recorded talks. </p>
                     <VideoSlideshow/>

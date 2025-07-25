@@ -64,10 +64,10 @@ const Group: React.FC = () => {
     const facultyData = [
         {
             name: "Hongyang Ryan Zhang",
-            position: "Assistant Professor of Computer Science",
+            position: "Assistant Professor",
             details: [
-                "Ph.D. in Computer Science, Stanford University",
-                "Postdoc in Statistics and Data Science at The Wharton School, University of Pennsylvania"
+                "Postdoc in Statistics and Data Science at The Wharton School, University of Pennsylvania",
+                "Ph.D. in Computer Science, Stanford University"
             ],
             imageSrc: "portraits/hongyang.png", // Replace with actual image path
             link: "https://www.hongyangzhang.com/"
@@ -246,7 +246,7 @@ const Group: React.FC = () => {
 
                 {/* Students and Postdocs section */}
                 <section className="group-section">
-                    <h2>Members</h2>
+                    <h2>Students</h2>
                     <div className="members">
                         {phdStudentsData.map((person, index) => (
                             <Member
