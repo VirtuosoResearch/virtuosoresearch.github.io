@@ -28,6 +28,9 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/EnsembleLoRA" target="_blank" rel="noopener noreferrer">EnsembleLoRA</a>
                         </li>
                         <li>
+                            <a href="https://github.com/VirtuosoResearch/Scalable-finetuning" target="_blank" rel="noopener noreferrer">GradEx</a>
+                        </li>
+                        <li>
                             <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
                         </li>
                         <li>
