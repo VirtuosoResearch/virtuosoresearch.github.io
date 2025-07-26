@@ -12,6 +12,8 @@ const ImageSlideshow: React.FC = () => {
 		'home_images/noise-stability-optimization-poster.png',
 		'home_images/NeurIPS_Instruction_Workshop_2023.png',
 		'home_images/SDM_2023_Poster.png',
+        'home_images/GradEx_Poster.png',
+        'home_images/EnsembleLoRA_Poster.png',
 		'home_images/group_2025.jpg',
 //        'ai3.jpg',
 ////        'home_images/icml22.jpeg',
