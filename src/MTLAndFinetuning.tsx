@@ -33,7 +33,41 @@ const MTLAndFinetuning: React.FC = () => {
                         <li><a href="">Abhinav Nippani</a>, Computer Science Master's student</li>
                     </ul>
                 </p>
-                <p> <b>Progress:</b> First, we explore the node label prediction task. We leverage higher-order task affinities to cluster tasks based on transferability and train group-specific models using spectral clustering, which helps mitigate negative transfer in multitask graph learning (<a href="https://arxiv.org/pdf/2306.14009">KDD'23</a>). We then develop an efficient method, Grad-TAG, to estimate these higher-order affinities via gradient linearization and random projections, and apply semidefinite programming for scalable task grouping across hundreds of tasks (<a href="https://arxiv.org/pdf/2409.06091">KDD'24</a>). Building on this, we propose GradEx for the NLP setting, focusing on subset selection. GradEx estimates task relevance using first-order gradient approximations from a meta-trained initialization and supports both forward selection and random ensemble methods (<a href="https://arxiv.org/pdf/2409.19458">EMNLP'24</a>). More recently, we have focused on adapter ensembling for multitask fine-tuning. Here, task affinities estimated via first-order gradients are used to group tasks, with one adapter trained per group. At inference, adapters are combined via weighted ensembling, achieving better generalization than per-task tuning with minimal additional overhead (<a href="https://arxiv.org/pdf/2505.21930">ACL'25</a>).
+                <p> <b>Progress:</b> 
+                    {/* <b>Progress:</b> First, we explore the node label prediction task. We leverage higher-order task affinities to cluster tasks based on transferability and train group-specific models using spectral clustering, which helps mitigate negative transfer in multitask graph learning (<a href="https://arxiv.org/pdf/2306.14009">KDD'23</a>). We then develop an efficient method, Grad-TAG, to estimate these higher-order affinities via gradient linearization and random projections, and apply semidefinite programming for scalable task grouping across hundreds of tasks (<a href="https://arxiv.org/pdf/2409.06091">KDD'24</a>). Building on this, we propose GradEx for the NLP setting, focusing on subset selection. GradEx estimates task relevance using first-order gradient approximations from a meta-trained initialization and supports both forward selection and random ensemble methods (<a href="https://arxiv.org/pdf/2409.19458">EMNLP'24</a>). More recently, we have focused on adapter ensembling for multitask fine-tuning. Here, task affinities estimated via first-order gradients are used to group tasks, with one adapter trained per group. At inference, adapters are combined via weighted ensembling, achieving better generalization than per-task tuning with minimal additional overhead (<a href="https://arxiv.org/pdf/2505.21930">ACL'25</a>). */}
+                    <ul>
+                    <li>
+                        <b>Node label prediction task:</b>
+                        Used higher-order task affinities to cluster tasks based on transferability.
+                        Trained group-specific models via spectral clustering to reduce negative transfer in multitask graph learning
+                        (<a href="https://arxiv.org/pdf/2306.14009">KDD'23</a>).
+                    </li>
+                    <li>
+                        <b>Noise Stability Optimization:</b>
+                        a Hessian-trace based regularization method that improves generalization by injecting symmetric noise into neural network weights to explicitly encourage flatter minima.
+                        (<a href="https://arxiv.org/pdf/2306.08553">TMLR'24</a>).
+                    </li>
+                    <li>
+                        <b>Grad-TAG (Gradient-based Task Affinity Grouping):</b>
+                        Estimated higher-order affinities using gradient linearization and random projections.
+                        Employed semidefinite programming for scalable task grouping over hundreds of tasks
+                        (<a href="https://arxiv.org/pdf/2409.06091">KDD'24</a>).
+                    </li>
+                    <li>
+                        <b>GradEx (Gradient-based Example Selector):</b>
+                        Focused on subset selection using first-order gradient approximations from a meta-trained initialization.
+                        Supported both forward selection and random ensemble strategies
+                        (<a href="https://arxiv.org/pdf/2409.19458">EMNLP'24</a>).
+                    </li>
+                    <li>
+                        <b>EnsembleLoRA (Adapter ensembling for multitask fine-tuning):</b>
+                        Grouped tasks using first-order gradient based affinities.
+                        Trained one adapter per group and combined them via weighted ensembling at inference.
+                        Achieved better generalization than per-task tuning with minimal additional overhead
+                        (<a href="https://arxiv.org/pdf/2505.21930">ACL'25</a>).
+                    </li>
+                    </ul>
+
                 </p> 
             </div>
             <Footer/>
