@@ -29,7 +29,7 @@ const TitleAndMission: React.FC = () => {
                 <p>
                     The team comprises of a diverse team of students and researchers who are passionate about advancing technology, at the same time hoping to make a tangible impact. Current focus include:
                     <ul>
-                        <li>Generalization of neural networks, matrix and tensor methods, and optimization algorithms. We have been developing non-vacuous generalization measures for deep neural networks, though a novel technique of Hessian (<a href="https://arxiv.org/abs/2206.02659">ICML'22</a>). This also leads to a new sample complexity result for graph neural networks (<a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>).</li>
+                        <li>Generalization of neural networks, matrix completion, and optimization algorithms. We have been developing non-vacuous generalization measures for deep neural networks, through a novel technique of neural network Hessians (<a href="https://arxiv.org/abs/2206.02659">ICML'22</a>). By examining second-order derivatives, this also leads to a new sample complexity result for graph neural networks (<a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>).</li>
                         <li>Developing neural networks for simultaneously optimizing multiple tasks, with applications to fine-tuning and making inference on large language models  (<a href="https://arxiv.org/abs/2409.19458">EMNLP'24</a>), community detection (<a href="https://arxiv.org/abs/2409.06091">KDD'23</a>), and transportation (<a href="https://arxiv.org/abs/2311.00164">NeurIPS'23</a>).</li>
                     </ul>
                 </p>    
@@ -39,7 +39,7 @@ const TitleAndMission: React.FC = () => {
                 <p>
                     Links to some of our ongoing projects with further description
                     <ul>
-                        <li> Statistical learning for modeling modern AI/ML (<a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a>) </li>
+                        <li> Statistical learning and modeling for modern AI/ML: <a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2306.08553">TMLR'24</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a> </li>
                         <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning: Measurements and algorithms for representational transfer</Link></li>
 			            <li> <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">Data analytics for aiding road safety with graph neural networks</a> </li>
                     </ul>
