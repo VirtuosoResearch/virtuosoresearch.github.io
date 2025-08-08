@@ -34,5 +34,6 @@ The past academic year has been an extremely challenging one. Nevertheless, we r
 Two of the main focus we're exploring now involve:
 - Developing computational methods for understanding neural networks, by measuring Hessian statistics.
 - Better understanding agents, including (algorithmic) reasoning, reinforcement learning.
+
 Lastly, we would like to thank all the colleagues who have interacted with us and have helped contribute to our research.
 
