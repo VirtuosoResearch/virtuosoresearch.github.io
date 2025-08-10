@@ -28,6 +28,9 @@ However, this seems to have been reverted so that is really fortunate news for t
 Another major change that has happend this year is the extensive use of LLMs for doing research. I have found LLMs particularly useful while doing tedious calculations and checking related works. In this age where a lot of the research is assisted by AI agents, it seems all the more important to have the ability to conduct independent, creative research in this exciting time.
 
 It was also a great pleasure to attend JSM for the first time; I had been wanting to attend the conference after the pandemic. It was great to finally turn around, and it is truly inspring to hear talks from legends in the field.
+Here's a photo with the legendary Rob Tibshirani (author of [ESL textbook](https://hastie.su.domains/ElemStatLearn/)):
+
+![JSM25](/images/JSM25_rt.jpeg)
 
 #### Looking forward
 
