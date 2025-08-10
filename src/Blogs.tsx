@@ -13,6 +13,10 @@ const ResearchBlogs: React.FC = () => {
                     <h2>AI in Healthcare: Revolutionizing Patient Care with Smart Algorithms</h2>
                 </Link>
                 <p>John Doe, 2023</p> */}
+                <Link reloadDocument to="/blogs/blog/EnsembleloraNote">
+                    <h2>Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</h2>
+                </Link>
+                <p>Michael Zhang, August 2025</p>
                 <Link reloadDocument to="/blogs/blog/NoteJune">
                     <h2>Reflection of the past academic year</h2>
                 </Link>
