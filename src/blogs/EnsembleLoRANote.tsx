@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'markdown-to-jsx';
-import Markdown from './EnsembleloraNote.md';
+import Markdown from './EnsembleLoRANote.md';
 import Header from '../Header';
 import './Blog.css'
 
-const EnsembleloraNote: React.FC = () => {
+const EnsembleLoRANote: React.FC = () => {
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
@@ -23,4 +23,4 @@ const EnsembleloraNote: React.FC = () => {
     );
 };
 
-export default EnsembleloraNote;
+export default EnsembleLoRANote;
