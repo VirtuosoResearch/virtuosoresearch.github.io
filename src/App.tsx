@@ -13,6 +13,7 @@ import AllNews from './AllNews';
 import Resources from './Resources';
 import MTLAndFinetuning from './MTLAndFinetuning';
 import DDPMLearningNote from './blogs/DDPMLearningNote';
+import EnsembleLoRANote from './blogs/EnsembleLoRANote';
 import NoteJune from './blogs/NoteJune';
 import './App.css'
 
@@ -32,6 +33,7 @@ const App: React.FC = () => {
         <Route path="/resources" element={<Resources />} />
         <Route path="/mtlandfinetuning" element={<MTLAndFinetuning />} />
         <Route path="/blogs/blog/DDPMLearningNote" element={<DDPMLearningNote />} />
+        <Route path="/blogs/blog/EnsembleLoRANote" element={<EnsembleLoRANote />} />
         <Route path="/blogs/blog/NoteJune" element={<NoteJune />} />
       </Routes>
     </HashRouter>
