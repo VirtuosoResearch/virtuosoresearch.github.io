@@ -18,9 +18,9 @@ const ResearchBlogs: React.FC = () => {
                 </Link>
                 <p>Michael Zhang, August 2025</p>
                 <Link reloadDocument to="/blogs/blog/NoteJune">
-                    <h2>Reflection of the past academic year</h2>
+                    <h2>AY reflection</h2>
                 </Link>
-                <p>Hongyang Ryan Zhang, June 2025</p>
+                <p>Ryan Zhang, August 2025</p>
                 <Link reloadDocument to="/blogs/blog/DDPMLearningNote">
                     <h2>Denoising Diffusion Probabilistic Models</h2>
                 </Link>
