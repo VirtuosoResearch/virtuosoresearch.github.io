@@ -10,7 +10,9 @@ We propose an ensemble method for fine-tuning language models on multiple datase
 
 ## 1. Motivations
 
-In many applications, fine-tuning language models involves multiple data sources. Existing methods have several limitations. Directly applying a base fine-tuning method often leads to negative interference across tasks. Pretraining a shared adapter and then fine-tuning it for each task increases computational cost.
+In many applications, fine-tuning language models involves multiple data sources. Existing methods have several limitations. Directly applying a base fine-tuning method often leads to negative interference across tasks. Pretraining a shared adapter and then fine-tuning it for each task may increases computational cost.
+
+To figure our the relationship of tasks, several works evaluate the similarities betweeen tasks or data samples. Influence functions evaluate how slight changes to individual training examples affect model predictions ([Koh and Liang, 2017](https://proceedings.mlr.press/v70/koh17a/koh17a.pdf)). Datamodeling uses random sampling and surrogate models to approximate the impact of adding or removing specific training samples on prediction loss ([Park et al., 2023](https://arxiv.org/pdf/2303.14186)). Task affinity grouping computes a task affinity matrix by computing gradient similarity between tasks ([Fifty et al., 2021](https://proceedings.neurips.cc/paper_files/paper/2021/file/e77910ebb93b511588557806310f78f1-Paper.pdf)). Our [prior work](https://arxiv.org/pdf/2409.19458) has explored efficent methods to estimate the fine-tuned result. Inspired by them, we propose an efficient grouping method without performing any fine-tuning. 
 
 ## 2. Methods
 
@@ -33,7 +35,7 @@ Next, we apply several gradient boosting steps to reduce the loss in groups that
 
 ## 3. Experiments
 
-Empirically, our method improves accuracy by 10\% with only 8\% more computation and 9 GB of additional memory compared to QLoRA. It achieves comparable performance with 45\% less computation and memory compared to approaches without doing Taylor’s expansion to estimate. Compared to full fine-tuning, our method improves accuracy by 4\% while using 92\% less computation and saving 52 GB of memory. All the results are based on the Llama-8B model.
+Empirically, our method improves accuracy by 10\% compared to QLoRA with few more computation and additional memory. It achieves comparable performance with 45\% less computation and memory compared to approaches without doing Taylor’s expansion to estimate. Compared to full fine-tuning, our method improves accuracy by 4\% while using much less computation and memory. All the results are based on the Llama-8B model.
 
 
 <figure style="text-align:center;">
@@ -52,6 +54,8 @@ Beyond experimental results, we also analyze empirical generalization error and 
 
 ## 5. Conclusion
 We present an ensemble method of low-rank adapters for adapting language models across multiple datasets. First, we develop an efficient task affinity grouping algorithm, with a first-order approximation for estimating task affinities and a clustering step to partition tasks into groups. Then, we construct an ensemble for groups of tasks, consisting of adapters fine-tuned on each group with additional boosting steps. Our method consistently improves fine-tuning performance with minimal computational overhead. Lastly, we analyze the sharpness measures of low-rank adapters.
+
+For future works, we can adapt this ensemble learning method to in-context learning or reinforcement learning setting.
 
 Our implementation is open-sourced at [https://github.com/VirtuosoResearch/EnsembleLoRA](https://github.com/VirtuosoResearch/EnsembleLoRA), and it can be easily adapted to other settings.
 
