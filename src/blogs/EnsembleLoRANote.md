@@ -4,6 +4,10 @@ Aug 10, 2025
 
 #### Michael Zhang
 
+## Abstract
+
+We propose an ensemble method for fine-tuning language models on multiple datasets by grouping them into a small number of sets, training one small adapter per group, and combining them with weights. Using a first-order approximation of low-rank adaptation, we estimate performance from base model gradients, achieving 105× speedup compared to full fine-tuning while outperforming QLoRA with minimal overhead.
+
 ## 1. Motivations
 
 In many applications, fine-tuning language models involves multiple data sources. Existing methods have several limitations. Directly applying a base fine-tuning method often leads to negative interference across tasks. Pretraining a shared adapter and then fine-tuning it for each task increases computational cost.
@@ -31,10 +35,6 @@ Next, we apply several gradient boosting steps to reduce the loss in groups that
 
 Empirically, our method improves accuracy by 10\% with only 8\% more computation and 9 GB of additional memory compared to QLoRA. It achieves comparable performance with 45\% less computation and memory compared to approaches without doing Taylor’s expansion to estimate. Compared to full fine-tuning, our method improves accuracy by 4\% while using 92\% less computation and saving 52 GB of memory. All the results are based on the Llama-8B model.
 
-<figure style="text-align:center;">
-  <figcaption style="text-align:left;"><em>Table 1: We report the test accuracy (%) of our method, as compared with baselines. We also compute the average test accuracy across ten NLP datasets, along with the number of FLOPs and memory usage for fine-tuning Llama-8B using QLoRA.</em></figcaption>
-  <img src="/images/EnsembleLoRA/main_result_ensemble.png" alt="main_result" style="width:100%; max-width:800px;">
-</figure>
 
 <figure style="text-align:center;">
   <img src="/images/EnsembleLoRA/trade_off.png" alt="trade_off" style="width:60%; max-width:800px;">
@@ -54,3 +54,36 @@ Beyond experimental results, we also analyze empirical generalization error and 
 We present an ensemble method of low-rank adapters for adapting language models across multiple datasets. First, we develop an efficient task affinity grouping algorithm, with a first-order approximation for estimating task affinities and a clustering step to partition tasks into groups. Then, we construct an ensemble for groups of tasks, consisting of adapters fine-tuned on each group with additional boosting steps. Our method consistently improves fine-tuning performance with minimal computational overhead. Lastly, we analyze the sharpness measures of low-rank adapters.
 
 Our implementation is open-sourced at [https://github.com/VirtuosoResearch/EnsembleLoRA](https://github.com/VirtuosoResearch/EnsembleLoRA), and it can be easily adapted to other settings.
+
+## BibTex
+<!-- If you find EnsembleLoRA useful for your work, please cite:
+
+```bibtex
+@inproceedings{li2025efficient,
+  title={Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets},
+  author={Li, Dongyue and Zhang, Ziniu and Wang, Lu and Zhang, Hongyang R},
+  booktitle={Association for Computational Linguistics (ACL)},
+  year={2025}
+}
+``` -->
+
+<p>If you find EnsembleLoRA useful for your work, please cite:</p>
+
+<pre><code class="language-bibtex">@inproceedings{li2025efficient,
+  title={Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets},
+  author={Li, Dongyue and Zhang, Ziniu and Wang, Lu and Zhang, Hongyang R},
+  booktitle={Association for Computational Linguistics (ACL)},
+  year={2025}
+}
+</code></pre>
+
+<style>
+pre code{
+  display:block;
+  padding:1rem;
+  border-radius:8px;
+  background:#f5f5f5;
+  overflow:auto;
+  font-size:0.95rem;
+}
+</style>
