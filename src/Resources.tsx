@@ -72,6 +72,15 @@ const Resources: React.FC = () => {
                     </ul>
                 </section>
 
+                <section className="section">
+                    <h3>Course materials</h3>
+                    <ul>
+                        <li>
+                            <a href="/CS4100.html" target="_blank" rel="noopener noreferrer">CS7140 Artificial Intelligence (Fall 2025) </a>
+                        </li>
+                    </ul>
+                </section>
+
                 {/*<section className="section">
                     <h3>Articles</h3>
                     <ul>
