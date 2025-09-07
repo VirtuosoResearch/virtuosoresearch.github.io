@@ -52,6 +52,10 @@ const Member: React.FC<{ name: string, position: string, details: string[], imag
         </div>
     );
 };
+const SimpleMember: React.FC<{ name: string, position: string }> = ({ name, position }) => (
+    <p><strong>{name}</strong> {position}</p>
+);
+
 
 const Group: React.FC = () => {
     const defaultImageSrc = "default.jpg"; // Default image source
@@ -59,12 +63,11 @@ const Group: React.FC = () => {
     // Data for faculty
     const facultyData = [
         {
-            name: "Hongyang R. Zhang",
-            position: "Assistant Professor of Computer Science",
+            name: "Hongyang Ryan Zhang",
+            position: "Assistant Professor",
             details: [
-//                "Ph.D. in computer science from Stanford",
-//                "Postdoc at University of Pennsylvania",
-//                "Etc",
+                "Postdoc in Statistics and Data Science at The Wharton School, University of Pennsylvania",
+                "Ph.D. in Computer Science, Stanford University"
             ],
             imageSrc: "portraits/hongyang.png", // Replace with actual image path
             link: "https://www.hongyangzhang.com/"
@@ -74,134 +77,163 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
-            name: "Dongyue Li",
-            position: "CS PhD Student (2021)",
+            name: "Minxuan Duan",
+            position: "Ph.D.",
             details: [
-                "BEng in CS, Shanghai Jiao Tong University",
+                "B.S., Peking University",
+                "M.S., University of Chicago"
+            ],
+            imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
+            link: "http://minxuanduan.com"
+        },
+        {
+            name: "Dongyue Li",
+            position: "Ph.D.",
+            details: [
+                "B.Eng., Shanghai Jiao Tong University",
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
         },
-        {
-            name: "Haotian Ju",
-            position: "MS, then as an RA  (2021)",
-            details: [
-								"BS in Applied Maths, Tsinghua University"
-            ],
-            imageSrc: "portraits/haotian.png", // Replace with actual image path
-            link: "http://virtuosoresearch.github.io/"
-        },
-        {
-            name: "Mahdi Haghifam",
-            position: "Khoury (distinguished) Postdoctral Fellow (2023)",
-            details: [
-                "PhD from the University of Toronto. Joint Mentor: Jonathan Ullman"
-            ],
-            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
-            link: "https://mhaghifam.github.io/mahdihaghifam/"
-        },
 				{
 	          name: "Michael Zhang",
-            position: "CS PhD (2024)",
+            position: "Ph.D.",
             details: [
-                "BEng in CS from UESTC"
+                "B.Eng., University of Electronic Science and Technology of China"
             ],
-            imageSrc: "default.jpg", // Replace with actual image path
+            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
 				},
 				{
 	          name: "Zhenshuo Zhang",
-            position: "CS PhD (2024)",
+            position: "Ph.D.",
             details: [
-                "BEng and MS in CS from Zhe Jiang University"
+                "B.Eng. and M.S., Zhejiang University"
             ],
-            imageSrc: "default.jpg", // Replace with actual image path
+            imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
 				},
-        {
-            name: "Abhinav Nippani",
-            position: "Master's Student (2023)",
-            details: [
-                "Bachelor in Electrial and Electronics Engineering, BITS Pilani, Hyderabad",
-            ],
-            imageSrc: "portraits/Abhinav_Nippani.jpeg", // Replace with actual image path
-            link: "/"
-        },
+//            {
+//                name: "Can He",
+//                position: "M.S.",
+//                details: [
+//                ],
+//                imageSrc: "default.jpg", // Replace with actual image path
+//                link: "https://www.linkedin.com/in/canhenortheastern/"
+//            },
+            {
+                name: "Xin Wang",
+                position: "M.S.",
+                details: [
+                    "B.S., Nanjing University"
+                ],
+                imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
+                link: "/"
+            },
+            {
+                name: "Youran Ye",
+                position: "M.S.",
+                details: [
+                    "B.S., Fudan University",
+                ],
+                imageSrc: "portraits/youran.jpg", // Replace with actual image path
+                link: "/"
+            },
+//        {
+//            name: "Mahdi Haghifam",
+//            position: "Postdoc",
+//            details: [
+//                "PhD, University of Toronto"
+//            ],
+//            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
+//            link: "https://mhaghifam.github.io/mahdihaghifam/"
+//        },
+
+     ];
+    
+     const alumniData = [
         {
             name: "Debankita Basu",
-            position: "Master's Student (2023)",
-            details: [
-                "BS in CS, UMass Amherst",
-            ],
-            imageSrc: "portraits/Debankita_Basu.jpeg", // Replace with actual image path
-            link: "/"
+            position: "M.S. alumni",
+            details: ["Now working as a data scientist at Health Innovators"],
+            imageSrc: "portraits/Debankita_Basu.jpeg",
+            link: "https://www.linkedin.com/in/debankitabasu/"
+        },        
+        {
+            name: "Haotian Ju",
+            position: "M.S. alumni",
+            details: ["Now working as a quantitative researcher"],
+            imageSrc: "portraits/haotian.png",
+            link: "https://scholar.google.com/citations?user=wpKgvpwAAAAJ&hl=en"
         },
-       {
+        {
+            name: "Abhinav Nippani",
+            position: "M.S. alumni",
+            details: ["Now working on a stealth startup"],
+            imageSrc: "portraits/Abhinav_Nippani.jpeg",
+            link: "https://www.linkedin.com/in/abhinav-nippani/"
+        },
+        {
+            name: "Jinhong Yu",
+            position: "M.S. alumni",
+            details: ["Now an intern at Cardinal Operations"],
+            imageSrc: "portraits/jinhong.jpeg",
+            link: "https://www.linkedin.com/in/yjh849625800/"
+        },
+        {
             name: "Kailai Chen",
-            position: "Visiting Undergraduate Researcher (2023)",
-            details: [
-                "BS in Maths and Statistics from Xi'An Jiao Tong University",
-            ],
-            imageSrc: "portraits/kailai.jpg", // Replace with actual image path
-            link: "/"
+            position: "Undergrad alumni",
+            details: ["Will join Northwestern as a Ph.D. student"],
+            imageSrc: "portraits/kailai.jpg",
+            link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
-				{
-						name: "Yangnan Lin",
-						position: "Visiting Undergraduate Researcher (2023)",
-            details: [
-                "BEng in CS from Shanghai Jiao Tong University",
-            ],
-            imageSrc: "default.jpg", // Replace with actual image path
-            link: "/"
-				},
         {
             name: "Allen Ye",
-            position: "Alumni",
-            details: [
-                "Bachelor's in CS, Northeastern University, 2023",
-            ],
-            imageSrc: "portraits/allen.png", // Replace with actual image path
+            position: "Undergrad alumni",
+            details: ["Now working as an SWE at Tesla"],
+            imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
-        },
-     ];
+        }
+    ];
 
+    
     // Collaborators data
     const collaboratorsData = [
-        {
-            name: "Tina Eliassi-Rad",
-            describtion: "Northeastern",
-            link: "https://eliassi.org/"
-        },
-        {
-            name: "Haris Koutsopoulos",
-            describtion: "Northeastern",
-            link: "https://coe.northeastern.edu/people/koutsopoulos-haris/"
-        },
-        {
-            name: "Huy Nguyen",
-            describtion: "Northeastern",
-            link: "https://www.ccs.neu.edu/home/hlnguyen/"
-        },
-//        {
-//            name: "Predrag Radivojac ",
-//            describtion: "Northeastern",
-//            link: "https://www.khoury.northeastern.edu/home/radivojac/"
-//        },
-        {
-            name: "Aneesh Sharma",
-            describtion: "Google",
-            link: "/"
-        },
-        {
-            name: "Weijie Su",
-            describtion: "University of Pennsylvania",
-            link: "http://stat.wharton.upenn.edu/~suw/"
-        },
-        {
-            name: "Fan Yang",
-            describtion: "Tsinghua",
-            link: "https://yangf75.github.io/"
-        },
+        //{
+        //    name: "Tina Eliassi-Rad",
+        //    describtion: "Northeastern",
+        //    link: "https://eliassi.org/"
+        //},
+        //{
+        //    name: "Haris Koutsopoulos",
+        //    describtion: "Northeastern",
+        //    link: "https://coe.northeastern.edu/people/koutsopoulos-haris/"
+        //},
+        //{
+        //    name: "Huy Nguyen",
+        //    describtion: "Northeastern",
+        //    link: "https://www.ccs.neu.edu/home/hlnguyen/"
+        //},
+        //{
+        //    name: "Predrag Radivojac",
+        //    describtion: "Northeastern",
+        //    link: "https://www.khoury.northeastern.edu/home/radivojac/"
+        //},
+        //{
+        //    name: "Aneesh Sharma",
+        //    describtion: "Google",
+        //    link: "https://www.linkedin.com/in/aneesh-sharma-15011b17/"
+        //},
+        //{
+        //    name: "Weijie Su",
+        //    describtion: "University of Pennsylvania",
+        //    link: "http://stat.wharton.upenn.edu/~suw/"
+        //},
+        //{
+        //    name: "Fan Yang",
+        //    describtion: "Tsinghua",
+        //    link: "https://yangf75.github.io/"
+        //},
     ];
 
 
@@ -217,6 +249,23 @@ const Group: React.FC = () => {
                     <h2>Students</h2>
                     <div className="members">
                         {phdStudentsData.map((person, index) => (
+                            <Member
+                                key={index}
+                                name={person.name}
+                                position={person.position}
+                                details={person.details}
+                                imageSrc={person.imageSrc}
+                                link={person.link}
+                            />
+                        ))}
+                    </div>
+                </section>
+                
+                {/* Students and Postdocs section */}
+                <section className="group-section">
+                    <h2>Alumni</h2>
+                    <div className="members">
+                        {alumniData.map((person, index) => (
                             <Member
                                 key={index}
                                 name={person.name}
@@ -245,21 +294,14 @@ const Group: React.FC = () => {
                     </div>
                 </section>
 
-                <section className="group-section collaborators">
-                    <h2>Research Collaborators</h2>
-										<p>
-											We enjoy working with researchers with different background from us. To acknowledge their contributions, we are listing colleagues who collaborated with us on recent publications below: 
-										</p>
-                    <div className="members">
-                        <ul>
-                            {collaboratorsData.map((collaborator, index) => (
-                                <li key={index}>
-                                    <a href={collaborator.link}>{collaborator.name}</a>  ({collaborator.describtion})
-                                </li>
-                            ))}
-                        </ul>
+                {/* <section className="group-section">
+                    <h2>Alumni</h2>
+                    <div className="alumni-list">
+                        {alumniData.map((alum, index) => (
+                            <SimpleMember key={index} name={alum.name} position={alum.position} />
+                        ))}
                     </div>
-                </section>
+                </section> */}
 
             </div>
             <Footer/>

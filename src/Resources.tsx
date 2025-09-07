@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './Header';
+import ImageSlideshow from './ImageSlideshow';
+import VideoSlideshow from './VideoSlideshow';
 import './Resources.css';
 
 const Resources: React.FC = () => {
@@ -8,7 +10,7 @@ const Resources: React.FC = () => {
             <Header />
             <div className="resources-container">
                 <section className="section">
-                    <h1>Multitask learning methods</h1>
+                    <h1>Multitask learning</h1>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships using surrogate models</a>
@@ -16,14 +18,20 @@ const Resources: React.FC = () => {
                         <li>
                             <a href="https://github.com/VirtuosoResearch/boosting-multitask-learning-on-graphs" target="_blank" rel="noopener noreferrer">Multitask learning on graph-structured data</a>
                         </li>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/ScalableMTL" target="_blank" rel="noopener noreferrer">Scaling up multitask learning using a linearization technique</a>
+                        </li>
                     </ul>
-                    <h1>Fine-tuning and robustness</h1>
+                    <h1>Fine-tuning</h1>
                     <ul>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
+                            <a href="https://github.com/VirtuosoResearch/EnsembleLoRA" target="_blank" rel="noopener noreferrer">EnsembleLoRA</a>
                         </li>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Graph neural networks</a>
+                            <a href="https://github.com/VirtuosoResearch/Scalable-finetuning" target="_blank" rel="noopener noreferrer">GradEx</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/noise-stability-optimization" target="_blank" rel="noopener noreferrer">Noise stability optimization</a>
                         </li>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Regularized-Self-Labeling" target="_blank" rel="noopener noreferrer">Regularization methods for fine-tuning</a>
@@ -32,10 +40,22 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization using Hessian</a>
                         </li>                        
                     </ul>
-                    <h1>References</h1>
+										<h1>Graph neural networks</h1>
+										<ul>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization</a>
+                        </li>
+										</ul>
+										<h1>Data augmentation</h1>
+										<ul>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/Tree-data-augmentation" target="_blank" rel="noopener noreferrer">A simple, tree-structured data augmentation scheme</a>
+                        </li>
+										</ul>
+                    <h1>Pointers</h1>
                     <ul>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications in language models</a>
+                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications</a>
                         </li>
                     </ul>
                 </section>
@@ -52,6 +72,15 @@ const Resources: React.FC = () => {
                     </ul>
                 </section>
 
+                <section className="section">
+                    <h3>Course materials</h3>
+                    <ul>
+                        <li>
+                            <a href="/CS4100.html" target="_blank" rel="noopener noreferrer">CS4100 Artificial Intelligence (Fall 2025) </a>
+                        </li>
+                    </ul>
+                </section>
+
                 {/*<section className="section">
                     <h3>Articles</h3>
                     <ul>
@@ -63,11 +92,15 @@ const Resources: React.FC = () => {
                         </li>
                     </ul>
                 </section>*/}
-                <div className="section">
-                    <h2>Contact</h2>
-                    <p>We are actively looking for students to join our research projects. If you have ideas, we would love to chat. You may take a look at our recent papers and projects first. The ideal student should to be self-motivated, and have a strong background in mathematics and/or programming.</p>
-                    <p><strong>Email:</strong> hongyang90@gmail.com</p>
-                </div>
+
+                <section className="section">
+                    <h1>Presentation materials and group photos</h1>
+                    Here are some of our conference posters and group photos.
+                    <ImageSlideshow/>
+					<p> Here are several recorded talks. </p>
+                    <VideoSlideshow/>
+					<p> We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback! </p>
+                </section>
             </div>
         </div>
     );

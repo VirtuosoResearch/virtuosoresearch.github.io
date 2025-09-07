@@ -1,56 +1,44 @@
 import React from 'react';
 import './News.css';
+import { Link } from 'react-router-dom';
 
 const News: React.FC = () => {
+
+    const latestNewsItems = [
+        {
+            date: "Jun, 2025",
+            content: ""
+        },
+    ];
+
     return (
         <div className="news">
             <h2>Recent Updates</h2>
-            <div className="news-item">
-                <div className="news-date">Apr, 2024</div>
-                <p> We are looking for undergraduate students to join our team as part of Northeastern's coop program </p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Apr, 2024</div>
-                <p> We are glad that there'll be two students joining as CS PhD in the upcoming fall </p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Mar, 2024</div>
-                <p> A <a href="https://www.hongyangzhang.com/mtl_slides.pdf">talk slide</a> that summarizes our work on developing multitask neural networks over the past few years! </p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Feb, 2024</div>
-                <p> We are working on organizing a session at INFORMS 2024, about "Multitask and federated learning: Challenges of optimization under heterogeneity" (along with Prof. T. Yang from TAMU) </p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Jan, 2024</div>
-                <p> Hongyang is excited to serve as a meta-reviewer of ICML 2024! </p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Dec, 2023</div>
-                <p>Our paper on the traffic accident analysis using graph neural networks is now on <a href="https://arxiv.org/abs/2311.00164">arxiv!</a>
- </p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Nov, 2023</div>
-                <p>We will present a research progress about designing clustering methods for instruction fine-tuning at NeurIPS Workshop on instruction tuning and instruction following.</p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Oct, 2023</div>
-                <p>Our group website is launched!</p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Sep, 2023</div>
-                <p>One paper accepted into NeurIPS'23 (Datasets and Benchmarks track): Congrats Abhinav, Dongyue, and Haotian! We introduce a dataset of traffic accident labels and validate the efficiency of graph neural networks for predicting accident occurrence.</p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Sep, 2023</div>
-                <p>Welcome to Dr. Mahdi Haghifam, joining Northeastern from University of Toronto, and Kailai Chen, visiting from Xi'an Jiao Tong University!</p>
-            </div>
-            <div className="news-item">
-                <div className="news-date">Aug, 2023</div>
-                <p>Dongyue presented a paper at KDD, Long Beach, about a new method for multitask learning on graph-structured data, the main idea being a clustering and boosting procedure.</p>
-            </div>
-            <p><a href="/allnews" className="news-link">... see all News</a></p>
+		
+		<div className="news-item">
+			<div className="news-date">Jun, 2025</div>
+			<p> Excited that our project on <a href="https://arxiv.org/abs/2010.11750">transfer learning random matrices</a> is accepted to JMLR! Thanks to the reviewers and editors for great feedback! </p>
+		</div>
+	
+		<div className="news-item">
+			<div className="news-date">May, 2025</div>
+			<p> A new paper out on <a href="https://arxiv.org/abs/2505.21930">an efficient ensemble method for fine-tuning language models</a>! </p>
+		</div>
+		
+		<div className="news-item">
+			<div className="news-date">Apr, 2025</div>
+			<p> Welcome Minxuan Duan (joining from U-Chicago) to our lab as a PhD student in the fall! </p>
+		</div>
+	        <div className="news-item">
+		        <div className="news-date">Oct, 2024</div>
+			<p> We're looking for one or two Ph.D. students to join our lab in the upcoming season. If you are interested, please mention my name in your <a href="https://www.khoury.northeastern.edu/apply/phd-apply/">CS PhD application as potential advisor</a>. You can also send me an email about your application (I may not have the capacity to respond to every email request). Students coming from underrepresented demographics may be eligible for a one-year departmental PhD fellowship. </p>
+		</div>
+	        <div className="news-item">
+		        <div className="news-date">Sep, 2024</div>
+			<p> New paper at EMNLP on a scalable finetuning approach tested on a wide range of language models, as well as a <a href="http://arxiv.org/abs/2306.08553">two-point gradient estimate</a> for finding flat solutions in loss surfaces at TMLR </p>
+		</div>
+
+            <p> <Link to="/allnews" className="news-link">See all news</Link> </p>
         </div>
     );
 };

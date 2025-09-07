@@ -1,15 +1,20 @@
+/* AllNews.css */
+
 .allnews-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+		display: flex;
+    padding: 100;
 }
 
 .centered-title {
     text-align: center;
+		display: flex;
 }
 
 .news-list {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .news-item {

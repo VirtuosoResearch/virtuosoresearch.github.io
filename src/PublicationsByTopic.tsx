@@ -9,12 +9,16 @@ const PublicationsByTopic: React.FC = () => {
     
     //order the unique topics from the publications
     const topicOrder = [
-        'Algorithms, Learning Theory, Generalization Bounds',
-        'Multitask Learning, Fine-Tuning, Robustness',
-        'Graph Neural Networks, Social Networks',
-        'Algorithmic game Theory',
+		'Data Augmentation',
+		'Fine-Tuning',        
+		'Generalization',
+        'Machine Learning Theory',
+        'Mobility Networks',
+		'Multitask Learning',
+		'Robustness',
+		'Transfer Learning',
+        'Transportation Networks',
     ];
-
     //get the unique topics from the publications and sort them based on the predefined order
     const uniqueTopics = [...new Set(publications.map((pub) => pub.topic))]
         .filter((topic) => topicOrder.includes(topic))
