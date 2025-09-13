@@ -121,15 +121,15 @@ const Group: React.FC = () => {
 //                imageSrc: "default.jpg", // Replace with actual image path
 //                link: "https://www.linkedin.com/in/canhenortheastern/"
 //            },
-            {
-                name: "Xin Wang",
-                position: "M.S.",
-                details: [
-                    "B.S., Nanjing University"
-                ],
-                imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
-                link: "/"
-            },
+//            {
+//                name: "Xin Wang",
+//                position: "M.S.",
+//                details: [
+//                    "B.S., Nanjing University"
+//                ],
+//                imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
+//                link: "/"
+//            },
             {
                 name: "Youran Ye",
                 position: "M.S.",
