@@ -17,7 +17,7 @@ const News: React.FC = () => {
 		
 		<div className="news-item">
 			<div className="news-date">Oct, 2025</div>
-			<p> Invited talk at INFORMS 2025, on <a href="/src/files/hessian_present_informs.pdf">Label-Invariant Hessian Regularization Mitigates Grokking in Mathematical Reasoning</a>. </p>
+			<p> Presenting our recent work on <a href="./talks/grokking.pdf">a Hessian perspective of grokking</a>, and <a href="./talks/icl.pdf">in-context learning</a> at INFORMS 2025 </p>
 		</div>
 		
 		<div className="news-item">
