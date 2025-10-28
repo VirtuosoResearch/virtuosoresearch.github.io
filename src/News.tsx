@@ -17,7 +17,7 @@ const News: React.FC = () => {
 		
 		<div className="news-item">
 			<div className="news-date">Oct, 2025</div>
-			<p> Presenting our recent work on <a href="./talks/grokking.pdf">a Hessian perspective of grokking</a>, and <a href="./talks/icl.pdf">in-context learning</a> at INFORMS 2025 </p>
+			<p> Presenting our recent work on <a href="./talks/grokking.pdf">a Hessian perspective of grokking</a>, and <a href="./talks/ICL.pdf">in-context learning</a> at INFORMS 2025 </p>
 		</div>
 		
 		<div className="news-item">
