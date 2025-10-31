@@ -10,7 +10,7 @@ const Resources: React.FC = () => {
             <Header />
             <div className="resources-container">
                 <section className="section">
-                    <h1>Multitask learning</h1>
+                    <h3>Multitask learning</h3>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships using surrogate models</a>
@@ -22,7 +22,7 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/ScalableMTL" target="_blank" rel="noopener noreferrer">Scaling up multitask learning using a linearization technique</a>
                         </li>
                     </ul>
-                    <h1>Fine-tuning</h1>
+                    <h3>Fine-tuning</h3>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/EnsembleLoRA" target="_blank" rel="noopener noreferrer">EnsembleLoRA</a>
@@ -52,7 +52,7 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Tree-data-augmentation" target="_blank" rel="noopener noreferrer">A simple, tree-structured data augmentation scheme</a>
                         </li>
 										</ul>
-                    <h1>Pointers</h1>
+                    <h3>Pointers</h3>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications</a>
@@ -94,7 +94,7 @@ const Resources: React.FC = () => {
                 </section>*/}
 
                 <section className="section">
-                    <h1>Presentation materials and group photos</h1>
+                    <h3>Presentation materials and group photos</h3>
                     Here are some of our conference posters and group photos.
                     <ImageSlideshow/>
 					<p> Here are several recorded talks. </p>
