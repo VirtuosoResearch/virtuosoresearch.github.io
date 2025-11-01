@@ -16,6 +16,11 @@ const News: React.FC = () => {
             <h2>Recent Updates</h2>
 		
 		<div className="news-item">
+			<div className="news-date">Oct, 2025</div>
+			<p> Presenting our recent work on <a href="./talks/grokking.pdf">a Hessian perspective of grokking</a>, and <a href="./talks/ICL.pdf">in-context learning</a> at INFORMS 2025 </p>
+		</div>
+		
+		<div className="news-item">
 			<div className="news-date">Jun, 2025</div>
 			<p> Excited that our project on <a href="https://arxiv.org/abs/2010.11750">transfer learning random matrices</a> is accepted to JMLR! Thanks to the reviewers and editors for great feedback! </p>
 		</div>
