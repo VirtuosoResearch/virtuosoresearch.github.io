@@ -40,13 +40,13 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization using Hessian</a>
                         </li>                        
                     </ul>
-										<h1>Graph neural networks</h1>
+				    <h3>Graph neural networks</h3>
 										<ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization</a>
                         </li>
 										</ul>
-										<h1>Data augmentation</h1>
+					<h3>Data augmentation</h3>
 										<ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Tree-data-augmentation" target="_blank" rel="noopener noreferrer">A simple, tree-structured data augmentation scheme</a>
