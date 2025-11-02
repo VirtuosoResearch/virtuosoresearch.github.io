@@ -72,6 +72,26 @@ const Resources: React.FC = () => {
                     </ul>
                 </section>
 
+
+                <section className="section">
+                    <h3>Talks</h3>
+                    <p>Here are some of our talk slides</p>
+                    <ul>
+                        <li>
+                            <a href="/talks/EnsembleLoRA_v2.pdf" target="_blank" rel="noopener noreferrer">Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</a>
+                        </li>    
+                        <li>
+                            <a href="/talks/grokking.pdf" target="_blank" rel="noopener noreferrer">Label-Invariant Hessian Regularization Mitigates Grokking in Mathematical Reasoning</a>
+                        </li>                      
+                        <li>
+                            <a href="/talks/ICL.pdf" target="_blank" rel="noopener noreferrer">Scaling Language Model Inference via Gradient Estimation</a>
+                        </li>                          
+                        <li>
+                            <a href="/talks/GradSel.pdf" target="_blank" rel="noopener noreferrer">Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation</a>
+                        </li>                      
+                    </ul>
+                </section>
+
                 <section className="section">
                     <h3>Course materials</h3>
                     <ul>
@@ -99,21 +119,6 @@ const Resources: React.FC = () => {
                     <ImageSlideshow/>
 					<p> Here are several recorded talks. </p>
                     <VideoSlideshow/>
-                    <p>Here are some of our talk slides</p>
-                    <ul>
-                        <li>
-                            <a href="/talks/EnsembleLoRA_v2.pdf" target="_blank" rel="noopener noreferrer">Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</a>
-                        </li>    
-                        <li>
-                            <a href="/talks/grokking.pdf" target="_blank" rel="noopener noreferrer">Label-Invariant Hessian Regularization Mitigates Grokking in Mathematical Reasoning</a>
-                        </li>                      
-                        <li>
-                            <a href="/talks/ICL.pdf" target="_blank" rel="noopener noreferrer">Scaling Language Model Inference via Gradient Estimation</a>
-                        </li>                          
-                        <li>
-                            <a href="/talks/GradSel.pdf" target="_blank" rel="noopener noreferrer">Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation</a>
-                        </li>                      
-                    </ul>
 					<p> We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback! </p>
                 </section>
             </div>
