@@ -78,9 +78,6 @@ const Resources: React.FC = () => {
                     <p>Here are some of our talk slides</p>
                     <ul>
                         <li>
-                            <a href="/talks/GradEx_v2.pdf" target="_blank" rel="noopener noreferrer">Scalable Fine-tuning from Multiple Data Sources: A First-Order Approximation Approach</a>
-                        </li>    
-                        <li>
                             <a href="/talks/EnsembleLoRA_v2.pdf" target="_blank" rel="noopener noreferrer">Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</a>
                         </li>    
                         <li>
@@ -91,7 +88,7 @@ const Resources: React.FC = () => {
                         </li>                          
                         <li>
                             <a href="/talks/GradSel.pdf" target="_blank" rel="noopener noreferrer">Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation</a>
-                        </li>        
+                        </li>                      
                     </ul>
                 </section>
 
