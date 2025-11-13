@@ -1,6 +1,15 @@
 const publications = [
     {
         year: 2025,
+        title: "Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation",
+        link: "https://arxiv.org/abs/2508.19999",
+        authors: "Ziniu Zhang, Zhenshuo Zhang, Dongyue Li, Lu Wang, Jennifer Dy, Hongyang R. Zhang",
+        publishingSite: "EMNLP",
+        date: "2025",
+        topic: "Multitask Learning",
+    },
+    {
+        year: 2025,
         title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
         link: "https://arxiv.org/abs/2010.11750",
         authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, Weijie Su",
