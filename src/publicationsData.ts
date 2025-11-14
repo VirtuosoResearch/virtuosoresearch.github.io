@@ -1,5 +1,14 @@
 const publications = [
     {
+        year: 2026,
+        title: "Scalable Multi-Objective and Meta Reinforcement Learning via Gradient Estimation",
+        link: "",
+        authors: "Zhenshuo Zhang, Minxuan Duan, Youran Ye, Hongyang R. Zhang",
+        publishingSite: "AAAI",
+        date: "2026",
+        topic: "Multitask Learning",
+    },
+    {
         year: 2025,
         title: "Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation",
         link: "https://arxiv.org/abs/2508.19999",
