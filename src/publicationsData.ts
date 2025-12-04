@@ -2,7 +2,7 @@ const publications = [
     {
         year: 2026,
         title: "Efficiently Learning Branching Networks for Multitask Algorithmic Reasoning",
-        link: "",
+        link: "https://arxiv.org/abs/2512.01113",
         authors: "Dongyue Li, Zhenshuo Zhang, Minxuan Duan, Edgar Dobriban, Hongyang R. Zhang",
         publishingSite: "KDD",
         date: "2026",
@@ -11,7 +11,7 @@ const publications = [
     {
         year: 2026,
         title: "Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation",
-        link: "",
+        link: "https://arxiv.org/abs/2512.02920",
         authors: "Ziniu Zhang, Minxuan Duan, Haris N. Koutsopoulos, Hongyang R. Zhang",
         publishingSite: "KDD (Datasets)",
         date: "2026",
@@ -29,7 +29,7 @@ const publications = [
     {
         year: 2025,
         title: "One-Sided Matrix Completion from Ultra-Sparse Samples",
-        link: "",
+        link: "https://openreview.net/forum?id=kQc2GfNWFm",
         authors: "Hongyang R. Zhang, Zhenshuo Zhang, Huy L. Nguyen, Guanghui Lan",
         publishingSite: "NeurIPS workshop on optimization and ML",
         date: "2025",

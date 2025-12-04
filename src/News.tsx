@@ -14,7 +14,17 @@ const News: React.FC = () => {
     return (
         <div className="news">
             <h2>Recent Updates</h2>
-		
+
+		<div className="news-item">
+			<div className="news-date">Nov, 2025</div>
+			<p> New papers out: <ul>
+				<li><a href="https://arxiv.org/abs/2512.01113">Understanding algorithmic reasoning</a>,</li>
+				<li><a href="https://arxiv.org/abs/2512.02920">A satellite imaging dataset</a>, and</li>
+				<li><a href="https://arxiv.org/abs/2511.12779">An algorithm for multi-objective RL</a>.</li>
+			</ul>
+			</p>
+		</div>
+
 		<div className="news-item">
 			<div className="news-date">Oct, 2025</div>
 			<p> Presenting our recent work on <a href="./talks/grokking.pdf">a Hessian perspective of grokking</a>, and <a href="./talks/ICL.pdf">in-context learning</a> at INFORMS 2025 </p>
