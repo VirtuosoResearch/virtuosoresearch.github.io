@@ -1,5 +1,50 @@
 const publications = [
     {
+        year: 2026,
+        title: "Efficiently Learning Branching Networks for Multitask Algorithmic Reasoning",
+        link: "https://arxiv.org/abs/2512.01113",
+        authors: "Dongyue Li, Zhenshuo Zhang, Minxuan Duan, Edgar Dobriban, Hongyang R. Zhang",
+        publishingSite: "KDD",
+        date: "2026",
+        topic: "LLM Inference and Reasoning",
+    },
+    {
+        year: 2026,
+        title: "Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation",
+        link: "https://arxiv.org/abs/2512.02920",
+        authors: "Ziniu Zhang, Minxuan Duan, Haris N. Koutsopoulos, Hongyang R. Zhang",
+        publishingSite: "KDD (Datasets)",
+        date: "2026",
+        topic: "Road Safety",
+    },
+    {
+        year: 2026,
+        title: "Scalable Multi-Objective and Meta Reinforcement Learning via Gradient Estimation",
+        link: "https://arxiv.org/abs/2511.12779",
+        authors: "Zhenshuo Zhang, Minxuan Duan, Youran Ye, Hongyang R. Zhang",
+        publishingSite: "AAAI",
+        date: "2026",
+        topic: "Reinforcement Learning",
+    },
+    {
+        year: 2025,
+        title: "One-Sided Matrix Completion from Ultra-Sparse Samples",
+        link: "https://openreview.net/forum?id=kQc2GfNWFm",
+        authors: "Hongyang R. Zhang, Zhenshuo Zhang, Huy L. Nguyen, Guanghui Lan",
+        publishingSite: "NeurIPS workshop on optimization and ML",
+        date: "2025",
+        topic: "Nonconvex Optimization",
+    },    
+    {
+        year: 2025,
+        title: "Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation",
+        link: "https://arxiv.org/abs/2508.19999",
+        authors: "Ziniu Zhang, Zhenshuo Zhang, Dongyue Li, Lu Wang, Jennifer Dy, Hongyang R. Zhang",
+        publishingSite: "EMNLP",
+        date: "2025",
+        topic: "LLM Inference and Reasoning",
+    },
+    {
         year: 2025,
         title: "Precise High-Dimensional Asymptotics for Quantifying Heterogeneous Transfers",
         link: "https://arxiv.org/abs/2010.11750",
@@ -24,7 +69,7 @@ const publications = [
         authors: "Hongyang R. Zhang, Dongyue Li, and Haotian Ju",
         publishingSite: "TMLR",
         date: "2024",
-        topic: "Generalization",
+        topic: "Hessian and Regularization",
     },
     {
         year: 2024,
@@ -60,7 +105,7 @@ const publications = [
         authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, and Hongyang R. Zhang",
         publishingSite: "NeurIPS, Datasets and Benchmarks Track",
         date: "2023",
-        topic: "Transportation Networks",
+        topic: "Road Safety",
     },
 //    {
 //        year: 2023,
@@ -105,7 +150,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, Aneesh Sharma, and Hongyang R. Zhang",
         publishingSite: "AISTATS",
         date: "2023",
-        topic: "Generalization",
+        topic: "Sample Complexities",
     },
     {
         year: 2023,
@@ -132,7 +177,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, and Hongyang R. Zhang",
         publishingSite: "ICML",
         date: "2022",
-        topic: "Fine-Tuning",
+        topic: "Hessian and Regularization",
     },
     {
         year: 2022,
@@ -141,7 +186,7 @@ const publications = [
         authors: "Michael Zhang, Nimit Sohoni, Hongyang R. Zhang, Chelsea Finn, and Christopher Ré",
         publishingSite: "ICML",
         date: "2022",
-        topic: "Robustness",
+        topic: "Contrastive Learning",
     },
     {
         year: 2022,
@@ -159,7 +204,7 @@ const publications = [
         authors: "Dongyue Li and Hongyang R. Zhang",
         publishingSite: "NeurIPS",
         date: "2021",
-        topic: "Fine-Tuning",
+        topic: "Hessian and Regularization",
     },
     {
         year: 2021,
@@ -177,7 +222,7 @@ const publications = [
         authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
         publishingSite: "COLT",
         date: "2020",
-        topic: "Gradient Descent",
+        topic: "Nonconvex Optimization",
     },
     {
         year: 2020,
