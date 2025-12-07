@@ -35,6 +35,7 @@ const App: React.FC = () => {
         <Route path="/blogs/blog/DDPMLearningNote" element={<DDPMLearningNote />} />
         <Route path="/blogs/blog/EnsembleLoRANote" element={<EnsembleLoRANote />} />
         <Route path="/blogs/blog/NoteJune" element={<NoteJune />} />
+        <Route path="/blogs/blog/MMTraCENote" element={<EnsembleLoRANote />} />
       </Routes>
     </HashRouter>
   );
