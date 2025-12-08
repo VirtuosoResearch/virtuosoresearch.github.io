@@ -48,13 +48,22 @@ MMTraCE combines several real-world data sources to describe both the structure 
   <img src="/images/mmtrace/stat2.png" style="width:100%; height:auto;" />
 </div>
 
-**statistics** of the total number of edges, average edge length in meters, road network density, availability of traffic volume, period of accident records, total number of accident records, and total number of satellite images. 
+**Statistics** of the total number of edges, average edge length in meters, road network density, availability of traffic volume, period of accident records, total number of accident records, and total number of satellite images. 
 
 <div style="text-align: center; margin-bottom: 1rem;">
   <img src="/images/mmtrace/road_count.png" style="max-width:70%; height:auto;" />
 </div>
 
 **The proportion of different road types among six states' road networks.**  Residential roads account for the vast majority of the total, making up approximately 74.5% of all roads. Other types, such as tertiary, secondary, and primary, contribute much smaller proportions by comparison.
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); text-align: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+  <img src="/images/mmtrace/accident_MA-1.png" style="width:100%; height:auto;" />
+  <img src="/images/mmtrace/accident_IA-1.png" style="width:100%; height:auto;" />
+  <img src="/images/mmtrace/accident_DE-1.png" style="width:100%; height:auto;" />
+  <img src="/images/mmtrace/accident_MD-1.png" style="width:100%; height:auto;" />
+</div>
+
+The average number of **accidents per month** for each year in Massachusetts, Iowa, Delaware, and Maryland. The sharp drop in 2020 is due to the impact of COVID-19.
 
 ## Main Results
 
@@ -64,6 +73,12 @@ MMTraCE combines several real-world data sources to describe both the structure 
 
 **Main results of GNNs, vision models, and multimodal fusion strategies.** The performance is evaluated using the mean absolute error (MAE) and area under the ROC curve (AUROC) on the test split.        
 **A leave-one-out analysis is also attached.** To account for variability, each experiment is repeated with three different random seeds, and we report the averaged results along with standard deviations.
+
+<div style="text-align: center; margin-bottom: 1rem;">
+  <img src="/images/mmtrace/transfer.png" style="max-width:32%; height:auto;" />
+</div>
+
+**Cross-state AUROC performance of the GIN + MoE model**, computed over six states. Each entry shows the score when training on one state (represented by rows) and testing on another state (represented by columns). Darker colors indicate better transferability.
 
 ## Causal Analysis
 
@@ -82,12 +97,6 @@ MMTraCE combines several real-world data sources to describe both the structure 
 </div>
 
 **Average treatment effect on the treated (ATT) among all six states.** We analyze the effect of seasonal variation, road type, and precipitation. We vary for different years to compute the mean and standard deviations.
-
-<div style="text-align: center; margin-bottom: 1rem;">
-  <img src="/images/mmtrace/transfer.png" style="max-width:35%; height:auto;" />
-</div>
-
-**Cross-state AUROC performance of the GIN + MoE model**, computed over six states. Each entry shows the score when training on one state (represented by rows) and testing on another state (represented by columns). Darker colors indicate better transferability.
 
 ## Contact
 
