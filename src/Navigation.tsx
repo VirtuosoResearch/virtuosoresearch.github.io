@@ -9,6 +9,7 @@ const Navigation: React.FC = () => {
         <nav>
             <ul className="nav-list">
                 <li><Link to="/" className="nav-link">About</Link></li>
+                <li><Link to="/blogs" className="nav-link">Blogs</Link></li>
                 <li><Link to="/people" className="nav-link">People</Link></li>
                 <li className="nav-dropdown">
                     <span className="nav-link">Publications</span>
@@ -18,7 +19,7 @@ const Navigation: React.FC = () => {
                     </div>
                 </li>
                 <li><Link to="/resources" className="nav-link">Resources</Link></li>
-                <li><Link to="/blogs" className="nav-link">Blogs</Link></li>
+                <li><Link to="/talks" className="nav-link">Talks</Link></li>
             </ul>
         </nav>
     );

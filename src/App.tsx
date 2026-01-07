@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import HomePage from './HomePage';
 import People from './People';
 import ResearchBlogs from './Blogs';
+import Talks from './Talks';
 import PublicationsByYear from './PublicationsByYear';
 import PublicationsByTopic from './PublicationsByTopic';
 import AllNews from './AllNews';
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/people" element={<People />} />
         <Route path="/blogs" element={<ResearchBlogs />} />
+        <Route path="/talks" element={<Talks />} />
         <Route path="/publications" element={<PublicationsByYear />} />
         <Route path="/publications/year" element={<PublicationsByYear />} />
         <Route path="/publications/topic" element={<PublicationsByTopic />} />

@@ -13,7 +13,7 @@ const publications = [
         title: "Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation",
         link: "https://arxiv.org/abs/2512.02920",
         authors: "Ziniu Zhang, Minxuan Duan, Haris N. Koutsopoulos, Hongyang R. Zhang",
-        publishingSite: "KDD (Datasets)",
+        publishingSite: "KDD",
         date: "2026",
         topic: "Road Safety",
     },
