@@ -33,8 +33,18 @@ const Talks: React.FC = () => {
         <div>
         <Header />
             <div className="blog-container">
+                <h1 style={{ fontSize: '28px', fontWeight: 'bold', color: '#333', marginBottom: '20px' }}>
+                    Northeastern University Fundamental Machine Learning Seminar
+                </h1>
+                <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
+                    News:
+                </h2>
+                <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
+                    <li><a href="https://chong-l.github.io/">Chong Liu</a> will give a talk soon.</li>
+                    <li>Join our email list to get notified of speakers and livestream links every week.</li>
+                </ul>
                 {/* Dec 17, 2025 - Zeyu Jia */}
-                <div style={{ marginBottom: '30px' }}>
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
                         onClick={toggleAbstract1}
                         style={{ 
@@ -46,9 +56,8 @@ const Talks: React.FC = () => {
                     >
                         Theoretical Foundations of Outcome-Based Reinforcement Learning
                     </h2>
-                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Wednesday, Dec 17, 2025 @ 1-2 p.m. (lunch at 12:30pm)</p>
-                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Zeyu Jia</p>
-                    <p style={{ margin: '5px 0' }}><strong>Biography:</strong> Zeyu Jia is a final-year PhD student in the Department of Electrical Engineering and Computer Science at MIT, where he is affiliated with the Laboratory for Information and Decision Systems (LIDS). Prior to joining MIT, he received his bachelor's degree from the School of Mathematical Sciences at Peking University. His research interests include machine learning theory, with a focus on reinforcement learning theory, statistics, and information theory.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Wednesday, Dec 17, 2025 @ 1-2 p.m.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Zeyu Jia (MIT)</p>
                     {showAbstract1 && (
                         <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
                             <p style={{ margin: '0', lineHeight: '1.6' }}>
@@ -56,11 +65,12 @@ const Talks: React.FC = () => {
                             </p>
                             <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>This talk presents two complementary perspectives on this question. First, we examine the offline setting, where a novel Change of Trajectory Measure Lemma reveals that outcome-based reinforcement learning is statistically no more difficult than per-step-based reinforcement learning under standard coverage assumptions. This suggests that observed performance gaps stem from algorithmic limitations rather than fundamental statistical barriers.</p>
                             <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>Second, we explore the online learning setting, presenting provably sample-efficient algorithms that achieve strong guarantees using only outcome-based feedback. However, we also identify fundamental separations: certain MDPs exhibit exponential gaps between outcome-based and step-level feedback, revealing precisely when and why process supervision truly matters.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Zeyu Jia is a final-year PhD student in the Department of Electrical Engineering and Computer Science at MIT, where he is affiliated with the Laboratory for Information and Decision Systems (LIDS). Prior to joining MIT, he received his bachelor's degree from the School of Mathematical Sciences at Peking University. His research interests include machine learning theory, with a focus on reinforcement learning theory, statistics, and information theory.</p>
                         </div>
                     )}
                 </div>
                 {/* Oct 23, 2025 - Vatsal Sharan */}
-                <div style={{ marginBottom: '30px' }}>
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
                         onClick={toggleAbstract2}
                         style={{ 
@@ -73,7 +83,7 @@ const Talks: React.FC = () => {
                         Using Algorithms to Understand Transformers (and Using Transformers to Understand Algorithms)
                     </h2>
                     <p style={{ margin: '5px 0' }}><strong>Time:</strong> Thursday, Oct 23, 2025 @ 3-4 p.m.</p>
-                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Vatsal Sharan (USC)</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Vatsal Sharan (University of Southern California)</p>
                     {showAbstract2 && (
                         <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
                             <p style={{ margin: '0', lineHeight: '1.6' }}>
@@ -83,7 +93,7 @@ const Talks: React.FC = () => {
                     )}
                 </div>
                 {/* April 15, 2025 - Abhishek Panigrahi */}
-                <div style={{ marginBottom: '30px' }}>
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
                         onClick={toggleAbstract3}
                         style={{ 
@@ -96,7 +106,7 @@ const Talks: React.FC = () => {
                         Efficient "curriculum-based" training: Theoretical modeling through synthetic testbeds
                     </h2>
                     <p style={{ margin: '5px 0' }}><strong>Time:</strong> Tuesday, April 15, 2025 @ 2-3 p.m.</p>
-                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Abhishek Panigrahi (fifth-year PhD student from Princeton University)</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Abhishek Panigrahi (Princeton University)</p>
                     {showAbstract3 && (
                         <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
                             <p style={{ margin: '0', lineHeight: '1.6' }}>
@@ -113,7 +123,7 @@ const Talks: React.FC = () => {
                     )}
                 </div>
                 {/* April 4, 2024 - Hongfu Liu */}
-                <div style={{ marginBottom: '30px' }}>
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
                         onClick={toggleAbstract5}
                         style={{ 
@@ -126,18 +136,18 @@ const Talks: React.FC = () => {
                         Goal-Oriented Data-Centric Learning
                     </h2>
                     <p style={{ margin: '5px 0' }}><strong>Time:</strong> Thursday, April 4, 2024</p>
-                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Hongfu Liu</p>
-                    <p style={{ margin: '5px 0' }}><strong>Biography:</strong> Dr. Hongfu Liu is an Assistant Professor of Computer Science at Brandeis University. His research interests lie in core machine learning and AI-assisted applications. He has published over 100 papers (e.g., NeurIPS, ICLR, ICML, IJCAI, AAAI, KDD, ICDM, SDM, CIKM, CVPR, ICCV, TPAMI, and TKDE). These publications have received over 3,500 citations with an h-index of 34 according to Google Scholar as of March 2024. He has also won several awards including the First Place Award in MS-Celel-1M Grand Challenge in ICCV 2017, the NVIDIA CCS Best Student Paper Award in FG 2021, the 2021 INNS Aharon Katzir Young Investigator Award, the top reviewer in UAI 2022, the highlighted/notable Area Chair in ICLR 2022/2023, and the 2022 Global Top-25 Chinese Young Scholars in AI (Data Mining Area) by Baidu Scholar. He has served as an Associate Editor of IEEE CIM and as an Area Chair of ICLR, ICML, and NeurIPS.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Hongfu Liu (Brandeis University)</p>
                     {showAbstract5 && (
                         <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
                             <p style={{ margin: '0', lineHeight: '1.6' }}>
                             <strong>Abstract:</strong> Data-centric learning focuses on enhancing algorithmic performance from the perspective of the training data. In contrast to model-centric learning, which designs novel algorithms or optimization techniques for performance improvement with fixed training data, data-centric learning operates with a fixed learning algorithm while modifying the training data through trimming, augmenting, or other methods aligned with improving utility. Data-centric learning holds significant potential in many areas such as model interpretation, subset training set selection, data generation, noisy label detection, active learning, and others. In this talk, I will introduce our recent advances in data-centric learning based on influence functions.
                             </p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Dr. Hongfu Liu is an Assistant Professor of Computer Science at Brandeis University. His research interests lie in core machine learning and AI-assisted applications. He has published over 100 papers (e.g., NeurIPS, ICLR, ICML, IJCAI, AAAI, KDD, ICDM, SDM, CIKM, CVPR, ICCV, TPAMI, and TKDE). These publications have received over 3,500 citations with an h-index of 34 according to Google Scholar as of March 2024. He has also won several awards including the First Place Award in MS-Celel-1M Grand Challenge in ICCV 2017, the NVIDIA CCS Best Student Paper Award in FG 2021, the 2021 INNS Aharon Katzir Young Investigator Award, the top reviewer in UAI 2022, the highlighted/notable Area Chair in ICLR 2022/2023, and the 2022 Global Top-25 Chinese Young Scholars in AI (Data Mining Area) by Baidu Scholar. He has served as an Associate Editor of IEEE CIM and as an Area Chair of ICLR, ICML, and NeurIPS.</p>
                         </div>
                     )}
                 </div>
                 {/* Oct 26, 2022 - Pratik Chaudhari */}
-                <div style={{ marginBottom: '30px' }}>
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
                         onClick={toggleAbstract4}
                         style={{ 
@@ -150,8 +160,7 @@ const Talks: React.FC = () => {
                         Does the Data Induce Capacity Control in Deep Learning?
                     </h2>
                     <p style={{ margin: '5px 0' }}><strong>Time:</strong> Wednesday, Oct 26, 2022</p>
-                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Pratik Chaudhari</p>
-                    <p style={{ margin: '5px 0' }}><strong>Biography:</strong> Pratik Chaudhari is an Assistant Professor in Electrical and Systems Engineering and Computer and Information Science at the University of Pennsylvania. He is a member of the GRASP Laboratory. From 2018-19, he was a Senior Applied Scientist at Amazon Web Services and a Postdoctoral Scholar in Computing and Mathematical Sciences at Caltech. Pratik received his PhD (2018) in Computer Science from UCLA, his Master's (2012) and Engineer's (2014) degrees in Aeronautics and Astronautics from MIT. He was a part of NuTonomy Inc. (now Hyundai-Aptiv Motional) from 2014-16. He received the NSF CAREER award and the Intel Rising Star Faculty Award in 2022.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Pratik Chaudhari (University of Pennsylvania)</p>
                     {showAbstract4 && (
                         <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
                             <p style={{ margin: '0', lineHeight: '1.6' }}>
@@ -159,6 +168,7 @@ const Talks: React.FC = () => {
                             </p>
                             <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>We will argue that deep networks are successful because of a characteristic structure in the space of learning tasks. The input correlation matrix for typical tasks has a peculiar ("sloppy") eigenspectrum where, in addition to a few large eigenvalues (salient features), there are a large number of small eigenvalues that are distributed uniformly over a very large range. This structure in the input data is strongly mirrored in the representation learned by the network. A number of quantities such as the Hessian, the Fisher Information Matrix, as well as others such as correlations of activations or Jacobians, are also sloppy. Even if the model class for deep networks is very large, there is only a tiny subset of models that fit such sloppy tasks.</p>
                             <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>Using these ideas, this talk will demonstrate an analytical non-vacuous generalization bound for deep networks that does not use compression. It will also discuss how these ideas can be harnessed into algorithms that learn from unlabeled data optimally.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Pratik Chaudhari is an Assistant Professor in Electrical and Systems Engineering and Computer and Information Science at the University of Pennsylvania. He is a member of the GRASP Laboratory. From 2018-19, he was a Senior Applied Scientist at Amazon Web Services and a Postdoctoral Scholar in Computing and Mathematical Sciences at Caltech. Pratik received his PhD (2018) in Computer Science from UCLA, his Master's (2012) and Engineer's (2014) degrees in Aeronautics and Astronautics from MIT. He was a part of NuTonomy Inc. (now Hyundai-Aptiv Motional) from 2014-16. He received the NSF CAREER award and the Intel Rising Star Faculty Award in 2022.</p>
                             <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>References:</strong></p>
                             <ul style={{ margin: '5px 0 0 0', paddingLeft: '20px', lineHeight: '1.6' }}>
                                 <li style={{ marginBottom: '5px' }}>Does the data induce capacity control in deep learning? Rubing Yang, Jialin Mao, and Pratik Chaudhari. [ICML '22] <a href="https://arxiv.org/abs/2110.14163" target="_blank" rel="noopener noreferrer" style={{ color: '#007BFF' }}>https://arxiv.org/abs/2110.14163</a></li>
@@ -167,6 +177,9 @@ const Talks: React.FC = () => {
                         </div>
                     )}
                 </div>
+                <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
+                    Seminar Hosts: Hongyang Ryan Zhang
+                </h2>
             </div>
         </div>
     );
