@@ -32,11 +32,14 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script>
       MathJax = {
-        loader: {load: ['a11y/semantic-enrich']},
+        loader: {
+          load: ['a11y/semantic-enrich'],
+          require: false
+        },
         options: {
+          enableMenu: false,
           sre: {
             speech: 'shallow'  // one of: 'deep', 'shallow', or 'none'
           },
