@@ -34,14 +34,14 @@ const Talks: React.FC = () => {
         <Header />
             <div className="blog-container">
                 <h1 style={{ fontSize: '28px', fontWeight: 'bold', color: '#333', marginBottom: '20px' }}>
-                    Northeastern University Fundamental Machine Learning Seminar
+                    Northeastern University Statistical/Theoretical Machine Learning Seminar
                 </h1>
                 <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
                     News:
                 </h2>
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><a href="https://chong-l.github.io/">Chong Liu</a> will give a talk soon.</li>
-                    <li>Join our email list to get notified of speakers and livestream links every week.</li>
+                    <li><a href="https://chong-l.github.io/">Chong Liu</a> will give a talk on Jan 22nd.</li>
+                    <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
                 {/* Dec 17, 2025 - Zeyu Jia */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
@@ -178,7 +178,7 @@ const Talks: React.FC = () => {
                     )}
                 </div>
                 <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
-                    Seminar Hosts: Hongyang Ryan Zhang
+                    Seminar Host: Hongyang R. Zhang
                 </h2>
             </div>
         </div>
