@@ -8,6 +8,7 @@ const Talks: React.FC = () => {
     const [showAbstract3, setShowAbstract3] = useState(false);
     const [showAbstract4, setShowAbstract4] = useState(false);
     const [showAbstract5, setShowAbstract5] = useState(false);
+    const [showAbstract6, setShowAbstract6] = useState(false);
 
     const toggleAbstract1 = () => {
         setShowAbstract1(!showAbstract1);
@@ -29,6 +30,10 @@ const Talks: React.FC = () => {
         setShowAbstract5(!showAbstract5);
     };
 
+    const toggleAbstract6 = () => {
+        setShowAbstract6(!showAbstract6);
+    };
+
     return (
         <div>
         <Header />
@@ -40,9 +45,34 @@ const Talks: React.FC = () => {
                     News:
                 </h2>
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
-                    <li><a href="https://chong-l.github.io/">Chong Liu</a> will give a talk on Jan 22nd.</li>
                     <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
+                {/* Jan 22, 2026 - Chong Liu */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2 
+                        onClick={toggleAbstract6}
+                        style={{ 
+                            cursor: 'pointer', 
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        Accelerated Bayesian Optimization for Drug Discovery
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Thursday, Jan 22, 2026 @ 3-4 p.m.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Chong Liu (SUNY Albany)</p>
+                    {showAbstract6 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> Modern drug discovery is a time-consuming, expensive, and high-risk scientific process. A central component is drug screening, which involves sequential decision-making under severe cost and time constraints, where each wet-lab validation experiment can take days or even weeks. Bayesian optimization (BO) is widely used to guide such decisions, but standard BO methods often require too many experimental rounds to be practical for real-world discovery pipelines.
+                            </p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>In this talk, I will present recent advances in my lab on accelerated Bayesian optimization that dramatically reduce the number of experiments needed to identify high-quality drug candidates. The key idea is to reuse knowledge from prior discovery history, such as optimization trajectories, and transfer it to new targets. I will introduce two complementary approaches: one that learns procedure-informed optimization strategy to enable rapid few-shot optimization, and another that provides guaranteed speed-ups by explicitly modeling how new targets differ from previous ones.</p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>Through experiments on drug discovery benchmarks, I will show how these methods converge to promising compounds significantly faster than conventional BO, translating directly into fewer experiments, lower costs, and shorter timelines. The talk will conclude with a discussion of where these methods can be used in more critical applications.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Dr. Chong Liu is an Assistant Professor of Computer Science at the State University of New York at Albany. His research broadly spans machine learning and AI for science, with a focus on Bayesian optimization, drug discovery, and quantum machine learning. His work has been published in leading machine learning venues including ICML, ICLR, AISTATS, UAI, and JMLR, with oral presentations at AAAI and AAMAS. He is an area chair for ICML, ICLR, and AISTATS, and he has organized the AI for Drug Discovery and Development (AI4D3) workshop series since 2023. Dr. Liu received his Ph.D. in Computer Science from University of California, Santa Barbara in 2023 and subsequently spent one year as a Data Science Institute Postdoctoral Scholar at the University of Chicago.</p>
+                        </div>
+                    )}
+                </div>
                 {/* Dec 17, 2025 - Zeyu Jia */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
