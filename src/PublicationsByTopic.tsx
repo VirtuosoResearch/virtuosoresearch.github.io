@@ -9,21 +9,23 @@ const PublicationsByTopic: React.FC = () => {
     
     //order the unique topics from the publications
     const topicOrder = [
-        'Contrastive Learning',
-		'Data Augmentation',
-		'Fine-Tuning',        
-		'Hessian and Regularization',
-        'LLM Inference and Reasoning',
-        'Machine Learning Theory',
-        'Mobility Networks',
-		'Multitask Learning',
-        'Road Safety',
-        'Reinforcement Learning',
-		'Robustness',
-        'Sample Complexities',
-		'Transfer Learning',
-        'Transportation Networks',
-        'Nonconvex Optimization'
+        // 'Contrastive Learning',
+		// 'Data Augmentation',
+		// 'Fine-Tuning',        
+		// 'Hessian and Regularization',
+        // 'LLM Inference and Reasoning',
+        'Optimization Algorithms',
+        'ML Theory',
+        // 'Mobility Networks',
+		'Neural Networks and Generative Models',
+        // 'Road Safety',
+        // 'Reinforcement Learning',
+		// 'Robustness',
+        // 'Sample Complexities',
+		// 'Transfer Learning',
+        'Social Networks and Network Data',
+        'Algorithmic Game Theory',
+        // 
     ];
     //get the unique topics from the publications and sort them based on the predefined order
     const uniqueTopics = [...new Set(publications.map((pub) => pub.topic))]

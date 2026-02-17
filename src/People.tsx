@@ -95,17 +95,17 @@ const Group: React.FC = () => {
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
         },
-				{
-	          name: "Michael Zhang",
+        {
+            name: "Michael Zhang",
             position: "Ph.D.",
             details: [
                 "B.Eng., University of Electronic Science and Technology of China"
             ],
             imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io/"
-				},
-				{
-	          name: "Zhenshuo Zhang",
+        },
+		{
+	        name: "Zhenshuo Zhang",
             position: "Ph.D.",
             details: [
                 "B.Eng., Zhejiang University",
@@ -113,7 +113,7 @@ const Group: React.FC = () => {
             ],
             imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
-				},
+        },
 //            {
 //                name: "Can He",
 //                position: "M.S.",
@@ -131,15 +131,6 @@ const Group: React.FC = () => {
 //                imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
 //                link: "/"
 //            },
-            {
-                name: "Youran Ye",
-                position: "M.S.",
-                details: [
-                    "B.S., Fudan University",
-                ],
-                imageSrc: "portraits/youran.jpg", // Replace with actual image path
-                link: "/"
-            },
 //        {
 //            name: "Mahdi Haghifam",
 //            position: "Postdoc",
@@ -154,12 +145,21 @@ const Group: React.FC = () => {
     
      const alumniData = [
         {
+            name: "Youran Ye",
+            position: "M.S. alumni",
+            details: [
+                "Will be a Ph.D. student in Fall 2026",
+            ],
+            imageSrc: "portraits/youran.jpg", // Replace with actual image path
+            link: "/"
+        },
+        {
             name: "Debankita Basu",
             position: "M.S. alumni",
             details: ["Now working as a data scientist at Health Innovators"],
             imageSrc: "portraits/Debankita_Basu.jpeg",
             link: "https://www.linkedin.com/in/debankitabasu/"
-        },        
+        },
         {
             name: "Haotian Ju",
             position: "M.S. alumni",
@@ -184,7 +184,7 @@ const Group: React.FC = () => {
         {
             name: "Kailai Chen",
             position: "Undergrad alumni",
-            details: ["Will join Northwestern as a Ph.D. student"],
+            details: ["Now a Ph.D. student at Northwestern"],
             imageSrc: "portraits/kailai.jpg",
             link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
