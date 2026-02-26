@@ -50,7 +50,9 @@ For example:
 
 We present three examples of branching GNNs, each designed to learn a pair of algorithms. As shown in the toy graph above, all three algorithms share identical node labels in the first step, so the same initial GNN layer applies to all. BFS and Bellman–Ford continue to share encodings in steps 2 and 3, thus reusing the second layer, while DFS branches out. 
 
-![2](/images/AlgorithmicReasoningNote/branching_examples.png)
+<figure style="text-align:center;">
+  <img src="/images/AlgorithmicReasoningNote/branching_examples.png" alt="pipeline" style="width:100%; max-width:800px;">
+</figure>
 
 The primary challenge in building such a network is determining the optimal structure. If we have $n$ tasks, $L$ layers, and each layer can be split into $k$ branches, the number of possible tree configurations is $k^{nL}$. For even a modest number of tasks and layers, this search space is large, making an exhaustive search impossible. 
 
@@ -73,13 +75,17 @@ Computing the task affinity scores requires training networks for repeatedly on 
 
 Therefore, we replace the repeated training on random subsets with solving logistic regression problems on the gradients of each subset. Crucially, the running time is $O(|S|)$, which involves training the initialization on all tasks and evaluating the gradients on the samples in $S$. We illustrate the procedure in a figure below. 
 
-![2](/images/AlgorithmicReasoningNote/illustration_approach.png)
+<figure style="text-align:center;">
+  <img src="/images/AlgorithmicReasoningNote/illustration_approach.png" alt="pipeline" style="width:80%; max-width:800px;">
+</figure>
 
 ### Learning Branching Structures
 
 Next, we search for a branching network via a top-down procedure. The algorithm begins with a single network with one module per layer. Starting at the first layer, tasks are grouped into $k_1$ clusters, creating $k_1$ modules. If $k_1 = 2$, tasks are split into two groups. The procedure continues recursively: Each group is further split at the next layer. If both are split into two groups, the second layer then contains four modules. This continues until the last layer. We illustrate a splitting of a branching network with GNN as the base model below. 
 
-![2](/images/AlgorithmicReasoningNote/illustration_of_splitting.png)
+<figure style="text-align:center;">
+  <img src="/images/AlgorithmicReasoningNote/illustration_of_splitting.png" alt="pipeline" style="width:100%; max-width:800px;">
+</figure>
 
 In summary, in terms of running time, at each layer, the algorithm takes $O(n)$ time to find a partitioning, since the union of sets is at most $n$. In total, AutoBRANE takes $O(nL)$ time. Regarding memory usage,  suppose the last layer contains $k$ clusters, and at each layer, the number of clusters grows by a constant factor.  Then the total number of nodes in the tree is roughly $k$.
 
@@ -87,7 +93,9 @@ In summary, in terms of running time, at each layer, the algorithm takes $O(n)$ 
 
 When applying our approach, AutoBRANE, to the CLRS benchmark, we find that our approach achieves the best trade-off between error rate, GPU hours, and memory usage, as compared to existing multitask and branching network baselines. We show the results of using MPNN or edge transformers [2] as the base model. AutoBRANE outperforms a single multitask network by 3.7%, demonstrating the effectiveness of branching networks in leveraging positive task transfer. It also achieves the best overall trade-off, reducing the average error rate by 1.2% compared to the strongest baseline, while using 48% fewer GPU hours and 26% less memory.
 
-![2](/images/AlgorithmicReasoningNote/illustration_of_results.png)
+<figure style="text-align:center;">
+  <img src="/images/AlgorithmicReasoningNote/illustration_of_results.png" alt="pipeline" style="width:100%; max-width:800px;">
+</figure>
 
 Moreover, the resulting branching structure aligns well with task similarities in their intermediate steps, revealing three major clusters. The largest includes BFS, Bellman-Ford, and several DFS-based algorithms. Notably, BFS and Bellman-Ford are grouped together, consistent with observations from [4]. Five DFS-related tasks, including topological sort and DAG shortest paths, are clustered around DFS. Prim’s and Dijkstra’s algorithms form a group, reflecting their shared greedy edge-selection strategy. Kruskal’s and Floyd-Warshall are grouped as well, both involving edge selection within components. 
 
