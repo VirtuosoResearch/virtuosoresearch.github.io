@@ -17,7 +17,6 @@ import DDPMLearningNote from './blogs/DDPMLearningNote';
 import EnsembleLoRANote from './blogs/EnsembleLoRANote';
 import NoteJune from './blogs/NoteJune';
 import MMTraCENote from './blogs/MMTraCENote'
-import AlgorithmicReasoningNote from './blogs/AlgorithmicReasoningNote'
 import './App.css'
 
 const App: React.FC = () => {
@@ -40,7 +39,6 @@ const App: React.FC = () => {
         <Route path="/blogs/blog/EnsembleLoRANote" element={<EnsembleLoRANote />} />
         <Route path="/blogs/blog/NoteJune" element={<NoteJune />} />
         <Route path="/blogs/blog/MMTraCENote" element={<MMTraCENote />} />
-        <Route path="/blogs/blog/AlgorithmicReasoningNote" element={<AlgorithmicReasoningNote />} />
       </Routes>
     </HashRouter>
   );

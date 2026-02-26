@@ -110,7 +110,7 @@ If you are interested in more mathematical details or getting started with AutoB
 
 [1] Veličković, Petar, Adrià Puigdomènech Badia, David Budden, Razvan Pascanu, Andrea Banino, Misha Dashevskiy, Raia Hadsell, and Charles Blundell. The CLRS Algorithmic Reasoning Benchmark. ICML 2022.
 
-[2] Li, Dongyue, Zhenshuo Zhang, Minxuan Duan, Edgar Dobriban, and Hongyang R. Zhang. Efficiently Learning Branching Networks for Multitask Algorithmic Reasoning. KDD 2025.
+[2] Li, Dongyue, Zhenshuo Zhang, Minxuan Duan, Edgar Dobriban, and Hongyang R. Zhang. Efficiently Learning Branching Networks for Multitask Algorithmic Reasoning. KDD 2026.
 
 [3] Li, Dongyue, Aneesh Sharma, and Hongyang R. Zhang. Scalable multitask learning using gradient-based estimation of task affinity. KDD 2024.
 
