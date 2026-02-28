@@ -99,9 +99,9 @@ const Group: React.FC = () => {
             name: "Michael Zhang",
             position: "Ph.D.",
             details: [
-                "B.Eng., University of Electronic Science and Technology of China"
+                "B.Eng., University of Electronic Science and Technology"
             ],
-            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
+            imageSrc: "default.jpg", // Replace with actual image path
             link: "https://www.linkedin.com/in/ziniuzhang/"
         },
 		{
