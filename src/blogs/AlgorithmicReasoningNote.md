@@ -245,6 +245,22 @@ It looks like:
 
 Each line indicates which tasks share a module at each layer. Once the structure is generated, we can use the saved tree config to instantiate the branching architecture and train the full model. 
 
+## Discussion of Other Forms of Multi-Step Reasoning
+
+Another category of multi-step reasoning, called **latent multi-hop reasoning**, has also been studied to evaluate large language models in factual information retrieval [5]. This examines how models internally retrieve and utilize intermediate factual knowledge stored in their parameters to answer a question when such information is not explicitly provided in the prompt. 
+
+- For example, we prompt language models to answer the question: "Who is the spouse of the performer of Imagine?"  A latent reasoning in an LLM will first latently identify the performer of Imagine as John Lennon. Then, it uses its knowledge of John Lennon’s spouse to complete the prompt.
+
+Prior work [6] identifies a mechanism for latent two-hop reasoning in which the first hop is resolved in earlier layers through identifying the intermediate answer, which then propagates to later layers to resolve the second hop. 
+
+- In the figure below, their analysis observes evidence of latent reasoning in two-hop queries where (1) during the early layers, the first hop is resolved, and the source entity encodes the intermediate entity, John Lennon. (2) Then, during the middle layers, the information propagates to the last position. (3) During the later layers, the second hop is resolved, and the last token now encodes the target entity, Yoko Ono. 
+
+<figure style="text-align:center;">
+  <img src="../../public/images/AlgorithmicReasoningNote/latent_multihop_reasoning.png" alt="pipeline" style="width:60%; max-width:800px;">
+</figure>
+
+An interpretability method has been proposed to analyze failures in latent multi-hop reasoning by tracing how logits propagate across layers and positions [7]. This analysis shows that errors can arise from conflicts among entity logits extracted in higher layers. It is an intriguing future direction to study whether branching neural networks can capture reasoning over multiple factual knowledge.
+
 ## References
 
 [1] Veličković, Petar, Adrià Puigdomènech Badia, David Budden, Razvan Pascanu, Andrea Banino, Misha Dashevskiy, Raia Hadsell, and Charles Blundell. The CLRS Algorithmic Reasoning Benchmark. ICML 2022.
@@ -255,3 +271,8 @@ Each line indicates which tasks share a module at each layer. Once the structure
 
 [4] Veličković, Petar, Rex Ying, Matilde Padovano, Raia Hadsell, and Charles Blundell. Neural execution of graph algorithms. ICLR 2020.
 
+[5] Yang, Sohee, Elena Gribovskaya, Nora Kassner, Mor Geva, and Sebastian Riedel. Do large language models latently perform multi-hop reasoning? ACL 2024.
+
+[6] Biran, Eden, Daniela Gottesman, Sohee Yang, Mor Geva, and Amir Globerson. Hopping too late: Exploring the limitations of large language models on multi-hop queries. EMNLP 2024.
+
+[7] Yu, Zeping, Yonatan Belinkov, and Sophia Ananiadou. Back attention: Understanding and enhancing multi-hop reasoning in large language models.  EMNLP 2025.
