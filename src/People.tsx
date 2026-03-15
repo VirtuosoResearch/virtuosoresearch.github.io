@@ -182,16 +182,30 @@ const Group: React.FC = () => {
             link: "https://www.linkedin.com/in/yjh849625800/"
         },
         {
+            name: "Minghao Liu",
+            position: "M.S. alumni",
+            details: ["Now a software engineer at Palantir"],
+            imageSrc: "default.jpg",
+            link: "https://www.linkedin.com/in/liuminghao/"
+        },
+        {
+            name: "Haoyu He",
+            position: "Research assistant alumni",
+            details: ["Now a Ph.D. student at Northeastern University in College of Engineering"],
+            imageSrc: "default.jpg",
+            link: "https://he-h.github.io/"
+        },        
+        {
             name: "Kailai Chen",
-            position: "Undergrad alumni",
+            position: "Undergraduate student alumni",
             details: ["Now a Ph.D. student at Northwestern"],
             imageSrc: "portraits/kailai.jpg",
             link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
         {
             name: "Allen Ye",
-            position: "Undergrad alumni",
-            details: ["Now working as an SWE at Tesla"],
+            position: "Undergraduate student alumni",
+            details: ["Now working as a software engineer at Tesla"],
             imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
         }
