@@ -15,6 +15,7 @@ import Resources from './Resources';
 import MTLAndFinetuning from './MTLAndFinetuning';
 import DDPMLearningNote from './blogs/DDPMLearningNote';
 import EnsembleLoRANote from './blogs/EnsembleLoRANote';
+import AlgorithmicReasoningNote from './blogs/AlgorithmicReasoningNote';
 import NoteJune from './blogs/NoteJune';
 import MMTraCENote from './blogs/MMTraCENote'
 import './App.css'
@@ -37,6 +38,7 @@ const App: React.FC = () => {
         <Route path="/mtlandfinetuning" element={<MTLAndFinetuning />} />
         <Route path="/blogs/blog/DDPMLearningNote" element={<DDPMLearningNote />} />
         <Route path="/blogs/blog/EnsembleLoRANote" element={<EnsembleLoRANote />} />
+        <Route path="/blogs/blog/AlgorithmicReasoningNote" element={<AlgorithmicReasoningNote />} />
         <Route path="/blogs/blog/NoteJune" element={<NoteJune />} />
         <Route path="/blogs/blog/MMTraCENote" element={<MMTraCENote />} />
       </Routes>

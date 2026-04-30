@@ -9,6 +9,7 @@ const Talks: React.FC = () => {
     const [showAbstract4, setShowAbstract4] = useState(false);
     const [showAbstract5, setShowAbstract5] = useState(false);
     const [showAbstract6, setShowAbstract6] = useState(false);
+    const [showAbstract7, setShowAbstract7] = useState(false);
 
     const toggleAbstract1 = () => {
         setShowAbstract1(!showAbstract1);
@@ -34,6 +35,10 @@ const Talks: React.FC = () => {
         setShowAbstract6(!showAbstract6);
     };
 
+    const toggleAbstract7 = () => {
+        setShowAbstract7(!showAbstract7);
+    };
+
     return (
         <div>
         <Header />
@@ -47,6 +52,30 @@ const Talks: React.FC = () => {
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
+                {/* Upcoming - Ai Rui */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2
+                        onClick={toggleAbstract7}
+                        style={{
+                            cursor: 'pointer',
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        LLM Aggregation with Higher-Order Information
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Tuesday, March 24, 2026 @ 3-4 p.m.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Ai Rui (MIT)</p>
+                    {showAbstract7 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> With the rise of multi-agent reasoning using large language models, aggregating answers from multiple LLMs has become a central challenge. Most existing approaches rely on simple majority voting, which ignores heterogeneity and correlation across models. In this talk, I will introduce two new aggregation methods - Optimal Weight (OW) and Inverse Surprising Popularity (ISP) - that leverage both first-order and second-order information to produce more reliable collective decisions. I will present theoretical guarantees showing why these methods outperform majority voting, and demonstrate their effectiveness on synthetic data, standard LLM benchmarks, and a real-world healthcare application.
+                            </p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>Together, these results offer practical guidance for designing robust multi-agent LLM systems. This talk is based on joint work with Yuqi Pan, David Simchi-Levi, Milind Tambe and Haifeng Xu.</p>
+                        </div>
+                    )}
+                </div>
                 {/* Jan 22, 2026 - Chong Liu */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2 
