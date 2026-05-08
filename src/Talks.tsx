@@ -10,6 +10,7 @@ const Talks: React.FC = () => {
     const [showAbstract5, setShowAbstract5] = useState(false);
     const [showAbstract6, setShowAbstract6] = useState(false);
     const [showAbstract7, setShowAbstract7] = useState(false);
+    const [showAbstract8, setShowAbstract8] = useState(false);
 
     const toggleAbstract1 = () => {
         setShowAbstract1(!showAbstract1);
@@ -39,12 +40,16 @@ const Talks: React.FC = () => {
         setShowAbstract7(!showAbstract7);
     };
 
+    const toggleAbstract8 = () => {
+        setShowAbstract8(!showAbstract8);
+    };
+
     return (
         <div>
         <Header />
             <div className="blog-container">
                 <h1 style={{ fontSize: '28px', fontWeight: 'bold', color: '#333', marginBottom: '20px' }}>
-                    Northeastern University Statistical/Theoretical Machine Learning Seminar
+                    Machine Learning Foundations Seminar at Northeastern University
                 </h1>
                 <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333', marginBottom: '10px' }}>
                     News:
@@ -52,6 +57,31 @@ const Talks: React.FC = () => {
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
+                {/* Upcoming - Tianjiao Li */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2
+                        onClick={toggleAbstract8}
+                        style={{
+                            cursor: 'pointer',
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        Auto-Conditioned First-Order and Stochastic Optimization Methods
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Thursday, May 14, 2026.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Tianjiao Li (MIT)</p>
+                    {showAbstract8 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> First-order methods are widely used to tackle data science and machine learning problems with complex structures, such as nonconvexity, nonsmoothness, and stochasticity. However, in many real-world scenarios, the problem structure and parameters can be unknown or ambiguous, creating significant challenges for algorithm design and stepsize selection.
+                            </p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>In this talk, I will present a novel class of first-order methods, termed auto-conditioned methods, that are universal for solving various classes of optimization problems without requiring prior knowledge of problem parameters or resorting to any line search or backtracking procedures. In the first part of the talk, we focus on convex optimization and propose a uniformly optimal method for smooth, weakly smooth, and nonsmooth problems. In the second part of the talk, we consider smooth but possibly nonconvex optimization, and propose a novel parameter-free projected gradient method with the best-known unified complexity for convex and nonconvex problems. We then generalize the method to the stochastic setting, achieving new universal complexity bounds that are nearly optimal for both convex and nonconvex problems. The advantages of the proposed methods are demonstrated by encouraging numerical results.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Bio:</strong> Tianjiao Li is a Postdoctoral Associate at the MIT Sloan School of Management. Beginning in August 2026, he will spend one year at IBM Research as a Goldstine Fellow, and will then join the Department of Industrial and Systems Engineering at the University of Wisconsin-Madison as a tenure-track Assistant Professor in Fall 2027. He received his Ph.D. in Operations Research from the H. Milton Stewart School of Industrial and Systems Engineering at Georgia Tech, where he was advised by Prof. George Lan and Prof. Ashwin Pananjady. His research interests lie in the theory and methodology of nonlinear optimization, stochastic optimization, and reinforcement learning, with a central focus on bridging rigorous theoretical development with practical relevance, especially in data science and artificial intelligence.</p>
+                        </div>
+                    )}
+                </div>
                 {/* Upcoming - Ai Rui */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2
