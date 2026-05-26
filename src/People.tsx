@@ -63,7 +63,7 @@ const Group: React.FC = () => {
     // Data for faculty
     const facultyData = [
         {
-            name: "Hongyang R. Zhang",
+            name: "Hongyang Ryan Zhang",
             position: "Assistant Professor",
             details: [
                 "Postdoc in Statistics and Data Science at The Wharton School, University of Pennsylvania",
@@ -84,7 +84,7 @@ const Group: React.FC = () => {
                 "M.S., University of Chicago"
             ],
             imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
-            link: "https://www.minxuanduan.com"
+            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
         },
         {
             name: "Dongyue Li",
