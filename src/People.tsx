@@ -77,16 +77,6 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
-            name: "Minxuan Duan",
-            position: "Ph.D.",
-            details: [
-                "B.S., Peking University",
-                "M.S., University of Chicago"
-            ],
-            imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
-            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
-        },
-        {
             name: "Dongyue Li",
             position: "Ph.D.",
             details: [
@@ -94,15 +84,6 @@ const Group: React.FC = () => {
             ],
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
-        },
-        {
-            name: "Michael Zhang",
-            position: "Ph.D.",
-            details: [
-                "B.Eng., University of Electronic Science and Technology"
-            ],
-            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
-            link: "https://ziniuzhang.github.io/"
         },
 		{
 	        name: "Zhenshuo Zhang",
@@ -113,7 +94,26 @@ const Group: React.FC = () => {
             ],
             imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
+        },        
+        {
+            name: "Michael Zhang",
+            position: "Ph.D.",
+            details: [
+                "B.Eng., University of Electronic Science and Technology"
+            ],
+            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
+            link: "https://ziniuzhang.github.io/"
         },
+        {
+            name: "Minxuan Duan",
+            position: "Ph.D.",
+            details: [
+                "B.S., Peking University",
+                "M.S., University of Chicago"
+            ],
+            imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
+            link: "https://virtuosoresearch.github.io/"
+        },        
         {
             name: "Tianyu Lu",
             position: "M.S.",
