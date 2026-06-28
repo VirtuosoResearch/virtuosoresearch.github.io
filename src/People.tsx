@@ -85,6 +85,15 @@ const Group: React.FC = () => {
             imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
             link: "https://lidongyue12138.github.io/"
         },
+        {
+            name: "Michael Zhang",
+            position: "Ph.D.",
+            details: [
+                "B.Eng., University of Electronic Science and Technology"
+            ],
+            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
+            link: "https://www.linkedin.com/in/ziniuzhang/"
+        },        
 		{
 	        name: "Zhenshuo Zhang",
             position: "Ph.D.",
@@ -94,15 +103,6 @@ const Group: React.FC = () => {
             ],
             imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
-        },        
-        {
-            name: "Michael Zhang",
-            position: "Ph.D.",
-            details: [
-                "B.Eng., University of Electronic Science and Technology"
-            ],
-            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
-            link: "https://ziniuzhang.github.io/"
         },
         {
             name: "Alice Duan",
