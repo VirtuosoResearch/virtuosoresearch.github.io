@@ -2,7 +2,6 @@
 import React from 'react';
 // import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
 
 import HomePage from './HomePage';
 import People from './People';
@@ -12,6 +11,7 @@ import PublicationsByYear from './PublicationsByYear';
 import PublicationsByTopic from './PublicationsByTopic';
 import AllNews from './AllNews';
 import Resources from './Resources';
+import Outreach from './Outreach';
 import MTLAndFinetuning from './MTLAndFinetuning';
 import DDPMLearningNote from './blogs/DDPMLearningNote';
 import EnsembleLoRANote from './blogs/EnsembleLoRANote';
@@ -27,6 +27,7 @@ const App: React.FC = () => {
       
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/outreach" element={<Outreach />} />
         <Route path="/people" element={<People />} />
         <Route path="/blogs" element={<ResearchBlogs />} />
         <Route path="/talks" element={<Talks />} />

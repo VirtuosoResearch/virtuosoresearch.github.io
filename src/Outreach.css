@@ -1,0 +1,81 @@
+.outreach-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+}
+
+.outreach-section {
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: left;
+}
+
+.outreach-section h1 {
+    margin: 0 0 18px 0;
+    font-size: 24px;
+    line-height: 1.35;
+}
+
+.outreach-section h2 {
+    margin: 24px 0 12px 0;
+    font-size: 20px;
+}
+
+.outreach-section h3 {
+    margin: 24px 0 12px 0;
+    font-size: 20px;
+}
+
+.outreach-section p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.outreach-section ul {
+    margin: 8px 0 14px 0;
+    padding-left: 26px;
+}
+
+.outreach-section li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.outreach-logo-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.outreach-logo {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .outreach-section h1 {
+        font-size: 22px;
+    }
+
+    .outreach-section h2 {
+        font-size: 18px;
+    }
+
+    .outreach-section h3 {
+        font-size: 18px;
+    }
+
+    .outreach-section p,
+    .outreach-section li {
+        font-size: 15px;
+    }
+
+    .outreach-logo {
+        max-width: 100%;
+    }
+}
