@@ -8,9 +8,11 @@ const Outreach: React.FC = () => {
             <Header />
             <main className="outreach-container">
                 <section className="outreach-section">
-                    <h1>Practicing Generative AI Tools through Building Community Dashboards and Sports Predictors</h1>
 
-                    <h2>Overview</h2>
+                    We plan to deposite teaching materials about how to use generative tools with hands-on examples on this page.
+                    {/* <h1>Practicing Generative AI Tools through Building Community Dashboards and Sports Predictors</h1> */}
+
+                    {/* <h2>Overview</h2>
                     <p>
                         This program is designed to teach teenagers (ages 12-18) and young adults (ages 18-26) in
                         the Roxbury community how to use generative AI tools to write code, analyze data, and create
@@ -64,7 +66,7 @@ const Outreach: React.FC = () => {
 
                     <p><strong>Target Audience:</strong> Young adults (ages 18-26) and teenagers (ages 12-18)</p>
                     <p><strong>Location:</strong> Shaw-Roxbury Branch Library Community Room</p>
-                    <p><strong>Format:</strong> A 2-hour workshop</p>
+                    <p><strong>Format:</strong> A 2-hour workshop</p> */}
 
                     <div className="outreach-logo-wrapper">
                         <img src="/cope_logo2.png" alt="COPE with Courage Summer Camp logo" className="outreach-logo" />
