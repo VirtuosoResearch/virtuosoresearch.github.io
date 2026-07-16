@@ -77,16 +77,6 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
-            name: "Minxuan Duan",
-            position: "Ph.D.",
-            details: [
-                "B.S., Peking University",
-                "M.S., University of Chicago"
-            ],
-            imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
-            link: "https://scholar.google.com/citations?user=a-3k2XkAAAAJ&hl=en"
-        },
-        {
             name: "Dongyue Li",
             position: "Ph.D.",
             details: [
@@ -97,13 +87,13 @@ const Group: React.FC = () => {
         },
         {
             name: "Michael Zhang",
-            position: "Ph.D.",
+            position: " ",
             details: [
                 "B.Eng., University of Electronic Science and Technology"
             ],
-            imageSrc: "portraits/ZiniuZhang.jpg", // Replace with actual image path
-            link: "https://ziniuzhang.github.io/"
-        },
+            imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
+            link: "https://www.linkedin.com/in/ziniuzhang/"
+        },        
 		{
 	        name: "Zhenshuo Zhang",
             position: "Ph.D.",
@@ -114,6 +104,25 @@ const Group: React.FC = () => {
             imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
             link: "https://zhenshuozhang.github.io/"
         },
+        {
+            name: "Alice Duan",
+            position: "Ph.D.",
+            details: [
+                "B.S., Peking University",
+                "M.S., University of Chicago"
+            ],
+            imageSrc: "portraits/minxuan.jpg", // Replace with actual image path
+            link: "https://virtuosoresearch.github.io/"
+        },
+        {
+            name: "Tianyu Lu",
+            position: "M.S.",
+            details: [
+                "BS in Mathematics, The Chinese University of Hong Kong"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://virtuosoresearch.github.io/"
+        },
 //            {
 //                name: "Can He",
 //                position: "M.S.",
@@ -121,15 +130,6 @@ const Group: React.FC = () => {
 //                ],
 //                imageSrc: "default.jpg", // Replace with actual image path
 //                link: "https://www.linkedin.com/in/canhenortheastern/"
-//            },
-//            {
-//                name: "Xin Wang",
-//                position: "M.S.",
-//                details: [
-//                    "B.S., Nanjing University"
-//                ],
-//                imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
-//                link: "/"
 //            },
 //        {
 //            name: "Mahdi Haghifam",
@@ -140,13 +140,21 @@ const Group: React.FC = () => {
 //            imageSrc: "portraits/Mahdi_Haghifam.jpg", // Replace with actual image path
 //            link: "https://mhaghifam.github.io/mahdihaghifam/"
 //        },
-
      ];
     
      const alumniData = [
         {
+            name: "Xin Wang",
+            position: "M.S.",
+            details: [
+                "B.S., Nanjing University"
+            ],
+            imageSrc: "portraits/xinwang.jpg", // Replace with actual image path
+            link: "/"
+        },
+        {
             name: "Youran Ye",
-            position: "M.S. alumni",
+            position: "M.S. alumni 2026",
             details: [
                 "Will be a Ph.D. student in Fall 2026",
             ],
@@ -154,61 +162,61 @@ const Group: React.FC = () => {
             link: "/"
         },
         {
-            name: "Debankita Basu",
-            position: "M.S. alumni",
-            details: ["Now working as a data scientist at Health Innovators"],
-            imageSrc: "portraits/Debankita_Basu.jpeg",
-            link: "https://www.linkedin.com/in/debankitabasu/"
-        },
-        {
             name: "Haotian Ju",
-            position: "M.S. alumni",
+            position: "M.S. alumni 2024",
             details: ["Now working as a quantitative researcher"],
             imageSrc: "portraits/haotian.png",
             link: "https://scholar.google.com/citations?user=wpKgvpwAAAAJ&hl=en"
         },
         {
             name: "Abhinav Nippani",
-            position: "M.S. alumni",
+            position: "M.S. alumni 2024",
             details: ["Now working on a stealth startup"],
             imageSrc: "portraits/Abhinav_Nippani.jpeg",
             link: "https://www.linkedin.com/in/abhinav-nippani/"
         },
         {
             name: "Jinhong Yu",
-            position: "M.S. alumni",
+            position: "M.S. alumni 2024",
             details: ["Now an intern at Cardinal Operations"],
             imageSrc: "portraits/jinhong.jpeg",
             link: "https://www.linkedin.com/in/yjh849625800/"
         },
         {
-            name: "Minghao Liu",
-            position: "M.S. alumni",
-            details: ["Now a software engineer at Palantir"],
-            imageSrc: "default.jpg",
-            link: "https://www.linkedin.com/in/liuminghao/"
-        },
-        {
-            name: "Haoyu He",
-            position: "Research assistant alumni",
-            details: ["Now a Ph.D. student at Northeastern University in College of Engineering"],
-            imageSrc: "default.jpg",
-            link: "https://he-h.github.io/"
-        },        
-        {
             name: "Kailai Chen",
-            position: "Undergraduate student alumni",
+            position: "Undergraduate student alumni 2024",
             details: ["Now a Ph.D. student at Northwestern"],
             imageSrc: "portraits/kailai.jpg",
             link: "https://openreview.net/profile?id=~Kailai_Chen1"
         },
         {
+            name: "Debankita Basu",
+            position: "M.S. alumni 2023",
+            details: ["Now working as a data scientist at Health Innovators"],
+            imageSrc: "portraits/Debankita_Basu.jpeg",
+            link: "https://www.linkedin.com/in/debankitabasu/"
+        },        
+        {
             name: "Allen Ye",
-            position: "Undergraduate student alumni",
+            position: "Undergraduate student alumni 2023",
             details: ["Now working as a software engineer at Tesla"],
             imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
-        }
+        },
+        {
+            name: "Haoyu He",
+            position: "Research assistant alumni 2023",
+            details: ["Now a Ph.D. student at Northeastern University in College of Engineering"],
+            imageSrc: "default.jpg",
+            link: "https://he-h.github.io/"
+        },
+        {
+            name: "Minghao Liu",
+            position: "M.S. alumni 2022",
+            details: ["Now a software engineer at Palantir"],
+            imageSrc: "default.jpg",
+            link: "https://www.linkedin.com/in/liuminghao/"
+        }      
     ];
 
     

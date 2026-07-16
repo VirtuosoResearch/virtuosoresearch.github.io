@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 <img src="neu.png" alt="Northeastern University" />
             </div>
             <div className="footer-column">
-                <p>177 Huntington Ave, Room 2211, Boston, MA 02115</p>
+                <p>216 Mass Ave, Floor #3, Boston, MA 02115</p>
                 <p>ho.zhang@northeastern.edu</p>
             </div>
         </footer>
