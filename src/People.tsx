@@ -175,13 +175,13 @@ const Group: React.FC = () => {
             imageSrc: "portraits/Abhinav_Nippani.jpeg",
             link: "https://www.linkedin.com/in/abhinav-nippani/"
         },
-        {
-            name: "Jinhong Yu",
-            position: "M.S. alumni 2024",
-            details: ["Now an intern at Cardinal Operations"],
-            imageSrc: "portraits/jinhong.jpeg",
-            link: "https://www.linkedin.com/in/yjh849625800/"
-        },
+        // {
+        //     name: "Jinhong Yu",
+        //     position: "M.S. alumni 2024",
+        //     details: ["Now an intern at Cardinal Operations"],
+        //     imageSrc: "portraits/jinhong.jpeg",
+        //     link: "https://www.linkedin.com/in/yjh849625800/"
+        // },
         {
             name: "Kailai Chen",
             position: "Undergraduate student alumni 2024",
@@ -203,13 +203,13 @@ const Group: React.FC = () => {
             imageSrc: "portraits/allen.png",
             link: "https://www.linkedin.com/in/allenye66/"
         },
-        {
-            name: "Haoyu He",
-            position: "Research assistant alumni 2023",
-            details: ["Now a Ph.D. student at Northeastern University in College of Engineering"],
-            imageSrc: "default.jpg",
-            link: "https://he-h.github.io/"
-        },
+        // {
+        //     name: "Haoyu He",
+        //     position: "Research assistant alumni 2023",
+        //     details: ["Now a Ph.D. student at Northeastern University in College of Engineering"],
+        //     imageSrc: "default.jpg",
+        //     link: "https://he-h.github.io/"
+        // },
         {
             name: "Minghao Liu",
             position: "M.S. alumni 2022",
