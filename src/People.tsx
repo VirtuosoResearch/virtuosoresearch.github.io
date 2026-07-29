@@ -120,7 +120,7 @@ const Group: React.FC = () => {
             details: [
                 "BS in Mathematics, The Chinese University of Hong Kong"
             ],
-            imageSrc: "default.jpg", // Replace with actual image path
+            imageSrc: "portraits/tianyu.jpg", // Replace with actual image path
             link: "https://virtuosoresearch.github.io/"
         },
 //            {
