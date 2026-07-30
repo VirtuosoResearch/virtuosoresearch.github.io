@@ -86,13 +86,13 @@ const Group: React.FC = () => {
             link: "https://lidongyue12138.github.io/"
         },
         {
-            name: "Michael Zhang",
-            position: " ",
+            name: "Ziniu (Michael) Zhang",
+            position: "Ph.D.",
             details: [
-                "B.Eng., University of Electronic Science and Technology"
+                "B.Eng., University of Electronic Science and Technology of China"
             ],
             imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
-            link: "https://www.linkedin.com/in/ziniuzhang/"
+            link: "https://ziniuzhang.github.io"
         },        
 		{
 	        name: "Zhenshuo Zhang",

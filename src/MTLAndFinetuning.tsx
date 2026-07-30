@@ -30,7 +30,7 @@ const MTLAndFinetuning: React.FC = () => {
                         <li><a href="">Haotian Ju</a>, Data Analytics Engineering Master's student</li>
                         <li><a href="">Abhinav Nippani</a>, Computer Science Master's student</li>
                         <li><a href="https://zhenshuozhang.github.io/">Zhenshuo Zhang</a>, Computer Science PhD student</li>
-                        <li><a href="https://ziniuzhang.github.io/">Michael Zhang</a></li>
+                        <li><a href="https://ziniuzhang.github.io/">Ziniu (Michael) Zhang</a>, Computer Science PhD student</li>
                         <li><a href="https://www.minxuanduan.com/">Minxuan Duan</a>, Computer Science PhD student</li>
                     </ul>
                 </p>
