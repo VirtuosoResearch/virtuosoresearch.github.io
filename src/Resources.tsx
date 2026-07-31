@@ -10,7 +10,32 @@ const Resources: React.FC = () => {
             <Header />
             <div className="resources-container">
                 <section className="section">
-                    <h3>Multitask learning</h3>
+                    <h3>Open-source libraries</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/nnhessian" target="_blank" rel="noopener noreferrer">nnhessian</a>: an open-source library for computing spectral statistics of neural network Hessians
+                        </li>
+                    </ul>
+                    <h4>Survey</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications</a>
+                        </li>
+                    </ul>
+                    <h4>Datasets</h4>
+                    <ul>
+                        <li>
+                            A dataset for traffic accident analysis in the US: <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">ML4RoadSafety</a>
+                        </li>
+                        {/*<li>
+                            Geolocation Dataset <a href="/datasets/dataset2">[Visit Dataset]</a>
+                        </li>*/}
+                    </ul>
+                </section>
+
+                <section className="section repositories">
+                    <h3>Repositories</h3>
+                    <h4>Multitask learning</h4>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Task-Modeling" target="_blank" rel="noopener noreferrer">Modeling task relationships using surrogate models</a>
@@ -22,7 +47,7 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/ScalableMTL" target="_blank" rel="noopener noreferrer">Scaling up multitask learning using a linearization technique</a>
                         </li>
                     </ul>
-                    <h3>Fine-tuning</h3>
+                    <h4>Fine-tuning</h4>
                     <ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/EnsembleLoRA" target="_blank" rel="noopener noreferrer">EnsembleLoRA</a>
@@ -40,38 +65,19 @@ const Resources: React.FC = () => {
                             <a href="https://github.com/VirtuosoResearch/Robust-Fine-Tuning" target="_blank" rel="noopener noreferrer">Measuring generalization using Hessian</a>
                         </li>                        
                     </ul>
-				    <h3>Graph neural networks</h3>
+				    <h4>Graph neural networks</h4>
 										<ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Generalization-in-graph-neural-networks" target="_blank" rel="noopener noreferrer">Measuring generalization</a>
                         </li>
 										</ul>
-					<h3>Data augmentation</h3>
+					<h4>Data augmentation</h4>
 										<ul>
                         <li>
                             <a href="https://github.com/VirtuosoResearch/Tree-data-augmentation" target="_blank" rel="noopener noreferrer">A simple, tree-structured data augmentation scheme</a>
                         </li>
 										</ul>
-                    <h3>Pointers</h3>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications</a>
-                        </li>
-                    </ul>
                 </section>
-
-                <section className="section">
-                    <h3>Datasets</h3>
-                    <ul>
-                        <li>
-                            A dataset for traffic accident analysis in the US: <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">ML4RoadSafety</a>
-                        </li>
-                        {/*<li>
-                            Geolocation Dataset <a href="/datasets/dataset2">[Visit Dataset]</a>
-                        </li>*/}
-                    </ul>
-                </section>
-
 
                 <section className="section">
                     <h3>Talks</h3>
@@ -95,14 +101,14 @@ const Resources: React.FC = () => {
                     </ul>
                 </section>
 
-                <section className="section">
+                {/*<section className="section">
                     <h3>Course materials</h3>
                     <ul>
                         <li>
                             <a href="/CS4100.html" target="_blank" rel="noopener noreferrer">CS4100 Artificial Intelligence (Fall 2025) </a>
                         </li>
                     </ul>
-                </section>
+                </section>*/}
 
                 {/*<section className="section">
                     <h3>Articles</h3>

@@ -16,10 +16,11 @@
 /* Style each member entry */
 .members {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* Three columns at full width, dropping to two and then one as the window
+       narrows. A fixed 1000px grid overflowed the screen on a phone. */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
-    width:1000px; /*Adjust to space out the members */
-    /* Adjust this for space between rows and columns */
+    width: 100%;
 }
 
 /* Style member images */
@@ -97,7 +98,7 @@
     padding: 0;
     margin: 0;
     list-style: inside;
-    width: 1000px;
+    width: 100%;
 }
 
 /* Style individual collaborator items */

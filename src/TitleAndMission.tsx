@@ -40,8 +40,12 @@ const TitleAndMission: React.FC = () => {
                     Links to some of our ongoing projects with further description
                     <ul>
                         <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning: Measurements and algorithms for representational transfer</Link></li>
-                        <li> Measurement, reasoning, and learning beyond gradients: <a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2306.08553">TMLR'24</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a>, <a href="https://arxiv.org/abs/2512.01113">KDD'26</a>, <a href="https://arxiv.org/abs/2602.03783">ICLR'26</a>
-                        </li>                        
+                        <li> Measurement, reasoning, and learning beyond gradients
+                            <ul>
+                                <li> Highlighted papers: <a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2306.08553">TMLR'24</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a>, <a href="https://arxiv.org/abs/2512.01113">KDD'26</a>, <a href="https://arxiv.org/abs/2602.03783">ICLR'26</a> </li>
+                                <li> <a href="https://github.com/VirtuosoResearch/nnhessian">nnhessian</a>: a library for computing spectral statistics of neural network Hessians </li>
+                            </ul>
+                        </li>
 			            <li> <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">Data analytics for aiding road safety with graph neural networks</a> </li>
                     </ul>
                 </p>

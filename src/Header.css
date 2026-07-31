@@ -36,5 +36,21 @@
     font-size: 23px;
 }
 
+/* Two logos plus the title do not fit across a small phone at full size. */
+@media (max-width: 400px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header-logo,
+    .header-neu-logo {
+        width: 38px;
+    }
+
+    .header-title {
+        font-size: 20px;
+    }
+}
+
 /* .nav-list / .nav-link live in Navigation.css; the copies that used to be here
    loaded later and overrode its responsive rules. */

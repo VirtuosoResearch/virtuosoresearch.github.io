@@ -1,11 +1,13 @@
 /* ImageSlideshow.css */
 
 .slideshow-container {
-    width: 700px;
-    height: 500px;
+    /* Was a fixed 700x500, which overflowed its box on a phone. */
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 7 / 5;
     margin: auto;
     overflow: hidden;
-    position: relative; 
+    position: relative;
 }
 
 .slideshow-image {

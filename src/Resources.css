@@ -22,6 +22,13 @@
     font-weight: bold;
 }
 
+/* Further headings within a box, styled to match the box title. */
+.section h4 {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
 /* Style links and lists */
 .section ul {
     list-style-type: disc;
@@ -57,6 +64,10 @@
         font-size: 20px;
     }
 
+    .section h4 {
+        font-size: 20px;
+    }
+
     .join-us-container {
         padding: 15px;
     }
@@ -64,4 +75,12 @@
     .join-us-container h2 {
         font-size: 20px;
     }
+}
+
+/* Last, so it also wins inside the media query above: the topic labels inside
+   "Repositories" read as plain text, not headings. */
+.repositories h4 {
+    font-size: inherit;
+    font-weight: normal;
+    margin: 15px 0 5px 0;
 }
