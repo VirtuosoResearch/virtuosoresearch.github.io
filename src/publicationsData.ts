@@ -1,6 +1,15 @@
 const publications = [
     {
         year: 2026,
+        title: "WinQ: Accelerating Quantization-Aware Training of Language Models Around Saddle Points",
+        link: "https://arxiv.org/abs/2605.17471",
+        authors: "Dongyue Li, Zechun Liu, Kai Yi, Zhenshuo Zhang, Changsheng Zhao, Raghuraman Krishnamoorthi, Harshit Khaitan, Hongyang R. Zhang, and Steven Li",
+        publishingSite: "ICML",
+        date: "2026",
+        topic: "Optimization Algorithms",
+    },
+    {
+        year: 2026,
         title: "Efficient Estimation of Kernel Surrogate Models for Task Attribution",
         link: "https://arxiv.org/abs/2602.03783",
         authors: "Zhenshuo Zhang, Minxuan Duan, and Hongyang R. Zhang",

@@ -16,6 +16,16 @@ const News: React.FC = () => {
             <h2>Recent Updates</h2>
 
 		<div className="news-item">
+			<div className="news-date">Jul, 2026</div>
+			<p> New papers out: <ul>
+				<li><a href="https://arxiv.org/abs/2602.03783">Kernel surrogate models for task attribution</a>,</li>
+				<li><a href="https://arxiv.org/abs/2605.17471">Accelerating quantization-aware training</a>, and</li>
+				<li><a href="https://openreview.net/forum?id=kQc2GfNWFm">Matrix completion from ultra-sparse samples</a>.</li>
+			</ul>
+			</p>
+		</div>
+
+		<div className="news-item">
 			<div className="news-date">Nov, 2025</div>
 			<p> New papers out: <ul>
 				<li><a href="https://arxiv.org/abs/2512.01113">Understanding algorithmic reasoning</a>,</li>
@@ -39,21 +49,8 @@ const News: React.FC = () => {
 			<div className="news-date">May, 2025</div>
 			<p> A new paper out on <a href="https://arxiv.org/abs/2505.21930">an efficient ensemble method for fine-tuning language models</a>! </p>
 		</div>
-		
-		<div className="news-item">
-			<div className="news-date">Apr, 2025</div>
-			<p> Welcome Minxuan Duan (joining from U-Chicago) to our lab as a PhD student in the fall! </p>
-		</div>
-	        <div className="news-item">
-		        <div className="news-date">Oct, 2024</div>
-			<p> We're looking for one or two Ph.D. students to join our lab in the upcoming season. If you are interested, please mention my name in your <a href="https://www.khoury.northeastern.edu/apply/phd-apply/">CS PhD application as potential advisor</a>. You can also send me an email about your application (I may not have the capacity to respond to every email request). Students coming from underrepresented demographics may be eligible for a one-year departmental PhD fellowship. </p>
-		</div>
-	        <div className="news-item">
-		        <div className="news-date">Sep, 2024</div>
-			<p> New paper at EMNLP on a scalable finetuning approach tested on a wide range of language models, as well as a <a href="http://arxiv.org/abs/2306.08553">two-point gradient estimate</a> for finding flat solutions in loss surfaces at TMLR </p>
-		</div>
 
-            <p> <Link to="/allnews" className="news-link">See all news</Link> </p>
+            <p> <Link to="/allnews" className="news-link">See old news</Link> </p>
         </div>
     );
 };

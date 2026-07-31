@@ -28,3 +28,23 @@ li:not(:last-child) {
     margin: 20px 0;
     text-align: left;
 }
+
+/* Same reason as the news column: this one narrows on a phone rather than
+   stacking, so pull in the list indent, padding and type. */
+@media (max-width: 600px) {
+    .main-container .title-and-mission {
+        font-size: 15px;
+    }
+
+    .main-container .title-and-mission ul {
+        padding-left: 18px;
+    }
+
+    .main-container .section {
+        padding: 12px;
+    }
+
+    .bright-font {
+        font-size: 16px;
+    }
+}

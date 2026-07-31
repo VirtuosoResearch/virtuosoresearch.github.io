@@ -1,23 +1,37 @@
 /* Layout.css */
 
+/* The two columns never stack, so the news box stays in view at every width.
+   Instead the gutters give way first, then both columns shrink together. */
+
 .main-container {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    margin-left: 25px;
+    margin-left: clamp(0px, calc(3vw - 12px), 25px);
     margin-right: 0px;
 }
 
 .title-and-mission {
-    flex: 1;
-    margin-right: 25px;
+    flex: 1 1 0;
+    min-width: 0;
+    margin-right: clamp(10px, 2vw, 25px);
+}
+
+/* .content-container, not .news, is the flex item of the row: it keeps a
+   proportional share of the width, capped at the 350px desktop size and
+   floored so the box stays readable on a phone. */
+.content-container {
+    flex: 0 1 30%;
+    max-width: 350px;
+    min-width: 140px;
+    margin-right: clamp(0px, calc(5vw - 20px), 50px);
 }
 
 .news {
-    flex: 1;
-    max-width: 350px;
+    max-width: 100%;
+    margin-right: 0;
 }
 
 main {
-    padding: 20px;
+    padding: clamp(15px, 2vw, 20px);
 }

@@ -3,6 +3,8 @@
 .nav-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
     margin: 0;
     padding: 0;
 }
@@ -48,4 +50,16 @@
 
 .nav-dropdown-link:hover {
     background-color: #ddd;
+}
+
+/* On phones the seven links have to wrap, so tighten the spacing. */
+@media (max-width: 820px) {
+    .nav-list {
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        font-size: 17px;
+        margin: 0 12px 0 0;
+    }
 }

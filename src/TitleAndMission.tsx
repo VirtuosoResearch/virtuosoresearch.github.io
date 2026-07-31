@@ -35,12 +35,13 @@ const TitleAndMission: React.FC = () => {
                 </p>    
             </div>
             <div className="section">
-                <h3>Research</h3>
+                <h3>Projects</h3>
                 <p>
                     Links to some of our ongoing projects with further description
                     <ul>
-                        <li> A Hessian-based computational framework for modern machine learning: <a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2306.08553">TMLR'24</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a> </li>
                         <li> <Link to="/mtlandfinetuning" className="news-link">Multitask learning and fine-tuning: Measurements and algorithms for representational transfer</Link></li>
+                        <li> Measurement, reasoning, and learning beyond gradients: <a href="https://arxiv.org/abs/2206.02659">ICML'22</a>, <a href="http://arxiv.org/abs/2302.04451">AISTATS'23</a>, <a href="https://arxiv.org/abs/2306.08553">TMLR'24</a>, <a href="https://arxiv.org/abs/2010.11750">JMLR'25</a>, <a href="https://arxiv.org/abs/2512.01113">KDD'26</a>, <a href="https://arxiv.org/abs/2602.03783">ICLR'26</a>
+                        </li>                        
 			            <li> <a href="https://github.com/VirtuosoResearch/ML4RoadSafety">Data analytics for aiding road safety with graph neural networks</a> </li>
                     </ul>
                 </p>

@@ -4,17 +4,23 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-		display: flex;
-    padding: 100;
+    /* Was display: flex, which put the title in a narrow column
+       to the left of the news list instead of above it. */
+    display: block;
 }
 
 .centered-title {
     text-align: center;
-		display: flex;
+}
+
+/* MTLAndFinetuning.css redefines .centered-title with display: flex later in the
+   bundle, which defeats text-align. Scoped so only this page is affected. */
+.allnews-container .centered-title {
+    display: block;
 }
 
 .news-list {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .news-item {

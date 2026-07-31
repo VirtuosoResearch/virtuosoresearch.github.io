@@ -7,17 +7,17 @@ const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <div className="footer-column">
-                <p>© 2023 Virtuoso Research Lab</p>
-                <p>Credit to: Allen Ye and Jinhong Yu</p>
+                <p>Northeastern University</p>
+                <p>Khoury College of Computer Sciences</p>
             </div>
             <div className="footer-column">
-                <p>Associated with Khoury College of Computer Sciences, Northeastern University</p>
-                <img src="neu.png" alt="Northeastern University" />
+                <p>Address: 216 Mass Ave, Floor #3, Boston, MA 02115</p>
+                <p>Email: ho.zhang@northeastern.edu</p>
             </div>
             <div className="footer-column">
-                <p>216 Mass Ave, Floor #3, Boston, MA 02115</p>
-                <p>ho.zhang@northeastern.edu</p>
-            </div>
+                <p>Funding agency acknowledgement</p>
+                <p>National Science Foundation, JP Morgan Chase</p>
+            </div>            
         </footer>
     );
 };

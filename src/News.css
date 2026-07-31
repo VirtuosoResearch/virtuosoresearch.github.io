@@ -4,15 +4,18 @@
     background-color: #f2f2f2;
     border: 1px solid #666563;
     border-radius: 10px;
-    padding: 0;
+    padding: 0 10px;
     max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
     margin-left: 0px;
-    margin-right: 50px;
+    /* The right-hand gutter lives on .content-container in Layout.css; a margin
+       here is cancelled out by width: 100%. */
 }
 
 .news-item {
@@ -20,7 +23,37 @@
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin: 10px 0;
-    width: 328px; /* Calculated from Layout.css .news max-width minus 2 pixels for border */
+}
+
+/* Scoped to the home page column so the shared .news-item rules in
+   AllNews.css are left alone. */
+.news .news-item {
+    /* No bottom padding: the last paragraph's own margin supplies it. */
+    padding: 10px 10px 0;
+    width: 100%; /* Fills the news column instead of a fixed pixel width */
+    box-sizing: border-box;
+}
+
+/* The columns never stack, so this one gets narrow on a phone. Tighten the
+   insets, list indent and type so text fits instead of breaking mid-word. */
+@media (max-width: 600px) {
+    .news {
+        padding: 0 6px;
+        font-size: 14px;
+    }
+
+    .news h2 {
+        font-size: 16px;
+    }
+
+    .news .news-item {
+        padding: 8px 6px 0;
+    }
+
+    .news ul {
+        padding-left: 16px;
+        margin: 6px 0;
+    }
 }
 
 .news-date {

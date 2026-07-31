@@ -2,9 +2,10 @@
 
 .header {
     background-color: #f2f2f2;
-    padding: 20px 0;
-    padding-left: 20px;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -13,6 +14,13 @@
     width: 50px; /* Adjust the size of the logo */
     height: auto;
     margin-right: 10px; /* Space between logo and title */
+}
+
+/* Northeastern seal, sitting next to the lab logo (it used to be in the footer). */
+.header-neu-logo {
+    width: 45px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .header-content {
@@ -28,20 +36,5 @@
     font-size: 23px;
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #555;
-    margin: 0 15px; /*distance between each navigation link*/
-    transition: color 0.3s;
-}
-
-.nav-link:hover {
-    color: #000;
-}
+/* .nav-list / .nav-link live in Navigation.css; the copies that used to be here
+   loaded later and overrode its responsive rules. */

@@ -20,7 +20,7 @@ const Navigation: React.FC = () => {
                     </div>
                 </li>
                 <li><Link to="/resources" className="nav-link">Resources</Link></li>
-                <li><Link to="/talks" className="nav-link">Talks</Link></li>
+                <li><Link to="/talks" className="nav-link">Seminar</Link></li>
             </ul>
         </nav>
     );
