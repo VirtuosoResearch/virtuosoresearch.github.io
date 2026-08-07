@@ -123,14 +123,14 @@ const Group: React.FC = () => {
             imageSrc: "portraits/tianyu.jpg", // Replace with actual image path
             link: "https://virtuosoresearch.github.io/"
         },
-//            {
-//                name: "Can He",
-//                position: "M.S.",
-//                details: [
-//                ],
-//                imageSrc: "default.jpg", // Replace with actual image path
-//                link: "https://www.linkedin.com/in/canhenortheastern/"
-//            },
+        {
+            name: "Shirley Yu",
+            position: "Visiting undergraduate student",
+            details: [
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://virtuosoresearch.github.io/"
+        },
 //        {
 //            name: "Mahdi Haghifam",
 //            position: "Postdoc",
