@@ -22,7 +22,9 @@
    floored so the box stays readable on a phone. */
 .content-container {
     flex: 0 1 30%;
-    max-width: 350px;
+    /* 350px through ordinary desktops, then a share of the extra room on wide
+       screens so the column keeps up instead of stranding a gap beside it. */
+    max-width: clamp(350px, 20%, 550px);
     min-width: 140px;
     margin-right: clamp(0px, calc(5vw - 20px), 50px);
 }

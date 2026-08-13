@@ -1,7 +1,18 @@
 /* TitleAndMission.css */
 
+/* No max-width: this class sits on both the intro block and the column that
+   wraps it, and a cap here left a gap beside the news box on wide screens. */
 .title-and-mission {
-    max-width: 1500px;
+    width: 100%;
+}
+
+/* The column and its boxes span the full width, but the text inside stops at a
+   readable measure instead of running the whole width of a wide monitor. The
+   first selector is the inner intro block, not the column that wraps it. */
+.title-and-mission .title-and-mission,
+.main-container .section > p,
+.main-container .section > ul {
+    max-width: 1200px;
 }
 
 .bright-font {
