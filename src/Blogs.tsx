@@ -14,13 +14,13 @@ const ResearchBlogs: React.FC = () => {
                 </Link>
                 <p>John Doe, 2023</p> */}
                 <Link reloadDocument to="/blogs/blog/AlgorithmicReasoningNote">
-                    <h2>Learning Hierarchical Networks for Algorithmic Reasoning</h2>
+                    <h2>On (Multitask) Algorithmic Reasoning</h2>
                 </Link>
-                <p>Dongyue Li and Hongyang Zhang, Apr 2026</p>
+                <p>Dongyue Li and Hongyang Zhang, April 2026</p>
                 <Link reloadDocument to="/blogs/blog/MMTraCENote">
                     <h2>Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation</h2>
                 </Link>
-                <p>Michael Zhang, Dec 2025</p>
+                <p>Michael Zhang, December 2025</p>
                 <Link reloadDocument to="/blogs/blog/EnsembleLoRANote">
                     <h2>Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</h2>
                 </Link>
