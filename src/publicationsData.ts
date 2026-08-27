@@ -1,12 +1,30 @@
 const publications = [
     {
         year: 2026,
+        title: "Learning Mixtures of Plackett-Luce Models for Multi-Objective Alignment",
+        link: "https://arxiv.org/abs/2608.25200",
+        authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
+        publishingSite: "EMNLP",
+        date: "2026",
+        topic: "Language models",
+    },
+    {
+        year: 2026,
+        title: "Long-Context Demonstration Selection Using Grouped State Space Models",
+        link: "",
+        authors: "Ziniu Zhang, Zhenshuo Zhang, Ruoxuan Xiong, Gene Cooperman, and Hongyang R. Zhang",
+        publishingSite: "Findings of EMNLP",
+        date: "2026",
+        topic: "Language models",
+    },
+    {
+        year: 2026,
         title: "WinQ: Accelerating Quantization-Aware Training of Language Models Around Saddle Points",
         link: "https://arxiv.org/abs/2605.17471",
         authors: "Dongyue Li, Zechun Liu, Kai Yi, Zhenshuo Zhang, Changsheng Zhao, Raghuraman Krishnamoorthi, Harshit Khaitan, Hongyang R. Zhang, and Steven Li",
         publishingSite: "ICML",
         date: "2026",
-        topic: "Optimization Algorithms",
+        topic: "Neural net Hessian",
     },
     {
         year: 2026,
@@ -15,16 +33,16 @@ const publications = [
         authors: "Zhenshuo Zhang, Minxuan Duan, and Hongyang R. Zhang",
         publishingSite: "ICLR",
         date: "2026",
-        topic: "Neural Networks and Generative Models",
+        topic: "Multitask learning",
     },
     {
         year: 2026,
         title: "One-Sided Matrix Completion from Ultra-Sparse Samples",
-        link: "https://openreview.net/forum?id=kQc2GfNWFm",
+        link: "https://arxiv.org/abs/2601.12213",
         authors: "Hongyang R. Zhang, Zhenshuo Zhang, Huy L. Nguyen, Guanghui Lan",
         publishingSite: "TMLR",
         date: "2026",
-        topic: "Optimization Algorithms",
+        topic: "Matrix recovery",
     },
     {
         year: 2026,
@@ -33,7 +51,7 @@ const publications = [
         authors: "Dongyue Li, Zhenshuo Zhang, Minxuan Duan, Edgar Dobriban, Hongyang R. Zhang",
         publishingSite: "KDD",
         date: "2026",
-        topic: "Neural Networks and Generative Models",
+        topic: "Large-scale networks",
     },
     {
         year: 2026,
@@ -42,7 +60,7 @@ const publications = [
         authors: "Ziniu Zhang, Minxuan Duan, Haris N. Koutsopoulos, Hongyang R. Zhang",
         publishingSite: "KDD",
         date: "2026",
-        topic: "Social Networks and Network Data",
+        topic: "Large-scale networks",
     },
     {
         year: 2026,
@@ -51,7 +69,7 @@ const publications = [
         authors: "Zhenshuo Zhang, Minxuan Duan, Youran Ye, Hongyang R. Zhang",
         publishingSite: "AAAI",
         date: "2026",
-        topic: "Optimization Algorithms",
+        topic: "Multitask learning",
     },
     {
         year: 2025,
@@ -60,7 +78,7 @@ const publications = [
         authors: "Ziniu Zhang, Zhenshuo Zhang, Dongyue Li, Lu Wang, Jennifer Dy, Hongyang R. Zhang",
         publishingSite: "EMNLP",
         date: "2025",
-        topic: "Neural Networks and Generative Models",
+        topic: "Language models",
     },
     {
         year: 2025,
@@ -69,7 +87,7 @@ const publications = [
         authors: "Fan Yang, Hongyang R. Zhang, Sen Wu, Christopher Ré, Weijie Su",
         publishingSite: "Journal of Machine Learning Research",
         date: "2025",
-        topic: "ML Theory",
+        topic: "Multitask learning",
     },
     {
         year: 2025,
@@ -78,7 +96,7 @@ const publications = [
         authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
         publishingSite: "ACL",
         date: "2025",
-        topic: "Neural Networks and Generative Models",
+        topic: "Language models",
     },
     {
         year: 2024,
@@ -87,16 +105,16 @@ const publications = [
         authors: "Hongyang R. Zhang, Dongyue Li, and Haotian Ju",
         publishingSite: "TMLR",
         date: "2024",
-        topic: "Optimization Algorithms",
+        topic: "Neural net Hessian",
     },
     {
         year: 2024,
         title: "Scalable Fine-Tuning from Multiple Data Sources: A First-Order Approximation Approach",
-        link: "",
+        link: "https://arxiv.org/abs/2409.19458",
         authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
         publishingSite: "Findings of EMNLP",
         date: "2024",
-        topic: "Neural Networks and Generative Models",
+        topic: "Language models",
     },
     {
 	year: 2024,
@@ -105,7 +123,7 @@ const publications = [
 	authors: "Dongyue Li, Aneesh Sharma, and Hongyang R. Zhang",
 	publishingSite: "KDD",
 	date: "2024",
-	topic: "Neural Networks and Generative Models",
+	topic: "Multitask learning",
     },
     {
         year: 2024,
@@ -114,7 +132,7 @@ const publications = [
         authors: "Dongyue Li, Kailai Chen, Predrag Radivojac, and Hongyang R. Zhang",
         publishingSite: "Transactions on Machine Learning Research",
         date: "2024",
-        topic: "Neural Networks and Generative Models",
+        topic: "Robustness and data augmentation",
     },
     {
         year: 2023,
@@ -123,7 +141,7 @@ const publications = [
         authors: "Abhinav Nippani, Dongyue Li, Haotian Ju, Haris N. Koutsopoulos, and Hongyang R. Zhang",
         publishingSite: "NeurIPS, Datasets and Benchmarks Track",
         date: "2023",
-        topic: "Social Networks and Network Data",
+        topic: "Large-scale networks",
     },
 //    {
 //        year: 2023,
@@ -141,7 +159,7 @@ const publications = [
         authors: "Thien Hang Nguyen, Hongyang R. Zhang, and Huy L. Nguyen",
         publishingSite: "Transactions on Machine Learning Research",
         date: "2023",
-        topic: "Neural Networks and Generative Models",
+        topic: "Robustness and data augmentation",
     },
     {
         year: 2023,
@@ -150,7 +168,7 @@ const publications = [
         authors: "Dongyue Li, Haotian Ju, Aneesh Sharma, and Hongyang R. Zhang",
         publishingSite: "KDD",
         date: "2023",
-        topic: "Neural Networks and Generative Models",
+        topic: "Multitask learning",
     },
     {
         year: 2023,
@@ -159,7 +177,7 @@ const publications = [
         authors: "Dongyue Li, Huy N. Nguyen, and Hongyang R. Zhang",
         publishingSite: "Transactions on Machine Learning Research (Featured Certification)",
         date: "2023",
-        topic: "Neural Networks and Generative Models",
+        topic: "Multitask learning",
     },
     {
         year: 2023,
@@ -168,7 +186,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, Aneesh Sharma, and Hongyang R. Zhang",
         publishingSite: "AISTATS",
         date: "2023",
-        topic: "ML Theory",
+        topic: "Neural net Hessian",
     },
     {
         year: 2023,
@@ -177,7 +195,7 @@ const publications = [
         authors: "Dongyue Li, Tina Eliassi-Rad, and Hongyang R. Zhang",
         publishingSite: "SDM",
         date: "2023",
-        topic: "Social Networks and Network Data",
+        topic: "Large-scale networks",
     },
 //    {
 //        year: 2022,
@@ -195,7 +213,7 @@ const publications = [
         authors: "Haotian Ju, Dongyue Li, and Hongyang R. Zhang",
         publishingSite: "ICML",
         date: "2022",
-        topic: "ML Theory",
+        topic: "Neural net Hessian",
     },
     {
         year: 2022,
@@ -204,7 +222,7 @@ const publications = [
         authors: "Michael Zhang, Nimit Sohoni, Hongyang R. Zhang, Chelsea Finn, and Christopher Ré",
         publishingSite: "ICML",
         date: "2022",
-        topic: "Neural Networks and Generative Models",
+        topic: "Robustness and data augmentation",
     },
     {
         year: 2022,
@@ -213,7 +231,7 @@ const publications = [
         authors: "Ning Chen, Xiaotie Deng, Bo Tang, Hongyang R. Zhang, and Jie Zhang",
         publishingSite: "Information and Computation",
         date: "2022",
-        topic: "Algorithmic Game Theory",
+        topic: "Incentives and cooperative games",
     },
     {
         year: 2021,
@@ -222,16 +240,16 @@ const publications = [
         authors: "Dongyue Li and Hongyang R. Zhang",
         publishingSite: "NeurIPS",
         date: "2021",
-        topic: "Neural Networks and Generative Models",
+        topic: "Robustness and data augmentation",
     },
     {
         year: 2021,
         title: "Observational Supervision for Medical Image Classification using Gaze Data",
         link: "https://link.springer.com/chapter/10.1007/978-3-030-87196-3_56",
-        authors: "Khaled Saab, Sarah Hooper, Nimit Sohoni, Sen Wu, Jared Dunnmon, Hongyang R. Zhang, Daniel Rubin, and Christopher Ré",
+        authors: "Khaled Saab, Sarah M. Hooper, Nimit S. Sohoni, Jupinder Parmar, Brian Pogatchnik, Sen Wu, Jared A. Dunnmon, Hongyang R. Zhang, Daniel Rubin, and Christopher Ré",
         publishingSite: "MICCAI",
         date: "2021",
-        topic: "Neural Networks and Generative Models",
+        topic: "Robustness and data augmentation",
     },
     {
         year: 2020,
@@ -240,7 +258,7 @@ const publications = [
         authors: "Yuanzhi Li, Tengyu Ma, and Hongyang R. Zhang",
         publishingSite: "COLT",
         date: "2020",
-        topic: "ML Theory",
+        topic: "Matrix recovery",
     },
     {
         year: 2020,
@@ -249,16 +267,16 @@ const publications = [
         authors: "Sen Wu, Hongyang R. Zhang, Gregory Valiant, and Christopher Ré",
         publishingSite: "ICML",
         date: "2020",
-        topic: "ML Theory",
+        topic: "Robustness and data augmentation",
     },
     {
         year: 2020,
         title: "Understanding and Improving Information Transfer in Multi-Task Learning",
-        link: "",
+        link: "https://arxiv.org/abs/2005.00944",
         authors: "Sen Wu, Hongyang R. Zhang, and Christopher Ré",
         publishingSite: "ICLR",
         date: "2020",
-        topic: "Neural Networks and Generative Models",
+        topic: "Multitask learning",
     },
 ];
 

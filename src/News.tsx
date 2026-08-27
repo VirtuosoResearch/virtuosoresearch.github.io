@@ -20,7 +20,7 @@ const News: React.FC = () => {
 			<p> New papers out: <ul>
 				<li><a href="https://arxiv.org/abs/2602.03783">Kernel surrogate models for task attribution</a>,</li>
 				<li><a href="https://arxiv.org/abs/2605.17471">Accelerating quantization-aware training</a>, and</li>
-				<li><a href="https://openreview.net/forum?id=kQc2GfNWFm">Matrix completion from ultra-sparse samples</a>.</li>
+				<li><a href="https://arxiv.org/abs/2601.12213">Matrix completion from ultra-sparse samples</a>.</li>
 			</ul>
 			</p>
 		</div>

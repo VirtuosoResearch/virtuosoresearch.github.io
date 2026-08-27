@@ -124,8 +124,17 @@ const Group: React.FC = () => {
             link: "https://virtuosoresearch.github.io/"
         },
         {
+            name: "Chigozirim Ike",
+            position: "Undergraduate student",
+            details: [
+                "B.S. in Data Science \& Business Administration, Northeastern University"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://www.linkedin.com/in/chigo-ike/"
+        },
+        {
             name: "Shirley Yu",
-            position: "Visiting undergraduate student",
+            position: "Undergraduate student",
             details: [
             ],
             imageSrc: "default.jpg", // Replace with actual image path
