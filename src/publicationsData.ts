@@ -1,7 +1,7 @@
 const publications = [
     {
         year: 2026,
-        title: "Learning Mixtures of Plackett-Luce Models for Multi-Objective Alignment",
+        title: "MoPLEx: Estimating Plackett-Luce Mixture Models for Multi-Objective Alignment",
         link: "https://arxiv.org/abs/2608.25200",
         authors: "Dongyue Li, Ziniu Zhang, Lu Wang, and Hongyang R. Zhang",
         publishingSite: "EMNLP",
@@ -10,7 +10,7 @@ const publications = [
     },
     {
         year: 2026,
-        title: "Long-Context Demonstration Selection Using Grouped State Space Models",
+        title: "Long-Context Demonstration Selection Using State Space Models",
         link: "",
         authors: "Ziniu Zhang, Zhenshuo Zhang, Ruoxuan Xiong, Gene Cooperman, and Hongyang R. Zhang",
         publishingSite: "Findings of EMNLP",

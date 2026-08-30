@@ -87,7 +87,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Ziniu (Michael) Zhang",
-            position: "Ph.D.",
+            position: "Ph.D. student",
             details: [
                 "B.Eng., University of Electronic Science and Technology of China"
             ],
@@ -96,7 +96,7 @@ const Group: React.FC = () => {
         },        
 		{
 	        name: "Zhenshuo Zhang",
-            position: "Ph.D.",
+            position: "Ph.D. student",
             details: [
                 "B.Eng., Zhejiang University",
                 "M.S., Zhejiang University"
@@ -106,7 +106,7 @@ const Group: React.FC = () => {
         },
         {
             name: "Alice Duan",
-            position: "Ph.D.",
+            position: "Ph.D. student",
             details: [
                 "B.S., Peking University",
                 "M.S., University of Chicago"
@@ -116,12 +116,12 @@ const Group: React.FC = () => {
         },
         {
             name: "Tianyu Lu",
-            position: "M.S.",
+            position: "M.S. student",
             details: [
                 "BS in Mathematics, The Chinese University of Hong Kong"
             ],
             imageSrc: "portraits/tianyu.jpg", // Replace with actual image path
-            link: "https://virtuosoresearch.github.io/"
+            link: "https://www.linkedin.com/in/tianyu-lu-1a6a87326"
         },
         {
             name: "Chigozirim Ike",
