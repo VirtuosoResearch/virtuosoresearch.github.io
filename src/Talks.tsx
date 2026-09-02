@@ -11,6 +11,7 @@ const Talks: React.FC = () => {
     const [showAbstract6, setShowAbstract6] = useState(false);
     const [showAbstract7, setShowAbstract7] = useState(false);
     const [showAbstract8, setShowAbstract8] = useState(false);
+    const [showAbstract9, setShowAbstract9] = useState(false);
 
     const toggleAbstract1 = () => {
         setShowAbstract1(!showAbstract1);
@@ -44,6 +45,10 @@ const Talks: React.FC = () => {
         setShowAbstract8(!showAbstract8);
     };
 
+    const toggleAbstract9 = () => {
+        setShowAbstract9(!showAbstract9);
+    };
+
     return (
         <div>
         <Header />
@@ -57,6 +62,32 @@ const Talks: React.FC = () => {
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
+                {/* August 28, 2026 - Dongyue Li */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2
+                        onClick={toggleAbstract9}
+                        style={{
+                            cursor: 'pointer',
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        Scalable Algorithms for Multitask Learning on Foundation Models: A Gradient-based Framework
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Friday, August 28, 2026 @ 10:30 a.m. ET</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Dongyue Li (Northeastern University)</p>
+                    {showAbstract9 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> This thesis studies multitask learning, the problem of learning a predictor that performs well across multiple tasks simultaneously, each with a separate data distribution. In practice, jointly training on multiple tasks can lead to negative interference. Accurately identifying such effects is a difficult problem and has not been fully addressed in the literature. Specifically, a central issue is modeling the relationships when multiple tasks are trained together in a single model. As the number of subsets grows exponentially with the total number of tasks, exhaustively evaluating over all subsets is computationally expensive. Prior literature has proposed approximating multitask training performances using pairwise affinity scores such as gradient cosine similarities, which do not fully capture the complexity that may arise in downstream applications. This problem is increasingly relevant in the context of foundation models, for example, during supervised fine-tuning of large language models and the evaluation of neural networks' reasoning capabilities, where negative interference can again occur due to differences in task semantics or algorithmic execution.
+                            </p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>This thesis develops scalable algorithms for modeling task relationships and multitask optimization, focusing on their application to foundation models. First, I formulate the problem of predicting multitask training performance given a subset of tasks. I propose a surrogate modeling approach by fitting a regression model to the outcomes of randomly sampled task subsets. Second, I introduce an estimation algorithm that avoids repeated training on subsets. The key idea is to approximate the model output on any subset using a first-order Taylor expansion around a pretrained model initialization. I design an algorithm that uses gradients as features and approximates model weights trained on each subset by solving a regression that maps gradients to data labels. I show both theoretically and empirically that this approximation is highly accurate across several settings involving graph neural networks and large language models. Third, I propose a clustering algorithm that applies convex relaxation to task affinity scores to compute a disjoint partition of the input task datasets. Crucially, this framework requires computing gradients only once at the pretrained model, enabling rapid adaptation in downstream applications through the estimation algorithm.</p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>In the second part of the thesis, I demonstrate use cases for the above-proposed algorithms on foundation models. First, I design an ensemble of low-rank adapters for fine-tuning language models across multiple datasets. Second, I propose an algorithm that efficiently learns branching neural networks for performing multiple algorithmic reasoning tasks, applicable to many base models. Further, I present extensions of the algorithms to learn a mixture of Plackett-Luce models for multi-objective alignment of language models, and to select data augmentations for protein classification.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Dongyue Li is a Ph.D. candidate in the Khoury College of Computer Sciences at Northeastern University, advised by Professor Hongyang R. Zhang. He earned his Bachelor's degree in Computer Science from Shanghai Jiao Tong University. His research centers on developing scalable multitask learning algorithms for training foundation models, with applications in language model fine-tuning, algorithmic reasoning, and multi-objective alignment.</p>
+                        </div>
+                    )}
+                </div>
                 {/* Upcoming - Tianjiao Li */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2
