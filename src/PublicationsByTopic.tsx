@@ -2,7 +2,6 @@
 import React from 'react';
 import Header from './Header';
 import './Publications.css';
-import Footer from './Footer';
 import publications from './publicationsData';
 
 const PublicationsByTopic: React.FC = () => {
@@ -49,7 +48,6 @@ const PublicationsByTopic: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import './Publications.css';
-import Footer from './Footer';
 import publications from './publicationsData';
 
 const PublicationsByYear: React.FC = () => {
@@ -32,7 +31,6 @@ const PublicationsByYear: React.FC = () => {
 
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

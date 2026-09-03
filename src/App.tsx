@@ -13,6 +13,7 @@ import AllNews from './AllNews';
 import Resources from './Resources';
 import Outreach from './Outreach';
 import MTLAndFinetuning from './MTLAndFinetuning';
+import Footer from './Footer';
 import DDPMLearningNote from './blogs/DDPMLearningNote';
 import EnsembleLoRANote from './blogs/EnsembleLoRANote';
 import AlgorithmicReasoningNote from './blogs/AlgorithmicReasoningNote';
@@ -43,6 +44,8 @@ const App: React.FC = () => {
         <Route path="/blogs/blog/NoteJune" element={<NoteJune />} />
         <Route path="/blogs/blog/MMTraCENote" element={<MMTraCENote />} />
       </Routes>
+      {/* One footer for every route, so each tab carries it. */}
+      <Footer />
     </HashRouter>
   );
 };

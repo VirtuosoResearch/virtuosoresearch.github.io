@@ -2,7 +2,6 @@
 import React from 'react';
 import Header from './Header';
 import './People.css';
-import Footer from './Footer';
 
 // Member component
 //        {
@@ -336,7 +335,6 @@ const Group: React.FC = () => {
                 </section> */}
 
             </div>
-            <Footer/>
         </div>
     );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import './MTLAndFinetuning.css';
 import { Link } from 'react-router-dom';
 import Header from './Header';
-import Footer from './Footer';
 
 const MTLAndFinetuning: React.FC = () => {
 
@@ -98,7 +97,6 @@ const MTLAndFinetuning: React.FC = () => {
                     <p> We further extend to multi-objective reinforcement learning. In this setting, different objectives can be treated as related but potentially conflicting tasks. This connection allows task relationship modeling to inform policy learning, routing, and objective balancing in modern AI systems (<a href="https://arxiv.org/pdf/2511.12779">AAAI'26</a>).
                     </p>
             </div>
-            <Footer/>
         </div>
     );
 };

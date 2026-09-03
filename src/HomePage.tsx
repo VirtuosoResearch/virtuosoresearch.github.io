@@ -4,7 +4,6 @@ import Header from './Header';
 import TitleAndMission from './TitleAndMission';
 import News from './News';
 import './Layout.css';
-import Footer from './Footer';
 
 const HomePage: React.FC = () => {
     return (
@@ -18,7 +17,6 @@ const HomePage: React.FC = () => {
                     <News />
                 </div>
             </main>
-            <Footer/>
         </div>
     );
 };

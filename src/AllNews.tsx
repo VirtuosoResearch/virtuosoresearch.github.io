@@ -2,7 +2,6 @@ import React from 'react';
 import './AllNews.css';
 import { Link } from 'react-router-dom';
 import Header from './Header';
-import Footer from './Footer';
 
 const AllNews: React.FC = () => {
     const newsItems = [
@@ -131,7 +130,6 @@ const AllNews: React.FC = () => {
                     ))}
                 </div>
             </div>
-			<Footer/>
         </div>
     );
 };
