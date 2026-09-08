@@ -1,0 +1,291 @@
+/* Highlights.css */
+
+/* The card reuses .section from TitleAndMission.css for its background, border
+   and radius; only the tile and lightbox pieces live here. */
+.highlights h3 {
+    margin-top: 0;
+}
+
+/* Two equal columns, so both frames are the same size whatever they hold. They
+   drop to one column on a phone, where two tiles side by side in an already
+   narrow column would be too small to read. */
+.highlights-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* Each tile is a button so the lightbox opens from the keyboard too; these
+   rules undo the browser's button chrome. */
+.highlight-tile {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    color: inherit;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.highlight-tile:hover,
+.highlight-tile:focus-visible {
+    border-color: #b8b8b8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+    transform: translateY(-2px);
+}
+
+/* The frame is the part that has to match across the two tiles: a fixed 4:3
+   box, whatever shape or size the image inside it is. The background is the mat
+   the image is inset onto. */
+.highlight-frame {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: #ededed;
+}
+
+/* Outgoing and incoming slides are stacked so one can fade into the other.
+   object-fit sizes the image to the content box, so the padding here is what
+   holds it off the edge of the frame. */
+.highlight-layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Posters are mostly portrait. Fitting a whole one inside a landscape frame
+   shrinks it to an unreadable stamp, so it fills the frame instead and is
+   anchored to the top, which is the part worth seeing: title, authors, and the
+   first row of panels, at a size you can actually read. The lightbox still
+   opens the whole poster. Landscape posters are already close to the frame's
+   own 4:3, so this barely crops them. The wider mat keeps a poster's own white
+   edges from running into the frame. */
+.highlight-poster .highlight-layer {
+    object-position: top;
+    padding: 18px;
+}
+
+.highlight-layer-in {
+    animation: highlight-fade-in 600ms ease both;
+}
+
+/* The outgoing layer keeps its final transparent state, so it can stay in the
+   tree until the next change replaces it. */
+.highlight-layer-out {
+    animation: highlight-fade-out 600ms ease both;
+}
+
+@keyframes highlight-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes highlight-fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Off-screen copy of the next slide, so the browser has it cached before the
+   frame changes. */
+.highlight-preload {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .highlight-layer-in,
+    .highlight-layer-out {
+        animation-duration: 1ms;
+    }
+
+    .highlight-tile {
+        transition: none;
+    }
+}
+
+/* Play badge over a recorded talk. */
+.highlight-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    pointer-events: none;
+}
+
+.highlight-play-body {
+    fill: #212121;
+    fill-opacity: 0.78;
+    transition: fill-opacity 0.2s;
+}
+
+.highlight-play-arrow {
+    fill: #fff;
+}
+
+.highlight-tile:hover .highlight-play-body,
+.highlight-tile:focus-visible .highlight-play-body {
+    fill: #f00;
+    fill-opacity: 1;
+}
+
+.highlight-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 9px 10px 10px;
+    border-top: 1px solid #ededed;
+}
+
+.highlight-caption-text {
+    font-size: 14px;
+    line-height: 1.35;
+    color: #333;
+    /* Two lines at most, so one caption can't push its tile taller than the
+       other and break the matched frames. */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.highlight-caption-date {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Lightbox */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 64px;
+    background-color: rgba(0, 0, 0, 0.86);
+}
+
+.lightbox-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lightbox-figure img {
+    max-width: 100%;
+    /* Leaves room for the caption under the image at any window height. */
+    max-height: calc(100vh - 140px);
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: #111;
+}
+
+/* A 16:9 player sized to whichever of the window's two dimensions runs out
+   first. */
+.lightbox-video {
+    width: min(92vw, (100vh - 140px) * 16 / 9);
+    aspect-ratio: 16 / 9;
+}
+
+.lightbox-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+.lightbox-figure figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.lightbox-caption-text {
+    font-size: 16px;
+}
+
+.lightbox-caption-date {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.lightbox-close,
+.lightbox-arrow {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #e8e8e8;
+    cursor: pointer;
+    line-height: 1;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.lightbox-close:hover,
+.lightbox-arrow:hover,
+.lightbox-close:focus-visible,
+.lightbox-arrow:focus-visible {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.lightbox-close {
+    top: 14px;
+    right: 18px;
+    font-size: 34px;
+}
+
+.lightbox-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 46px;
+}
+
+.lightbox-prev {
+    left: 10px;
+}
+
+.lightbox-next {
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    .highlights-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .highlight-caption-text {
+        font-size: 13px;
+    }
+
+    /* The arrows sit over the image on a phone rather than beside it, so it
+       gets the full width. */
+    .lightbox {
+        padding: 20px 12px;
+    }
+
+    .lightbox-arrow {
+        font-size: 36px;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+}

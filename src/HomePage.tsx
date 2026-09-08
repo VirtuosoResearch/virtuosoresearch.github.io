@@ -3,6 +3,8 @@ import React from 'react';
 import Header from './Header';
 import TitleAndMission from './TitleAndMission';
 import News from './News';
+import Highlights from './Highlights';
+import Contact from './Contact';
 import './Layout.css';
 
 const HomePage: React.FC = () => {
@@ -12,6 +14,8 @@ const HomePage: React.FC = () => {
             <main className="main-container">
                 <div className="title-and-mission">
                     <TitleAndMission />
+                    <Highlights />
+                    <Contact />
                 </div>
                 <div className="content-container">
                     <News />

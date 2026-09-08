@@ -16,6 +16,11 @@ const News: React.FC = () => {
             <h2>Recent Updates</h2>
 
 		<div className="news-item">
+			<div className="news-date">Sep, 2026</div>
+			<p> Congratulations to <a href="https://lidongyue12138.github.io/">Dongyue Li</a> on a successful thesis defense! </p>
+		</div>
+
+		<div className="news-item">
 			<div className="news-date">Jul, 2026</div>
 			<p> New papers out: <ul>
 				<li><a href="https://arxiv.org/abs/2602.03783">Kernel surrogate models for task attribution</a>,</li>
