@@ -43,12 +43,14 @@ const photos: Slide[] = [
         caption: 'JSM at Nashville',
         date: 'August 2025',
     },
-    {
-        src: 'gallery/group-dinner-2025-lg.jpg',
-        thumb: 'gallery/group-dinner-2025-sm.jpg',
-        caption: 'Lab dinner in Boston',
-        date: 'Summer 2025',
-    },
+    /*
+        {
+            src: 'gallery/group-dinner-2025-lg.jpg',
+            thumb: 'gallery/group-dinner-2025-sm.jpg',
+            caption: 'Lab dinner in Boston',
+            date: 'Summer 2025',
+        },
+    */
     {
         src: 'gallery/informs-2023-lg.jpg',
         thumb: 'gallery/informs-2023-sm.jpg',
@@ -131,8 +133,8 @@ const posters: Slide[] = [
 
 /* Slightly different periods, so the two frames drift apart instead of always
    changing at the same moment. */
-const PHOTO_INTERVAL_MS = 6000;
-const POSTER_INTERVAL_MS = 8000;
+const PHOTO_INTERVAL_MS = 15000;
+const POSTER_INTERVAL_MS = 18000;
 
 const tileOf = (slide: Slide) => slide.thumb ?? slide.src;
 
