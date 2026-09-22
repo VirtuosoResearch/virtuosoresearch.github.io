@@ -123,6 +123,15 @@ const Group: React.FC = () => {
             link: "https://www.linkedin.com/in/tianyu-lu-1a6a87326"
         },
         {
+            name: "Nicole Chen",
+            position: "Undergraduate researcher",
+            details: [
+                "B.S. in Computer Science, Emory University"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://virtuosoresearch.github.io/"
+        },        
+        {
             name: "Chigozirim Ike",
             position: "Undergraduate student",
             details: [
@@ -130,6 +139,15 @@ const Group: React.FC = () => {
             ],
             imageSrc: "default.jpg", // Replace with actual image path
             link: "https://www.linkedin.com/in/chigo-ike/"
+        },
+        {
+            name: "Jessica Luo",
+            position: "Undergraduate researcher",
+            details: [
+                "B.S. in Computer Science (AI concentration), Northeastern University"
+            ],
+            imageSrc: "default.jpg", // Replace with actual image path
+            link: "https://virtuosoresearch.github.io/"
         },
         {
             name: "Shirley Yu",
