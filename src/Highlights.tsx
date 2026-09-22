@@ -67,6 +67,18 @@ const photos: Slide[] = [
 
 const posters: Slide[] = [
     {
+        src: 'gallery/poster-gradsel-lg.jpg',
+        thumb: 'gallery/poster-gradsel-sm.jpg',
+        caption: 'Linear-time demonstration selection for in-context learning',
+        date: 'EMNLP 2025',
+    },
+    {
+        src: 'gallery/poster-mmtrace-lg.jpg',
+        thumb: 'gallery/poster-mmtrace-sm.jpg',
+        caption: 'Multimodal embeddings for traffic accident prediction and causal estimation',
+        date: 'KDD 2026',
+    },
+    {
         src: 'gallery/poster-gradex-lg.jpg',
         thumb: 'gallery/poster-gradex-sm.jpg',
         caption: 'Scalable fine-tuning from multiple data sources',
