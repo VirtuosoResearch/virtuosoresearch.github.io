@@ -73,8 +73,8 @@ const posters: Slide[] = [
         date: 'EMNLP 2025',
     },
     {
-        src: 'gallery/poster-policygradex-lg.jpg',
-        thumb: 'gallery/poster-policygradex-sm.jpg',
+        src: 'gallery/poster-policygradex-lg.jpeg',
+        thumb: 'gallery/poster-policygradex-sm.jpeg',
         caption: 'Scalable Multi-Objective and Meta Reinforcement Learning via Gradient Estimation',
         date: 'AAAI 2026',
     },
