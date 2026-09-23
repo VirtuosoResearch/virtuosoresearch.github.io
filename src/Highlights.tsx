@@ -73,6 +73,12 @@ const posters: Slide[] = [
         date: 'EMNLP 2025',
     },
     {
+        src: 'gallery/poster-policygradex-lg.jpg',
+        thumb: 'gallery/poster-policygradex-sm.jpg',
+        caption: 'Scalable Multi-Objective and Meta Reinforcement Learning via Gradient Estimation',
+        date: 'AAAI 2026',
+    },
+    {
         src: 'gallery/poster-mmtrace-lg.jpg',
         thumb: 'gallery/poster-mmtrace-sm.jpg',
         caption: 'Multimodal embeddings for traffic accident prediction and causal estimation',
