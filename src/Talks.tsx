@@ -12,6 +12,8 @@ const Talks: React.FC = () => {
     const [showAbstract7, setShowAbstract7] = useState(false);
     const [showAbstract8, setShowAbstract8] = useState(false);
     const [showAbstract9, setShowAbstract9] = useState(false);
+    const [showAbstract10, setShowAbstract10] = useState(false);
+    const [showAbstract11, setShowAbstract11] = useState(false);
 
     const toggleAbstract1 = () => {
         setShowAbstract1(!showAbstract1);
@@ -49,6 +51,14 @@ const Talks: React.FC = () => {
         setShowAbstract9(!showAbstract9);
     };
 
+    const toggleAbstract10 = () => {
+        setShowAbstract10(!showAbstract10);
+    };
+
+    const toggleAbstract11 = () => {
+        setShowAbstract11(!showAbstract11);
+    };
+
     return (
         <div>
         <Header />
@@ -62,6 +72,58 @@ const Talks: React.FC = () => {
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
+                {/* Nov 23, 2026 - Brian Hu Zhang */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2
+                        onClick={toggleAbstract11}
+                        style={{
+                            cursor: 'pointer',
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        Computational game theory for the age of intelligent and learning agents
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Monday, Nov 23, 2026 @ 4-5 p.m.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Location:</strong> Room 356 (3rd floor), 216 Massachusetts Avenue, Boston</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Brian Hu Zhang (MIT)</p>
+                    {showAbstract11 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> We are increasingly moving toward a world where AI agents routinely have strategic interactions with each other and with humans. It is therefore becoming increasingly important to study what happens when strategic, intelligent, and adaptive learning agents interact with each other. In this talk, I will give an overview of research that I have done in this space and ideas for future research. I will focus specifically on two lines of work.
+                            </p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>First, I will discuss a new paradigm for understanding interactions of teams of agents communicating with each other and working together toward a shared goal, when communication may leak information to a possibly hidden adversary. Such games arise commonly in the real world—for example, in distributed networks and agentic systems where some nodes may be secretly compromised by an adversary—and also in recreational games, where they are known as games of social deduction. It was previously not clear how to even define a solution concept for this class of games, much less solve them. We designed the first solution concept and efficient algorithm for this class of games, via connections to generalized mechanism design, adversarial team games, and multi-party computation. With our new techniques, we computed exact optimal strategies for several five- and six-player variants of the game Avalon, making them the largest hidden-role games ever solved even to this day.</p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>Second, I will discuss new paradigms for mechanism design in a world of learning agents. This will come in two flavors: 1) new techniques for a very general form of mechanism design using learning algorithms, that is, using multi-agent reinforcement learning algorithms to design mechanisms, and 2) mechanism design for learning agents, that is, using incentives (payments) to steer a system of independent learning agents toward more desirable outcomes.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Brian Hu Zhang is a postdoc at MIT CSAIL, working with Profs. Constantinos Daskalakis and Gabriele Farina. His current research interests lie in developing foundations and algorithms for multi-agent systems and computational game theory. He recently completed his PhD in Computer Science at Carnegie Mellon University, advised by Prof. Tuomas Sandholm. His thesis won Honorable Mentions for the CMU SCS and AAAI/ACM SIGAI Dissertation Awards, as well as the CMU nomination for the ACM Dissertation Award. He was also the inaugural recipient of the CMU Hans J. Berliner Graduate Fellowship in Artificial Intelligence. He has also received a Best Student Paper Award at WINE 2026 and a Best Poster Award at AAAI 2025. Before CMU, he completed his undergraduate and master's degrees in Computer Science at Stanford University, where he completed his honors thesis with Prof. Gregory Valiant.</p>
+                        </div>
+                    )}
+                </div>
+                {/* Nov 11, 2026 - Margalit Glasgow */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2
+                        onClick={toggleAbstract10}
+                        style={{
+                            cursor: 'pointer',
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        When do Infinite-Width Neural Networks explain Finite-Width Networks
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Wednesday, Nov 11, 2026 @ 12-1:30 p.m.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Location:</strong> 1st floor conference room, 216 Massachusetts Avenue, Boston</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Margalit Glasgow (MIT)</p>
+                    {showAbstract10 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> A longstanding question in deep learning theory asks why gradient descent (GD) finds good solutions in non-convex neural-network optimization landscapes. One compelling theory is that overparameterization makes the optimization landscape benign, leading GD to find global optima. These global convergence guarantees have even been proven rigorously in some settings for infinite-width neural networks. In this talk, I'll address the question of when such infinite-width convergence guarantees can be transferred to finite-width 2-layer networks. I'll show that whenever the convergence rate of the infinite-width network is faster than 1/t<sup>2</sup>, comparable guarantees can be attained in finite-width networks. A key takeaway of our result is that whenever the convergence rate of the infinite-width, population-loss dynamics is faster than 1/t<sup>2</sup>, we can attain a loss of ϵ with only poly(d/ϵ) neurons, training samples, and GD steps.
+                            </p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Margalit Glasgow is a postdoc in LIDS/IDSS at MIT where she is advised by Sasha Rakhlin. She is broadly interested in theoretical machine learning and high dimensional probability, and recently her research has focused on deep learning theory. She will be on the academic job market in Fall 2026/Spring 2027 for jobs starting in Fall 2027.</p>
+                        </div>
+                    )}
+                </div>
                 {/* August 28, 2026 - Dongyue Li */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2

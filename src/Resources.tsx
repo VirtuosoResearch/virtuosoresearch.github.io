@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 import ImageSlideshow from './ImageSlideshow';
 import VideoSlideshow from './VideoSlideshow';
 import './Resources.css';
@@ -98,6 +99,27 @@ const Resources: React.FC = () => {
                         <li>
                             <a href="/talks/GradSel.pdf" target="_blank" rel="noopener noreferrer">Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation</a>
                         </li>        
+                    </ul>
+                </section>
+
+                <section className="section">
+                    <h3>Blogs</h3>
+                    <ul>
+                        <li>
+                            <Link reloadDocument to="/blogs/blog/AlgorithmicReasoningNote">On (Multitask) Algorithmic Reasoning</Link>, Dongyue Li and Hongyang Zhang, April 2026
+                        </li>
+                        <li>
+                            <Link reloadDocument to="/blogs/blog/MMTraCENote">Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation</Link>, Michael Zhang, December 2025
+                        </li>
+                        <li>
+                            <Link reloadDocument to="/blogs/blog/EnsembleLoRANote">Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</Link>, Michael Zhang, August 2025
+                        </li>
+                        <li>
+                            <Link reloadDocument to="/blogs/blog/NoteJune">AY reflection</Link>, Ryan Zhang, August 2025
+                        </li>
+                        <li>
+                            <Link reloadDocument to="/blogs/blog/DDPMLearningNote">Denoising Diffusion Probabilistic Models</Link>, Jinhong Yu, December 2023
+                        </li>
                     </ul>
                 </section>
 

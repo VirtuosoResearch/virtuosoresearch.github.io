@@ -52,31 +52,26 @@ return (
       
       <Routes>
         <!-- Add the following line, replace blog name -->
-        <Route path="/research/blog/{blog_name}" element={<{blog_name} />} />
+        <Route path="/blogs/blog/{blog_name}" element={<{blog_name} />} />
         <!-- End Here -->
       </Routes>
     </BrowserRouter>
   );
 ```
 
-- `Research.tsx` : Open this file under `src/` and add a Link tag as following:
+- `Resources.tsx` : Open this file under `src/` and add a list item to the `Blogs` section as following:
 
 ```Typescript
-return (
-        <div>
-        <Header />
-            <div className="blog-container">
-                <h1>Posts:</h1>
-                <!-- Add the following block, replace blog name, tytle, Author and date -->
-                <Link reloadDocument to="/research/blog/{blog_name}"> 
-                    <h2>{blog_tytle}</h2>
-                </Link>
-                <p>{blog_author}, {date}</p>
-                <!-- End Here -->
-            </div>
-        </div>
-    );
-
+<section className="section">
+    <h3>Blogs</h3>
+    <ul>
+        <!-- Add the following block, replace blog name, tytle, Author and date -->
+        <li>
+            <Link reloadDocument to="/blogs/blog/{blog_name}">{blog_tytle}</Link>, {blog_author}, {date}
+        </li>
+        <!-- End Here -->
+    </ul>
+</section>
 ```
 
 

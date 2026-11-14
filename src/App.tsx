@@ -1,11 +1,10 @@
 // src/App.tsx
 import React from 'react';
 // import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import HomePage from './HomePage';
 import People from './People';
-import ResearchBlogs from './Blogs';
 import Talks from './Talks';
 import PublicationsByYear from './PublicationsByYear';
 import PublicationsByTopic from './PublicationsByTopic';
@@ -30,7 +29,8 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/outreach" element={<Outreach />} />
         <Route path="/people" element={<People />} />
-        <Route path="/blogs" element={<ResearchBlogs />} />
+        {/* The blog list now lives on the Resources page; keep old links working. */}
+        <Route path="/blogs" element={<Navigate to="/resources" replace />} />
         <Route path="/talks" element={<Talks />} />
         <Route path="/publications" element={<PublicationsByYear />} />
         <Route path="/publications/year" element={<PublicationsByYear />} />

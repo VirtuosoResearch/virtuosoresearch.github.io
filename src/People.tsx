@@ -76,13 +76,14 @@ const Group: React.FC = () => {
     // Data for students and postdocs
     const phdStudentsData = [
         {
-            name: "Dongyue Li",
-            position: "Ph.D.",
+            name: "Zhenshuo Zhang",
+            position: "Ph.D. student",
             details: [
-                "B.Eng., Shanghai Jiao Tong University",
+                "B.Eng., Zhejiang University",
+                "M.S., Zhejiang University"
             ],
-            imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
-            link: "https://lidongyue12138.github.io/"
+            imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
+            link: "https://zhenshuozhang.github.io/"
         },
         {
             name: "Ziniu (Michael) Zhang",
@@ -92,16 +93,6 @@ const Group: React.FC = () => {
             ],
             imageSrc: "portraits/ziniu.jpg", // Replace with actual image path
             link: "https://ziniuzhang.github.io"
-        },        
-		{
-	        name: "Zhenshuo Zhang",
-            position: "Ph.D. student",
-            details: [
-                "B.Eng., Zhejiang University",
-                "M.S., Zhejiang University"
-            ],
-            imageSrc: "portraits/zhenshuo.png", // Replace with actual image path
-            link: "https://zhenshuozhang.github.io/"
         },
         {
             name: "Alice Duan",
@@ -169,6 +160,15 @@ const Group: React.FC = () => {
      ];
     
      const alumniData = [
+        {
+            name: "Dongyue Li",
+            position: "Ph.D. alumni 2026",
+            details: [
+                "Now working at Apple",
+            ],
+            imageSrc: "portraits/dongyue.jpg", // Replace with actual image path
+            link: "https://lidongyue12138.github.io/"
+        },
         {
             name: "Xin Wang",
             position: "M.S.",

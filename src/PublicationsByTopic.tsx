@@ -12,8 +12,10 @@ const PublicationsByTopic: React.FC = () => {
     const topicOrder = [
         'Matrix recovery',
         'Neural net Hessian',
+        'Multi-objective reinforcement learning',
         'Multitask learning',
-        'Language models',
+        'Language models and reasoning',
+        'Multimodality',
         'Robustness and data augmentation',
         'Large-scale networks',
         'Incentives and cooperative games',
