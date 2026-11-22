@@ -13,6 +13,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    /* A little narrower than the card, so the tiles don't dominate the column;
+       both frames shrink together and keep their 4:3 shape. */
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* A gallery with only one frame (the photos on the Resources page) gets one
+   column at a comfortable size, rather than half the card. */
+.highlights-row-single {
+    grid-template-columns: 1fr;
+    max-width: 520px;
 }
 
 /* Each tile is a button so the lightbox opens from the keyboard too; these
@@ -73,6 +84,13 @@
 .highlight-poster .highlight-layer {
     object-position: top;
     padding: 18px;
+}
+
+/* A recorded talk is usually a slide deck. Cropping a 16:9 still to the 4:3
+   frame would cut the text off at both sides, so the whole still is shown on
+   the mat instead. */
+.highlight-talk .highlight-layer {
+    object-fit: contain;
 }
 
 .highlight-layer-in {
@@ -272,6 +290,8 @@
     .highlights-row {
         grid-template-columns: 1fr;
         gap: 12px;
+        /* One tile per row is already small on a phone. */
+        max-width: none;
     }
 
     .highlight-caption-text {

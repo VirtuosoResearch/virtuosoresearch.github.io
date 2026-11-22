@@ -7,8 +7,8 @@ import './TitleAndMission.css';
 const Contact: React.FC = () => {
     return (
         <div className="section">
-            <h3>Contact</h3>
-            <p>We are always looking for students to join our research projects. If you have ideas, we would love to chat. You may take a look at our recent papers and projects first. The ideal student should to be self-motivated, and have a strong background in mathematics or in programming.</p>
+            <h3>Prospective Students</h3>
+            <p>We are always looking for students to join our research projects. If you have ideas, we would love to chat. You may take a look at our recent papers and projects first. The ideal student should be self-motivated, and have a strong background in mathematics or in programming.</p>
         </div>
     );
 };

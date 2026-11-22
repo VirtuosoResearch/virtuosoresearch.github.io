@@ -16,6 +16,19 @@ const News: React.FC = () => {
             <h2>Recent Updates</h2>
 
 		<div className="news-item">
+			<div className="news-date">Nov, 2026</div>
+			<p> New papers out (to appear at NeurIPS and EMNLP 2026): <ul>
+				<li><a href="https://arxiv.org/abs/2610.35733">Multi-objective RL using routed ensembles</a> (NeurIPS),</li>
+				<li><a href="https://arxiv.org/abs/2611.13198">Kernel surrogate models for multimodal attribution</a> (NeurIPS),</li>
+				<li><a href="https://arxiv.org/abs/2610.06404">Stability of multi-step reasoning</a> (NeurIPS),</li>
+				<li><a href="https://arxiv.org/abs/2608.25200">Multi-objective alignment</a> (EMNLP), and</li>
+				<li><a href="https://arxiv.org/abs/2609.17888">Long-context demonstration selection</a> (EMNLP).</li>
+			</ul>
+			Congrats to everyone involved!
+			</p>
+		</div>
+
+		<div className="news-item">
 			<div className="news-date">Sep, 2026</div>
 			<p> Congratulations to <a href="https://lidongyue12138.github.io/">Dongyue Li</a> on a successful thesis defense! </p>
 		</div>

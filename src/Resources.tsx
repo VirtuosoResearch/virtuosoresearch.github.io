@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import { Link } from 'react-router-dom';
-import ImageSlideshow from './ImageSlideshow';
-import VideoSlideshow from './VideoSlideshow';
+import { PhotoGallery } from './Highlights';
 import './Resources.css';
 
 const Resources: React.FC = () => {
@@ -20,7 +18,7 @@ const Resources: React.FC = () => {
                     <h4>Survey</h4>
                     <ul>
                         <li>
-                            <a href="https://github.com/VirtuosoResearch/Multitask-Learning-and-Fine-Tuning" target="_blank" rel="noopener noreferrer">Recent papers and projects on multitask learning, fine-tuning, and applications</a>
+                            <a href="https://github.com/VirtuosoResearch/Multi-source-learning-repository" target="_blank" rel="noopener noreferrer">Multi-source learning references: a paper list on multitask learning, source-to-target transfer, meta-learning, and applications</a>
                         </li>
                     </ul>
                     <h4>Datasets</h4>
@@ -33,6 +31,9 @@ const Resources: React.FC = () => {
                         </li>*/}
                     </ul>
                 </section>
+
+                {/* Posters and recorded talks are on the home page. */}
+                <PhotoGallery />
 
                 <section className="section repositories">
                     <h3>Repositories</h3>
@@ -81,7 +82,7 @@ const Resources: React.FC = () => {
                 </section>
 
                 <section className="section">
-                    <h3>Talks</h3>
+                    <h3>Talk slides</h3>
                     <p>Here are some of our talk slides</p>
                     <ul>
                         <li>
@@ -99,27 +100,6 @@ const Resources: React.FC = () => {
                         <li>
                             <a href="/talks/GradSel.pdf" target="_blank" rel="noopener noreferrer">Linear-Time Demonstration Selection for In-Context Learning via Gradient Estimation</a>
                         </li>        
-                    </ul>
-                </section>
-
-                <section className="section">
-                    <h3>Blogs</h3>
-                    <ul>
-                        <li>
-                            <Link reloadDocument to="/blogs/blog/AlgorithmicReasoningNote">On (Multitask) Algorithmic Reasoning</Link>, Dongyue Li and Hongyang Zhang, April 2026
-                        </li>
-                        <li>
-                            <Link reloadDocument to="/blogs/blog/MMTraCENote">Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation</Link>, Michael Zhang, December 2025
-                        </li>
-                        <li>
-                            <Link reloadDocument to="/blogs/blog/EnsembleLoRANote">Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets</Link>, Michael Zhang, August 2025
-                        </li>
-                        <li>
-                            <Link reloadDocument to="/blogs/blog/NoteJune">AY reflection</Link>, Ryan Zhang, August 2025
-                        </li>
-                        <li>
-                            <Link reloadDocument to="/blogs/blog/DDPMLearningNote">Denoising Diffusion Probabilistic Models</Link>, Jinhong Yu, December 2023
-                        </li>
                     </ul>
                 </section>
 
@@ -143,15 +123,6 @@ const Resources: React.FC = () => {
                         </li>
                     </ul>
                 </section>*/}
-
-                <section className="section">
-                    <h3>Presentation materials and group photos</h3>
-                    Here are some of our conference posters and group photos.
-                    <ImageSlideshow/>
-					<p> Here are several recorded talks. </p>
-                    <VideoSlideshow/>
-					<p> We are always looking for pointers and collaborators. Feel free to shoot us an email if you have any feedback! </p>
-                </section>
             </div>
         </div>
     );

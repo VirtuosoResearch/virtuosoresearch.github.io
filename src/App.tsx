@@ -29,8 +29,8 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/outreach" element={<Outreach />} />
         <Route path="/people" element={<People />} />
-        {/* The blog list now lives on the Resources page; keep old links working. */}
-        <Route path="/blogs" element={<Navigate to="/resources" replace />} />
+        {/* The blog list now lives on the home page; keep old links working. */}
+        <Route path="/blogs" element={<Navigate to="/" replace />} />
         <Route path="/talks" element={<Talks />} />
         <Route path="/publications" element={<PublicationsByYear />} />
         <Route path="/publications/year" element={<PublicationsByYear />} />

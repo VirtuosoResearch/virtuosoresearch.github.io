@@ -1,166 +1,39 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { Slide, photos, posters, talks } from './galleryData';
 import './Highlights.css';
 
-type Slide = {
-    /* Full-size file, opened in the lightbox. For a recorded talk this is the
-       still shown on the tile. */
-    src: string;
-    /* Smaller copy for the frame; falls back to src when absent. */
-    thumb?: string;
-    caption: string;
-    date: string;
-    /* Set for a recorded talk: the tile gets a play badge and the lightbox
-       opens the player rather than an image. */
-    videoId?: string;
+/* How a frame crops what it shows:
+   - photo: fills the frame.
+   - poster: fills the frame anchored to the top edge, with a wider mat.
+   - talk: the whole still is shown, so a slide's text isn't cut off at the
+     sides of a 16:9 recording. */
+type FrameKind = 'photo' | 'poster' | 'talk';
+
+type FrameConfig = {
+    kind: FrameKind;
+    slides: Slide[];
+    intervalMs: number;
 };
 
-/* Two frames of the same size sit side by side, each cycling through its own
-   list: photos on the left, posters on the right. Both start on a random slide
-   so the page doesn't open on the same pair every visit.
-
-   To add to either rotation, drop the file in public/gallery/ and add an entry.
-   Large images are worth downscaling first (a -sm copy near 900px for the frame
-   and a -lg copy near 1600px for the lightbox) so the home page isn't loading
-   camera JPEGs or print posters. An entry whose file is missing is dropped from
-   the rotation rather than shown broken, which is why the defense photo can be
-   added later without touching this file. */
-const photos: Slide[] = [
-    {
-        src: 'gallery/dongyue-defense-lg.jpg',
-        thumb: 'gallery/dongyue-defense-sm.jpg',
-        caption: 'Dongyue Li defends his PhD thesis',
-        date: 'September 2026',
-    },
-    {
-        src: 'gallery/lab-dinner-2026-lg.jpg',
-        thumb: 'gallery/lab-dinner-2026-sm.jpg',
-        caption: 'Celebrating after the defense',
-        date: 'September 2026',
-    },
-    {
-        src: 'gallery/jsm-2025-lg.jpg',
-        thumb: 'gallery/jsm-2025-sm.jpg',
-        caption: 'JSM at Nashville',
-        date: 'August 2025',
-    },
-    /*
-        {
-            src: 'gallery/group-dinner-2025-lg.jpg',
-            thumb: 'gallery/group-dinner-2025-sm.jpg',
-            caption: 'Lab dinner in Boston',
-            date: 'Summer 2025',
-        },
-    */
-    {
-        src: 'gallery/informs-2023-lg.jpg',
-        thumb: 'gallery/informs-2023-sm.jpg',
-        caption: 'Session photo at the INFORMS Annual Meeting',
-        date: 'October 2023',
-    },
-    {
-        src: 'gallery/icml-2022-lg.jpg',
-        thumb: 'gallery/icml-2022-sm.jpg',
-        caption: 'At the poster session at ICML',
-        date: 'July 2022',
-    },
+/* Frames of the same size sit side by side, each cycling through its own list.
+   The lists themselves live in galleryData.ts. Slightly different periods, so
+   neighbouring frames drift apart instead of always changing at the same
+   moment. Declared once here rather than inline in a page, so the frames keep
+   the same identity across renders and their timers aren't restarted. */
+const HOME_FRAMES: FrameConfig[] = [
+    { kind: 'poster', slides: posters, intervalMs: 18000 },
+    { kind: 'talk', slides: talks, intervalMs: 21000 },
 ];
 
-const posters: Slide[] = [
-    {
-        src: 'gallery/poster-gradsel-lg.jpg',
-        thumb: 'gallery/poster-gradsel-sm.jpg',
-        caption: 'Linear-time demonstration selection for in-context learning',
-        date: 'EMNLP 2025',
-    },
-    {
-        src: 'gallery/poster-policygradex-lg.jpeg',
-        thumb: 'gallery/poster-policygradex-sm.jpeg',
-        caption: 'Scalable Multi-Objective and Meta Reinforcement Learning via Gradient Estimation',
-        date: 'AAAI 2026',
-    },
-    {
-        src: 'gallery/poster-mmtrace-lg.jpg',
-        thumb: 'gallery/poster-mmtrace-sm.jpg',
-        caption: 'Multimodal embeddings for traffic accident prediction and causal estimation',
-        date: 'KDD 2026',
-    },
-    {
-        src: 'gallery/poster-gradex-lg.jpg',
-        thumb: 'gallery/poster-gradex-sm.jpg',
-        caption: 'Scalable fine-tuning from multiple data sources',
-        date: 'Findings of EMNLP 2024',
-    },
-    {
-        src: 'gallery/poster-ensemble-lora-lg.jpg',
-        thumb: 'gallery/poster-ensemble-lora-sm.jpg',
-        caption: 'Efficient ensemble for fine-tuning language models',
-        date: 'ACL 2025',
-    },
-    {
-        src: 'gallery/poster-road-safety-lg.jpg',
-        thumb: 'gallery/poster-road-safety-sm.jpg',
-        caption: 'Graph neural networks for road safety modeling',
-        date: 'NeurIPS 2023',
-    },
-    {
-        src: 'gallery/poster-gnn-generalization-lg.jpg',
-        thumb: 'gallery/poster-gnn-generalization-sm.jpg',
-        caption: 'Generalization in graph neural networks',
-        date: 'AISTATS 2023',
-    },
-    {
-        src: 'gallery/poster-negative-transfers-lg.jpg',
-        thumb: 'gallery/poster-negative-transfers-sm.jpg',
-        caption: 'Identification of negative transfers in multitask learning',
-        date: 'TMLR 2023',
-    },
-    {
-        src: 'gallery/poster-noise-stability-lg.jpg',
-        thumb: 'gallery/poster-noise-stability-sm.jpg',
-        caption: 'Noise stability optimization for flat minima',
-        date: 'TMLR 2024',
-    },
-    {
-        src: 'gallery/poster-edge-centrality-lg.jpg',
-        thumb: 'gallery/poster-edge-centrality-sm.jpg',
-        caption: 'Optimal intervention on weighted networks via edge centrality',
-        date: 'SDM 2023',
-    },
-    {
-        src: 'gallery/poster-finetuning-regularization-lg.jpg',
-        thumb: 'gallery/poster-finetuning-regularization-sm.jpg',
-        caption: 'Improved regularization and robustness for fine-tuning',
-        date: 'NeurIPS 2021',
-    },
-    {
-        src: 'gallery/poster-task-clustering-lg.jpg',
-        thumb: 'gallery/poster-task-clustering-sm.jpg',
-        caption: 'Approximate clustering for extracting task relationships',
-        date: 'NeurIPS 2023 workshop',
-    },
-    /* A recorded talk can join either rotation; the tile gets a play badge and
-       the lightbox opens the player:
-    {
-        src: 'https://img.youtube.com/vi/Wm61qG0XVB0/maxresdefault.jpg',
-        videoId: 'Wm61qG0XVB0',
-        caption: 'Boosting multitask learning on graphs',
-        date: 'KDD 2023',
-    },
-    */
+const PHOTO_FRAMES: FrameConfig[] = [
+    { kind: 'photo', slides: photos, intervalMs: 15000 },
 ];
-
-/* Slightly different periods, so the two frames drift apart instead of always
-   changing at the same moment. */
-const PHOTO_INTERVAL_MS = 15000;
-const POSTER_INTERVAL_MS = 18000;
 
 const tileOf = (slide: Slide) => slide.thumb ?? slide.src;
 
 type FrameProps = {
     slides: Slide[];
-    /* Which frame this is. Both crop to fill; posters get a wider mat and are
-       anchored to their top edge. */
-    kind: 'photo' | 'poster';
+    kind: FrameKind;
     intervalMs: number;
     paused: boolean;
     onOpen: (index: number) => void;
@@ -285,9 +158,14 @@ const SlideFrame: React.FC<FrameProps> = ({
     );
 };
 
-type OpenState = { list: 'photos' | 'posters'; index: number };
+type OpenState = { frame: number; index: number };
 
-const Highlights: React.FC = () => {
+type GalleryProps = {
+    title: string;
+    frames: FrameConfig[];
+};
+
+const Gallery: React.FC<GalleryProps> = ({ title, frames }) => {
     /* Files that failed to load, so a slot that hasn't been filled in yet drops
        out of its rotation. */
     const [missing, setMissing] = useState<string[]>([]);
@@ -297,16 +175,18 @@ const Highlights: React.FC = () => {
         setMissing((prev) => (prev.includes(src) ? prev : [...prev, src]));
     }, []);
 
-    const livePhotos = useMemo(
-        () => photos.filter((slide) => !missing.includes(slide.src)),
-        [missing]
-    );
-    const livePosters = useMemo(
-        () => posters.filter((slide) => !missing.includes(slide.src)),
-        [missing]
+    /* Positions are kept, so a frame's index still matches `frames` and the
+       lightbox state, even when a frame has run out of slides. */
+    const liveFrames = useMemo(
+        () =>
+            frames.map((frame) => ({
+                ...frame,
+                slides: frame.slides.filter((slide) => !missing.includes(slide.src)),
+            })),
+        [frames, missing]
     );
 
-    const openList = open === null ? [] : open.list === 'photos' ? livePhotos : livePosters;
+    const openList = open === null ? [] : liveFrames[open.frame].slides;
 
     const close = useCallback(() => setOpen(null), []);
 
@@ -348,7 +228,9 @@ const Highlights: React.FC = () => {
         };
     }, [open, close, step]);
 
-    if (livePhotos.length === 0 && livePosters.length === 0) {
+    const shownFrames = liveFrames.filter((frame) => frame.slides.length > 0);
+
+    if (shownFrames.length === 0) {
         return null;
     }
 
@@ -356,27 +238,27 @@ const Highlights: React.FC = () => {
 
     return (
         <div className="section highlights">
-            <h3>Photos and Posters</h3>
-            <div className="highlights-row">
-                {livePhotos.length > 0 && (
-                    <SlideFrame
-                        slides={livePhotos}
-                        kind="photo"
-                        intervalMs={PHOTO_INTERVAL_MS}
-                        paused={open !== null}
-                        onOpen={(index) => setOpen({ list: 'photos', index })}
-                        onMissing={markMissing}
-                    />
-                )}
-                {livePosters.length > 0 && (
-                    <SlideFrame
-                        slides={livePosters}
-                        kind="poster"
-                        intervalMs={POSTER_INTERVAL_MS}
-                        paused={open !== null}
-                        onOpen={(index) => setOpen({ list: 'posters', index })}
-                        onMissing={markMissing}
-                    />
+            <h3>{title}</h3>
+            <div
+                className={
+                    shownFrames.length === 1
+                        ? 'highlights-row highlights-row-single'
+                        : 'highlights-row'
+                }
+            >
+                {liveFrames.map(
+                    (frame, frameIndex) =>
+                        frame.slides.length > 0 && (
+                            <SlideFrame
+                                key={frame.kind}
+                                slides={frame.slides}
+                                kind={frame.kind}
+                                intervalMs={frame.intervalMs}
+                                paused={open !== null}
+                                onOpen={(index) => setOpen({ frame: frameIndex, index })}
+                                onMissing={markMissing}
+                            />
+                        )
                 )}
             </div>
 
@@ -457,5 +339,11 @@ const Highlights: React.FC = () => {
         </div>
     );
 };
+
+/* Home page: posters and recorded talks side by side. */
+const Highlights: React.FC = () => <Gallery title="Posters and Talks" frames={HOME_FRAMES} />;
+
+/* Resources page: the photo rotation on its own. */
+export const PhotoGallery: React.FC = () => <Gallery title="Photos" frames={PHOTO_FRAMES} />;
 
 export default Highlights;

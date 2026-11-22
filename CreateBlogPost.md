@@ -59,10 +59,10 @@ return (
   );
 ```
 
-- `Resources.tsx` : Open this file under `src/` and add a list item to the `Blogs` section as following:
+- `Blogs.tsx` : Open this file under `src/` and add a list item to the list. This is the `Blogs` box on the home page; newest posts go first.
 
 ```Typescript
-<section className="section">
+<div className="section">
     <h3>Blogs</h3>
     <ul>
         <!-- Add the following block, replace blog name, tytle, Author and date -->
@@ -71,7 +71,7 @@ return (
         </li>
         <!-- End Here -->
     </ul>
-</section>
+</div>
 ```
 
 
