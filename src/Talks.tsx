@@ -14,6 +14,7 @@ const Talks: React.FC = () => {
     const [showAbstract9, setShowAbstract9] = useState(false);
     const [showAbstract10, setShowAbstract10] = useState(false);
     const [showAbstract11, setShowAbstract11] = useState(false);
+    const [showAbstract12, setShowAbstract12] = useState(false);
 
     const toggleAbstract1 = () => {
         setShowAbstract1(!showAbstract1);
@@ -59,6 +60,10 @@ const Talks: React.FC = () => {
         setShowAbstract11(!showAbstract11);
     };
 
+    const toggleAbstract12 = () => {
+        setShowAbstract12(!showAbstract12);
+    };
+
     return (
         <div>
         <Header />
@@ -72,6 +77,35 @@ const Talks: React.FC = () => {
                 <ul style={{ marginBottom: '30px', paddingLeft: '20px', lineHeight: '1.8' }}>
                     <li>Join our <a href="https://groups.google.com/g/neu-ml"> mailing list</a> to receive notifications of speakers and livestream links.</li>
                 </ul>
+                {/* Dec 2, 2026 - Wenlong Mou */}
+                <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
+                    <h2
+                        onClick={toggleAbstract12}
+                        style={{
+                            cursor: 'pointer',
+                            color: '#007BFF',
+                            textDecoration: 'underline',
+                            marginBottom: '10px'
+                        }}
+                    >
+                        From Proofs to Solvers: Unlocking Scientific Agents with GAV
+                    </h2>
+                    <p style={{ margin: '5px 0' }}><strong>Time:</strong> Wednesday, Dec 2, 2026 @ 4-5 p.m.</p>
+                    <p style={{ margin: '5px 0' }}><strong>Location:</strong> Room 345, 216 Massachusetts Avenue, Boston (<a href="https://maps.app.goo.gl/6CB9ikMVUPiqJvY6A" target="_blank" rel="noopener noreferrer">map</a>)</p>
+                    <p style={{ margin: '5px 0' }}><strong>Zoom:</strong> <a href="https://northeastern.zoom.us/j/93610637395?pwd=mEHIsmgZyp46x9smA5iHeWAeM2bDzN.1" target="_blank" rel="noopener noreferrer">northeastern.zoom.us/j/93610637395</a> (Meeting ID: 936 1063 7395, Passcode: 546522)</p>
+                    <p style={{ margin: '5px 0' }}><strong>Presenter:</strong> Wenlong Mou (University of Toronto)</p>
+                    {showAbstract12 && (
+                        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '5px' }}>
+                            <p style={{ margin: '0', lineHeight: '1.6' }}>
+                            <strong>Abstract:</strong> AI agents thrive when answers are hard to find and cheap to check. That advantage has powered progress in proofs and code. However, in computational science and engineering, checking a solver may require the very simulation it was designed to avoid.
+                            </p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>GAV (Generator–Agent–Verifier) makes PDE problems verifiable by construction. The Generator learns a distribution of plausible solutions from data and uses the governing equations to turn samples into test problems. The Agent receives the forcing, initial conditions, and boundary conditions. The Verifier checks the solver against the hidden exact solution, then uses that feedback to steer future tests toward the solver's weaknesses within the target regime.</p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>Using simulation and real data, GAV improves solvers and reduced-order models for Navier–Stokes and Vlasov–Poisson-type equations. It cuts Navier–Stokes test error by more than an order of magnitude compared to commercial solvers. An extension to quantum chemistry yields a record certified variational energy upper bound on a FeMoCo benchmark, at only 5% of the computational cost.</p>
+                            <p style={{ margin: '15px 0 0 0', lineHeight: '1.6' }}><strong>Biography:</strong> Wenlong Mou is an Assistant Professor in the Department of Statistical Sciences at the University of Toronto. He received his Ph.D. in Electrical Engineering and Computer Sciences from UC Berkeley in 2023. Before joining Berkeley, he earned a B.Sc. in Computer Science and a B.A. in Economics from Peking University.</p>
+                            <p style={{ margin: '10px 0 0 0', lineHeight: '1.6' }}>His research explores the interplay between AI and dynamics, spanning AI for scientific and engineering problems in physical systems and the dynamics of learning algorithms. On the scientific side, he develops AI agents and machine learning methods for scientific computing and control. His work on theoretical foundations includes reinforcement learning with function approximation and post-training optimization of modern generative models. His work has been published in leading journals and conferences in machine learning, statistics, and applied mathematics, and was recognized as a finalist in the INFORMS Applied Probability Society Best Student Paper Competition.</p>
+                        </div>
+                    )}
+                </div>
                 {/* Nov 23, 2026 - Brian Hu Zhang */}
                 <div style={{ marginBottom: '30px', border: '1px solid #ddd', padding: '15px', borderRadius: '5px', backgroundColor: '#fff' }}>
                     <h2
